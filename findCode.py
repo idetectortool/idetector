@@ -19,7 +19,7 @@ def search_methods_in_directory(directory, package_name, class_name, method_name
                 decompiled_java_file_path = os.path.join(root, package_path, expected_file_name_java)
 
                 if file.endswith('.class') and not os.path.exists(decompiled_java_file_path):
-                    # 只有当对应的.java文件不存在时，才反编译.class文件
+
                     decompile_class_file(file_path, root)
 
                 if os.path.exists(decompiled_java_file_path):
@@ -45,7 +45,7 @@ def search_java_file_in_directory(directory, package_name, class_name):
                 decompiled_java_file_path = os.path.join(root, package_path, expected_file_name_java)
 
                 if file.endswith('.class') and not os.path.exists(decompiled_java_file_path):
-                    # 只有当对应的.java文件不存在时，才反编译.class文件
+
                     decompile_class_file(file_path, root)
 
                 if os.path.exists(decompiled_java_file_path):
@@ -80,22 +80,22 @@ def find_method_in_java_file(java_file_path, method_name):
     return ''
 
 def extract_and_delete_jars(directory):
-    # 遍历目录及其子目录
+
     for root, dirs, files in os.walk(directory):
         for file in files:
             if file.endswith(".jar"):
                 jar_path = os.path.join(root, file)
-                # 创建一个解压目录
+
                 extract_dir = os.path.splitext(jar_path)[0]
                 os.makedirs(extract_dir, exist_ok=True)
-                # 解压JAR包
+
                 with zipfile.ZipFile(jar_path, 'r') as zip_ref:
                     zip_ref.extractall(extract_dir)
-                # 删除原始JAR文件
+
                 os.remove(jar_path)
 
 def decompile_class_file(class_file_path, output_directory):
-    # 假设使用CFR作为反编译工具
+    
     java_file = os.path.join(output_directory, os.path.basename(class_file_path) + ".java")
     subprocess.run(["D:/java/JDK11/bin/java.exe", "-jar", "E:/python_project/pythonProject/tools/cfr-0.152.jar", class_file_path, "--outputdir", output_directory])
     return java_file
