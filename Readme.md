@@ -2,7 +2,7 @@
 
 **Step 2**.  Fill in the project's source code directory in the start.py file (project_dir).
 
-![image-20240717164151556](.\doc\image-20240717164151556.png)
+![image-20240717164151556](./doc/image-20240717164151556.png)
 
 **Step 3**. run start.py.  The results will be stored in the ./results.
 
