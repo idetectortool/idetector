@@ -10,9 +10,9 @@ proxy={
     'https': 'http://127.0.0.1:8080'
 }
 
-openai.api_key ='sk-hvYssLJkz2oLaV7r6fAdCb82Fd2242D18fA5Bf29E950113b'
+openai.api_key ='sk-'
 
-client = OpenAI(api_key=openai.api_key,base_url='https://openkey.cloud/v1')
+client = OpenAI(api_key=openai.api_key,base_url='https://')
 
 
 content_system = '''{
