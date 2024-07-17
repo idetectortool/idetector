@@ -1,0 +1,86 @@
+========================================
+[1] Found sink method:
+ <SysFunctionMapper: java.lang.Long updateFunction(java.lang.Object)>
+(1) Found vul call chain:
+ <com.inxedu.os.edu.controller.system.SysFunctionController: java.util.Map udpateFunction(com.inxedu.os.edu.entity.system.SysFunction)>
+  <com.inxedu.os.edu.service.impl.system.SysFunctionServiceImpl: void updateFunction(com.inxedu.os.edu.entity.system.SysFunction)>
+   <com.inxedu.os.edu.dao.impl.system.SysFunctionDaoImpl: void updateFunction(com.inxedu.os.edu.entity.system.SysFunction)>
+    <SysFunctionMapper: java.lang.Long updateFunction(java.lang.Object)>
+========================================
+[2] Found sink method:
+ <WebsiteCourseDetailMapper: java.lang.Long createWebsiteCourseDetail(java.lang.Object)>
+(1) Found vul call chain:
+ <com.inxedu.os.edu.controller.website.AdminWebsiteCourseDetailController: java.util.Map addrecommendCourse(javax.servlet.http.HttpServletRequest)>
+  <com.inxedu.os.edu.service.impl.website.WebsiteCourseDetailServiceImpl: void createWebsiteCourseDetail(java.lang.String)>
+   <com.inxedu.os.edu.dao.impl.website.WebsiteCourseDetailDaoImpl: void createWebsiteCourseDetail(java.lang.String)>
+    <WebsiteCourseDetailMapper: java.lang.Long createWebsiteCourseDetail(java.lang.Object)>
+========================================
+[3] Found sink method:
+ <CourseKpointMapper: java.lang.Long deleteKpointByIds(java.lang.Object)>
+(1) Found vul call chain:
+ <com.inxedu.os.edu.controller.course.AdminKpointController: java.util.Map deleteKpoint(java.lang.String)>
+  <com.inxedu.os.edu.service.impl.course.CourseKpointServiceImpl: void deleteKpointByIds(java.lang.String)>
+   <com.inxedu.os.edu.dao.impl.course.CourseKpointDaoImpl: void deleteKpointByIds(java.lang.String)>
+    <CourseKpointMapper: java.lang.Long deleteKpointByIds(java.lang.Object)>
+========================================
+[4] Found sink method:
+ <SysRoleMapper: java.lang.Long createRoleFunction(java.lang.Object)>
+(1) Found vul call chain:
+ <com.inxedu.os.edu.controller.system.SysRoleController: java.util.Map saveRoleFunction(javax.servlet.http.HttpServletRequest,int)>
+  <com.inxedu.os.edu.service.impl.system.SysRoleServiceImpl: void createRoleFunction(java.lang.String)>
+   <com.inxedu.os.edu.dao.impl.system.SysRoleDaoImpl: void createRoleFunction(java.lang.String)>
+    <SysRoleMapper: java.lang.Long createRoleFunction(java.lang.Object)>
+========================================
+[5] Found sink method:
+ <SysFunctionMapper: java.lang.Long deleteFunctionByIds(java.lang.Object)>
+(1) Found vul call chain:
+ <com.inxedu.os.edu.controller.system.SysFunctionController: java.util.Map deleteFunction(java.lang.String)>
+  <com.inxedu.os.edu.service.impl.system.SysFunctionServiceImpl: void deleteFunctionByIds(java.lang.String)>
+   <com.inxedu.os.edu.dao.impl.system.SysFunctionDaoImpl: void deleteFunctionByIds(java.lang.String)>
+    <SysFunctionMapper: java.lang.Long deleteFunctionByIds(java.lang.Object)>
+========================================
+[6] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.inxedu.os.common.controller.VideoUploadController: java.lang.String gok4(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)>
+  <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <com.inxedu.os.common.controller.VideoUploadController: java.lang.String uploadAudio(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)>
+  <java.io.File: void <init>(java.lang.String)>
+========================================
+[7] Found sink method:
+ <CourseFavoritesMapper: java.lang.Long deleteCourseFavoritesById(java.lang.Object)>
+(1) Found vul call chain:
+ <com.inxedu.os.edu.controller.user.UserController: org.springframework.web.servlet.ModelAndView deleteFavorite(javax.servlet.http.HttpServletRequest,java.lang.String)>
+  <com.inxedu.os.edu.service.impl.course.CourseFavoritesServiceImpl: void deleteCourseFavoritesById(java.lang.String)>
+   <com.inxedu.os.edu.dao.impl.course.CourseFavoritesDaoImpl: void deleteCourseFavoritesById(java.lang.String)>
+    <CourseFavoritesMapper: java.lang.Long deleteCourseFavoritesById(java.lang.Object)>
+(2) Found vul call chain:
+ <com.inxedu.os.app.controller.user.AppUserController: java.util.Map deleteFavorite(javax.servlet.http.HttpServletRequest)>
+  <com.inxedu.os.edu.service.impl.course.CourseFavoritesServiceImpl: void deleteCourseFavoritesById(java.lang.String)>
+   <com.inxedu.os.edu.dao.impl.course.CourseFavoritesDaoImpl: void deleteCourseFavoritesById(java.lang.String)>
+    <CourseFavoritesMapper: java.lang.Long deleteCourseFavoritesById(java.lang.Object)>
+========================================
+[8] Found sink method:
+ <CourseTeacherMapper: java.lang.Long createCourseTeacher(java.lang.Object)>
+(1) Found vul call chain:
+ <com.inxedu.os.edu.controller.course.AdminCourseController: org.springframework.web.servlet.ModelAndView addCourse(javax.servlet.http.HttpServletRequest,com.inxedu.os.edu.entity.course.Course)>
+  <com.inxedu.os.edu.controller.course.AdminCourseController: void addCourseTeacher(javax.servlet.http.HttpServletRequest,com.inxedu.os.edu.entity.course.Course)>
+   <com.inxedu.os.edu.service.impl.course.CourseTeacherServiceImpl: void addCourseTeacher(java.lang.String)>
+    <com.inxedu.os.edu.dao.impl.course.CourseTeacherDaoImpl: void addCourseTeacher(java.lang.String)>
+     <CourseTeacherMapper: java.lang.Long createCourseTeacher(java.lang.Object)>
+(2) Found vul call chain:
+ <com.inxedu.os.edu.controller.course.AdminCourseController: org.springframework.web.servlet.ModelAndView updateCourse(javax.servlet.http.HttpServletRequest,com.inxedu.os.edu.entity.course.Course)>
+  <com.inxedu.os.edu.controller.course.AdminCourseController: void addCourseTeacher(javax.servlet.http.HttpServletRequest,com.inxedu.os.edu.entity.course.Course)>
+   <com.inxedu.os.edu.service.impl.course.CourseTeacherServiceImpl: void addCourseTeacher(java.lang.String)>
+    <com.inxedu.os.edu.dao.impl.course.CourseTeacherDaoImpl: void addCourseTeacher(java.lang.String)>
+     <CourseTeacherMapper: java.lang.Long createCourseTeacher(java.lang.Object)>
+========================================
+[9] Found sink method:
+ <MsgSystemMapper: java.lang.Long delMsgSystemById(java.lang.Object)>
+(1) Found vul call chain:
+ <com.inxedu.os.edu.controller.letter.AdminMsgSystemController: java.util.Map delsystemmsg(javax.servlet.http.HttpServletRequest,java.lang.String)>
+  <com.inxedu.os.edu.service.impl.letter.MsgSystemServiceImpl: void delMsgSystemById(java.lang.String)>
+   <com.inxedu.os.edu.dao.impl.letter.MsgSystemDaoImpl: java.lang.Long delMsgSystemById(java.lang.String)>
+    <MsgSystemMapper: java.lang.Long delMsgSystemById(java.lang.Object)>
+Cost 30 seconds

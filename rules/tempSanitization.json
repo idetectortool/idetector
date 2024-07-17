@@ -1,0 +1,8 @@
+<com.inxedu.os.app.controller.user.AppUserController: java.util.Map deleteFavorite(javax.servlet.http.HttpServletRequest)>
+<com.inxedu.os.edu.service.impl.system.SysFunctionServiceImpl: void deleteFunctionByIds(java.lang.String)>
+<com.inxedu.os.edu.service.impl.system.SysRoleServiceImpl: void createRoleFunction(java.lang.String)>
+<com.inxedu.os.edu.service.impl.course.CourseKpointServiceImpl: void deleteKpointByIds(java.lang.String)>
+<com.inxedu.os.edu.controller.website.AdminWebsiteCourseDetailController: java.lang.String[] handleCourseId(java.util.List,java.lang.String)>
+<com.inxedu.os.edu.controller.system.SysFunctionController: java.util.Map udpateFunction(com.inxedu.os.edu.entity.system.SysFunction)>
+<com.inxedu.os.common.controller.VideoUploadController: java.lang.String uploadAudio(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)>
+<com.inxedu.os.common.controller.VideoUploadController: java.lang.String gok4(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)>

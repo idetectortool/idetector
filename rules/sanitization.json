@@ -1,0 +1,23 @@
+[
+    {
+        "name": "com.inxedu.os.common.controller.VideoUploadController",
+        "rules": [
+            {
+                "function": "uploadAudio",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "gok4",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    }
+]
