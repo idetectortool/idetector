@@ -1,0 +1,98 @@
+========================================
+[1] Found sink method:
+ <net.mingsoft.cms.dao.IContentDao: java.util.List queryIdsByCategoryIdForParser(net.mingsoft.cms.bean.ContentBean)>
+(1) Found vul call chain:
+ <net.mingsoft.cms.action.web.MCmsAction: java.lang.String view(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <net.mingsoft.cms.biz.impl.ContentBizImpl: java.util.List queryIdsByCategoryIdForParser(net.mingsoft.cms.bean.ContentBean)>
+   <net.mingsoft.cms.dao.IContentDao: java.util.List queryIdsByCategoryIdForParser(net.mingsoft.cms.bean.ContentBean)>
+(2) Found vul call chain:
+ <net.mingsoft.cms.action.GeneraterAction: net.mingsoft.base.entity.ResultData generateArticle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)>
+  <net.mingsoft.cms.biz.impl.ContentBizImpl: java.util.List queryIdsByCategoryIdForParser(net.mingsoft.cms.bean.ContentBean)>
+   <net.mingsoft.cms.dao.IContentDao: java.util.List queryIdsByCategoryIdForParser(net.mingsoft.cms.bean.ContentBean)>
+========================================
+[2] Found sink method:
+ <net.mingsoft.cms.dao.ICategoryDao: java.util.List queryChildren(net.mingsoft.cms.entity.CategoryEntity)>
+(1) Found vul call chain:
+ <net.mingsoft.cms.action.CategoryAction: net.mingsoft.base.entity.ResultData update(net.mingsoft.cms.entity.CategoryEntity,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)>
+  <net.mingsoft.cms.biz.impl.CategoryBizImpl: java.util.List queryChilds(net.mingsoft.cms.entity.CategoryEntity)>
+   <net.mingsoft.cms.dao.ICategoryDao: java.util.List queryChildren(net.mingsoft.cms.entity.CategoryEntity)>
+(2) Found vul call chain:
+ <net.mingsoft.cms.action.GeneraterAction: net.mingsoft.base.entity.ResultData genernateColumn(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)>
+  <net.mingsoft.cms.biz.impl.CategoryBizImpl: java.util.List queryChilds(net.mingsoft.cms.entity.CategoryEntity)>
+   <net.mingsoft.cms.dao.ICategoryDao: java.util.List queryChildren(net.mingsoft.cms.entity.CategoryEntity)>
+(3) Found vul call chain:
+ <net.mingsoft.cms.action.GeneraterAction: net.mingsoft.base.entity.ResultData generateArticle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)>
+  <net.mingsoft.cms.biz.impl.CategoryBizImpl: java.util.List queryChilds(net.mingsoft.cms.entity.CategoryEntity)>
+   <net.mingsoft.cms.dao.ICategoryDao: java.util.List queryChildren(net.mingsoft.cms.entity.CategoryEntity)>
+========================================
+[3] Found sink method:
+ <net.mingsoft.base.dao.IBaseDao: java.util.List excuteSql(java.lang.String)>
+(1) Found vul call chain:
+ <net.mingsoft.mdiy.action.ModelAction: net.mingsoft.base.entity.ResultData data(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.ui.ModelMap)>
+  <net.mingsoft.base.biz.impl.BaseBizImpl: java.lang.Object excuteSql(java.lang.String)>
+   <net.mingsoft.base.dao.IBaseDao: java.util.List excuteSql(java.lang.String)>
+(2) Found vul call chain:
+ <net.mingsoft.mdiy.action.ModelAction: net.mingsoft.base.entity.ResultData update(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.ui.ModelMap)>
+  <net.mingsoft.base.biz.impl.BaseBizImpl: java.lang.Object excuteSql(java.lang.String)>
+   <net.mingsoft.base.dao.IBaseDao: java.util.List excuteSql(java.lang.String)>
+(3) Found vul call chain:
+ <net.mingsoft.mdiy.action.FormAction: net.mingsoft.base.entity.ResultData importJson(net.mingsoft.mdiy.entity.ModelEntity,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.validation.BindingResult)>
+  <net.mingsoft.mdiy.biz.impl.ModelBizImpl: boolean importConfig(java.lang.String,net.mingsoft.mdiy.bean.ModelJsonBean)>
+   <net.mingsoft.mdiy.biz.impl.ModelBizImpl: boolean importModel(java.lang.String,net.mingsoft.mdiy.bean.ModelJsonBean,java.lang.String)>
+    <net.mingsoft.base.dao.IBaseDao: java.util.List excuteSql(java.lang.String)>
+(4) Found vul call chain:
+ <net.mingsoft.mdiy.action.ModelAction: net.mingsoft.base.entity.ResultData importJson(net.mingsoft.mdiy.entity.ModelEntity,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.validation.BindingResult)>
+  <net.mingsoft.mdiy.biz.impl.ModelBizImpl: boolean importModel(java.lang.String,net.mingsoft.mdiy.bean.ModelJsonBean,java.lang.String)>
+   <net.mingsoft.base.dao.IBaseDao: java.util.List excuteSql(java.lang.String)>
+(5) Found vul call chain:
+ <net.mingsoft.mdiy.action.ConfigAction: net.mingsoft.base.entity.ResultData importJson(net.mingsoft.mdiy.entity.ModelEntity,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.validation.BindingResult)>
+  <net.mingsoft.mdiy.biz.impl.ModelBizImpl: boolean importConfig(java.lang.String,net.mingsoft.mdiy.bean.ModelJsonBean)>
+   <net.mingsoft.mdiy.biz.impl.ModelBizImpl: boolean importModel(java.lang.String,net.mingsoft.mdiy.bean.ModelJsonBean,java.lang.String)>
+    <net.mingsoft.base.dao.IBaseDao: java.util.List excuteSql(java.lang.String)>
+========================================
+[4] Found sink method:
+ <net.mingsoft.base.dao.IBaseDao: void insertBySQL(java.lang.String,java.util.Map)>
+(1) Found vul call chain:
+ <net.mingsoft.mdiy.action.ModelAction: net.mingsoft.base.entity.ResultData save(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.ui.ModelMap)>
+  <net.mingsoft.base.biz.impl.BaseBizImpl: void insertBySQL(java.lang.String,java.util.Map)>
+   <net.mingsoft.base.dao.IBaseDao: void insertBySQL(java.lang.String,java.util.Map)>
+(2) Found vul call chain:
+ <net.mingsoft.mdiy.action.ModelAction: net.mingsoft.base.entity.ResultData update(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.ui.ModelMap)>
+  <net.mingsoft.base.biz.impl.BaseBizImpl: void insertBySQL(java.lang.String,java.util.Map)>
+   <net.mingsoft.base.dao.IBaseDao: void insertBySQL(java.lang.String,java.util.Map)>
+========================================
+[5] Found sink method:
+ <net.mingsoft.base.dao.IBaseDao: void deleteBySQL(java.lang.String,java.util.Map)>
+(1) Found vul call chain:
+ <net.mingsoft.cms.action.ContentAction: net.mingsoft.base.entity.ResultData delete(java.util.List,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)>
+  <net.mingsoft.base.biz.impl.BaseBizImpl: void deleteBySQL(java.lang.String,java.util.Map)>
+   <net.mingsoft.base.dao.IBaseDao: void deleteBySQL(java.lang.String,java.util.Map)>
+========================================
+[6] Found sink method:
+ <net.mingsoft.mdiy.dao.IDictDao: java.util.List queryExcludeApp(net.mingsoft.mdiy.entity.DictEntity)>
+(1) Found vul call chain:
+ <net.mingsoft.mdiy.action.web.DictAction: net.mingsoft.base.entity.ResultData listExcludeApp(net.mingsoft.mdiy.entity.DictEntity,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)>
+  <net.mingsoft.mdiy.biz.impl.DictBizImpl: java.util.List queryExcludeApp(net.mingsoft.mdiy.entity.DictEntity)>
+   <net.mingsoft.mdiy.dao.IDictDao: java.util.List queryExcludeApp(net.mingsoft.mdiy.entity.DictEntity)>
+========================================
+[7] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <net.mingsoft.basic.action.TemplateAction: net.mingsoft.base.entity.ResultData delete(javax.servlet.http.HttpServletRequest)>
+  <java.io.File: void <init>(java.lang.String)>
+This vul call chain contains filtering operations!!!
+========================================
+[8] Found sink method:
+ <net.mingsoft.base.dao.IBaseDao: void updateBySQL(java.lang.String,java.util.Map,java.util.Map)>
+(1) Found vul call chain:
+ <net.mingsoft.mdiy.action.ModelAction: net.mingsoft.base.entity.ResultData update(java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.ui.ModelMap)>
+  <net.mingsoft.base.biz.impl.BaseBizImpl: void updateBySQL(java.lang.String,java.util.Map,java.util.Map)>
+   <net.mingsoft.base.dao.IBaseDao: void updateBySQL(java.lang.String,java.util.Map,java.util.Map)>
+========================================
+[9] Found sink method:
+ <net.mingsoft.base.dao.IBaseDao: void dropTable(java.lang.String)>
+(1) Found vul call chain:
+ <net.mingsoft.mdiy.action.ModelAction: net.mingsoft.base.entity.ResultData delete(java.util.List,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)>
+  <net.mingsoft.base.biz.impl.BaseBizImpl: void dropTable(java.lang.String)>
+   <net.mingsoft.base.dao.IBaseDao: void dropTable(java.lang.String)>
+Cost 37 seconds

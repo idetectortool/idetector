@@ -1,0 +1,65 @@
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The uploadLic method includes checks for the filename to ensure it matches 'license.lic', which is a form of security filtering to prevent unauthorized file uploads."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method includes security filtering by validating the correctness of a check code before allowing the file download. This acts as a security measure to ensure the integrity and authenticity of the file being downloaded."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The correctness of a check code before allowing the file download is more of a verification step rather than a filtering function. It does not fit the criteria for filtering operations as specified by the audit rules."
+}
+
+{
+  "isfilter": false
+}
+

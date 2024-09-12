@@ -1,0 +1,12 @@
+========================================
+[1] Found sink method:
+ <org.springframework.util.FileCopyUtils: int copy(java.io.InputStream,java.io.OutputStream)>
+(1) Found vul call chain:
+ <com.dimple.file.web.controller.SysFileController: com.dimple.common.core.domain.ResponseEntity upload(org.springframework.web.multipart.MultipartFile,java.lang.String)>
+  <com.dimple.file.service.service.impl.SysFileServiceImpl: com.dimple.system.api.model.SysFileBO upload(org.springframework.web.multipart.MultipartFile,java.lang.String)>
+   <com.dimple.file.service.service.impl.LocalSysFileServiceImpl: com.dimple.system.api.model.SysFileBO uploadFile(org.springframework.web.multipart.MultipartFile)>
+    <com.dimple.file.service.utils.FileUploadUtils: java.lang.String upload(java.lang.String,org.springframework.web.multipart.MultipartFile)>
+     <com.dimple.file.service.utils.FileUploadUtils: java.lang.String upload(java.lang.String,org.springframework.web.multipart.MultipartFile,java.lang.String[])>
+      <org.springframework.web.multipart.MultipartFile: void transferTo(java.nio.file.Path)>
+       <org.springframework.util.FileCopyUtils: int copy(java.io.InputStream,java.io.OutputStream)>
+Cost 65 seconds

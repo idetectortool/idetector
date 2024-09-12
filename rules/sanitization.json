@@ -1,0 +1,96 @@
+[
+    {
+        "name": "edp.davinci.core.utils.SqlParseUtils",
+        "rules": [
+            {
+                "function": "replaceParams",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "getAuthVarExpression",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "edp.core.utils.FileUtils",
+        "rules": [
+            {
+                "function": "isCsv",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "isExcel",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "edp.davinci.service.impl.WidgetServiceImpl",
+        "rules": [
+            {
+                "function": "writeExcel",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "edp.davinci.service.impl.SourceServiceImpl",
+        "rules": [
+            {
+                "function": "dataUpload",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "edp.davinci.core.utils.CsvUtils",
+        "rules": [
+            {
+                "function": "parseCsvWithFirstAsHeader",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "edp.davinci.core.utils.ExcelUtils",
+        "rules": [
+            {
+                "function": "getReadWorkbook",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    }
+]

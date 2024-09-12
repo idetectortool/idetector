@@ -1,0 +1,99 @@
+========================================
+[1] Found sink method:
+ <com.zbkj.service.dao.SystemStoreDao: java.util.List getNearList(com.zbkj.common.request.StoreNearRequest)>
+(1) Found vul call chain:
+ <com.zbkj.front.controller.StoreController: com.zbkj.common.response.CommonResult register(com.zbkj.common.request.StoreNearRequest,com.zbkj.common.request.PageParamRequest)>
+  <com.zbkj.service.service.impl.SystemStoreServiceImpl: com.zbkj.common.response.StoreNearResponse getNearList(com.zbkj.common.request.StoreNearRequest,com.zbkj.common.request.PageParamRequest)>
+   <com.zbkj.service.dao.SystemStoreDao: java.util.List getNearList(com.zbkj.common.request.StoreNearRequest)>
+========================================
+[2] Found sink method:
+ <java.net.URL: java.net.URLConnection openConnection()>
+(1) Found vul call chain:
+ <com.zbkj.admin.controller.StoreProductController: com.zbkj.common.response.CommonResult importProduct(int,java.lang.String)>
+  <com.zbkj.service.service.impl.StoreProductServiceImpl: com.zbkj.common.request.StoreProductRequest importProductFromUrl(java.lang.String,int)>
+   <com.zbkj.service.delete.ProductUtils: com.zbkj.common.request.StoreProductRequest getJDProductInfo(java.lang.String,int)>
+    <com.zbkj.service.delete.ProductUtils: org.json.JSONObject getRequestFromUrl(java.lang.String)>
+     <java.net.URL: java.net.URLConnection openConnection()>
+(2) Found vul call chain:
+ <com.zbkj.front.pub.ImageMergeController: com.zbkj.common.response.CommonResult mergeList(java.util.List)>
+  <com.zbkj.common.utils.ImageMergeUtil: java.lang.String drawWordFile(java.util.List)>
+   <com.zbkj.common.utils.ImageMergeUtil: void buildImage(java.util.List)>
+    <com.zbkj.common.utils.ImageMergeUtil: void drawImage(com.zbkj.common.vo.ImageMergeUtilVo)>
+     <com.zbkj.common.utils.ImageMergeUtil: java.lang.String getFileSource(java.lang.String)>
+      <java.net.URL: java.net.URLConnection openConnection()>
+(3) Found vul call chain:
+ <com.zbkj.admin.controller.StoreProductController: com.zbkj.common.response.CommonResult importProduct(int,java.lang.String)>
+  <com.zbkj.service.service.impl.StoreProductServiceImpl: com.zbkj.common.request.StoreProductRequest importProductFromUrl(java.lang.String,int)>
+   <com.zbkj.service.delete.ProductUtils: com.zbkj.common.request.StoreProductRequest getPddProductInfo(java.lang.String,int)>
+    <com.zbkj.service.delete.ProductUtils: org.json.JSONObject getRequestFromUrl(java.lang.String)>
+     <java.net.URL: java.net.URLConnection openConnection()>
+(4) Found vul call chain:
+ <com.zbkj.admin.controller.StoreProductController: com.zbkj.common.response.CommonResult importProduct(int,java.lang.String)>
+  <com.zbkj.service.service.impl.StoreProductServiceImpl: com.zbkj.common.request.StoreProductRequest importProductFromUrl(java.lang.String,int)>
+   <com.zbkj.service.delete.ProductUtils: com.zbkj.common.request.StoreProductRequest getTaobaoProductInfo(java.lang.String,int)>
+    <com.zbkj.service.delete.ProductUtils: org.json.JSONObject getRequestFromUrl(java.lang.String)>
+     <java.net.URL: java.net.URLConnection openConnection()>
+(5) Found vul call chain:
+ <com.zbkj.admin.controller.StoreProductController: com.zbkj.common.response.CommonResult importProduct(int,java.lang.String)>
+  <com.zbkj.service.service.impl.StoreProductServiceImpl: com.zbkj.common.request.StoreProductRequest importProductFromUrl(java.lang.String,int)>
+   <com.zbkj.service.delete.ProductUtils: com.zbkj.common.request.StoreProductRequest getTmallProductInfo(java.lang.String,int)>
+    <com.zbkj.service.delete.ProductUtils: org.json.JSONObject getRequestFromUrl(java.lang.String)>
+     <java.net.URL: java.net.URLConnection openConnection()>
+(6) Found vul call chain:
+ <com.zbkj.admin.controller.StoreProductController: com.zbkj.common.response.CommonResult importProduct(int,java.lang.String)>
+  <com.zbkj.service.service.impl.StoreProductServiceImpl: com.zbkj.common.request.StoreProductRequest importProductFromUrl(java.lang.String,int)>
+   <com.zbkj.service.delete.ProductUtils: com.zbkj.common.request.StoreProductRequest getSuningProductInfo(java.lang.String,int)>
+    <com.zbkj.service.delete.ProductUtils: org.json.JSONObject getRequestFromUrl(java.lang.String)>
+     <java.net.URL: java.net.URLConnection openConnection()>
+========================================
+[3] Found sink method:
+ <com.zbkj.service.dao.UserDao: java.util.List findAdminList(java.util.Map)>
+(1) Found vul call chain:
+ <com.zbkj.admin.controller.UserController: com.zbkj.common.response.CommonResult getList(com.zbkj.common.request.UserSearchRequest,com.zbkj.common.request.PageParamRequest)>
+  <com.zbkj.service.service.impl.UserServiceImpl: com.github.pagehelper.PageInfo getList(com.zbkj.common.request.UserSearchRequest,com.zbkj.common.request.PageParamRequest)>
+   <com.zbkj.service.dao.UserDao: java.util.List findAdminList(java.util.Map)>
+========================================
+[4] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.zbkj.front.pub.ImageMergeController: com.zbkj.common.response.CommonResult mergeList(java.util.List)>
+  <com.zbkj.common.utils.ImageMergeUtil: java.lang.String drawWordFile(java.util.List)>
+   <com.zbkj.common.utils.ImageMergeUtil: void buildImage(java.util.List)>
+    <com.zbkj.common.utils.ImageMergeUtil: void drawImage(com.zbkj.common.vo.ImageMergeUtilVo)>
+     <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <com.zbkj.admin.pub.ImageMergeController: com.zbkj.common.response.CommonResult mergeList(java.util.List)>
+  <com.zbkj.common.utils.ImageMergeUtil: java.lang.String drawWordFile(java.util.List)>
+   <com.zbkj.common.utils.ImageMergeUtil: void buildImage(java.util.List)>
+    <com.zbkj.common.utils.ImageMergeUtil: void drawImage(com.zbkj.common.vo.ImageMergeUtilVo)>
+     <java.io.File: void <init>(java.lang.String)>
+========================================
+[5] Found sink method:
+ <com.zbkj.service.dao.StoreOrderDao: java.math.BigDecimal getRefundPrice(java.lang.String)>
+(1) Found vul call chain:
+ <com.zbkj.admin.controller.SystemWriteOffOrderController: com.zbkj.common.response.CommonResult getList(com.zbkj.common.request.SystemWriteOffOrderSearchRequest,com.zbkj.common.request.PageParamRequest)>
+  <com.zbkj.service.service.impl.StoreOrderServiceImpl: com.zbkj.common.response.SystemWriteOffOrderResponse getWriteOffList(com.zbkj.common.request.SystemWriteOffOrderSearchRequest,com.zbkj.common.request.PageParamRequest)>
+   <com.zbkj.service.dao.StoreOrderDao: java.math.BigDecimal getRefundPrice(java.lang.String)>
+========================================
+[6] Found sink method:
+ <com.zbkj.service.dao.UserDao: java.util.List getSpreadPeopleList(java.util.Map)>
+(1) Found vul call chain:
+ <com.zbkj.front.controller.UserController: com.zbkj.common.response.CommonResult getSpreadPeopleList(com.zbkj.common.request.UserSpreadPeopleRequest,com.zbkj.common.request.PageParamRequest)>
+  <com.zbkj.front.service.impl.UserCenterServiceImpl: java.util.List getSpreadPeopleList(com.zbkj.common.request.UserSpreadPeopleRequest,com.zbkj.common.request.PageParamRequest)>
+   <com.zbkj.service.service.impl.UserServiceImpl: java.util.List getSpreadPeopleList(java.util.List,java.lang.String,java.lang.String,java.lang.String,com.zbkj.common.request.PageParamRequest)>
+    <com.zbkj.service.dao.UserDao: java.util.List getSpreadPeopleList(java.util.Map)>
+========================================
+[7] Found sink method:
+ <com.zbkj.service.dao.StoreOrderDao: java.lang.Integer getRefundTotal(java.lang.String)>
+(1) Found vul call chain:
+ <com.zbkj.admin.controller.SystemWriteOffOrderController: com.zbkj.common.response.CommonResult getList(com.zbkj.common.request.SystemWriteOffOrderSearchRequest,com.zbkj.common.request.PageParamRequest)>
+  <com.zbkj.service.service.impl.StoreOrderServiceImpl: com.zbkj.common.response.SystemWriteOffOrderResponse getWriteOffList(com.zbkj.common.request.SystemWriteOffOrderSearchRequest,com.zbkj.common.request.PageParamRequest)>
+   <com.zbkj.service.dao.StoreOrderDao: java.lang.Integer getRefundTotal(java.lang.String)>
+========================================
+[8] Found sink method:
+ <com.zbkj.service.dao.StoreOrderDao: java.math.BigDecimal getTotalPrice(java.lang.String)>
+(1) Found vul call chain:
+ <com.zbkj.admin.controller.SystemWriteOffOrderController: com.zbkj.common.response.CommonResult getList(com.zbkj.common.request.SystemWriteOffOrderSearchRequest,com.zbkj.common.request.PageParamRequest)>
+  <com.zbkj.service.service.impl.StoreOrderServiceImpl: com.zbkj.common.response.SystemWriteOffOrderResponse getWriteOffList(com.zbkj.common.request.SystemWriteOffOrderSearchRequest,com.zbkj.common.request.PageParamRequest)>
+   <com.zbkj.service.dao.StoreOrderDao: java.math.BigDecimal getTotalPrice(java.lang.String)>
+Cost 78 seconds

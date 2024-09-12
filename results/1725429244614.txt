@@ -1,0 +1,126 @@
+========================================
+[1] Found sink method:
+ <org.springframework.util.FileCopyUtils: int copy(java.io.InputStream,java.io.OutputStream)>
+(1) Found vul call chain:
+ <com.fastbee.web.controller.common.CommonController: com.fastbee.common.core.domain.AjaxResult uploadFile(org.springframework.web.multipart.MultipartFile)>
+  <com.fastbee.common.utils.file.FileUploadUtils: java.lang.String upload(java.lang.String,org.springframework.web.multipart.MultipartFile)>
+   <com.fastbee.common.utils.file.FileUploadUtils: java.lang.String upload(java.lang.String,org.springframework.web.multipart.MultipartFile,java.lang.String[])>
+    <org.springframework.web.multipart.MultipartFile: void transferTo(java.nio.file.Path)>
+     <org.springframework.util.FileCopyUtils: int copy(java.io.InputStream,java.io.OutputStream)>
+(2) Found vul call chain:
+ <com.fastbee.web.controller.system.SysProfileController: com.fastbee.common.core.domain.AjaxResult avatar(org.springframework.web.multipart.MultipartFile)>
+  <com.fastbee.common.utils.file.FileUploadUtils: java.lang.String upload(java.lang.String,org.springframework.web.multipart.MultipartFile,java.lang.String[])>
+   <org.springframework.web.multipart.MultipartFile: void transferTo(java.nio.file.Path)>
+    <org.springframework.util.FileCopyUtils: int copy(java.io.InputStream,java.io.OutputStream)>
+(3) Found vul call chain:
+ <com.fastbee.web.controller.common.CommonController: com.fastbee.common.core.domain.AjaxResult uploadFiles(java.util.List)>
+  <com.fastbee.common.utils.file.FileUploadUtils: java.lang.String upload(java.lang.String,org.springframework.web.multipart.MultipartFile)>
+   <com.fastbee.common.utils.file.FileUploadUtils: java.lang.String upload(java.lang.String,org.springframework.web.multipart.MultipartFile,java.lang.String[])>
+    <org.springframework.web.multipart.MultipartFile: void transferTo(java.nio.file.Path)>
+     <org.springframework.util.FileCopyUtils: int copy(java.io.InputStream,java.io.OutputStream)>
+========================================
+[2] Found sink method:
+ <java.net.URL: java.net.URLConnection openConnection()>
+(1) Found vul call chain:
+ <com.fastbee.data.controller.wechat.WeChatController: void wxBindCallback(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <com.fastbee.iot.wechat.impl.WeChatServiceImpl: java.lang.String wxBindCallback(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+   <com.fastbee.iot.wechat.impl.WeChatServiceImpl: com.fastbee.common.wechat.WeChatAppResult getAccessTokenOpenId(java.lang.String,com.fastbee.iot.domain.SocialPlatform)>
+    <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String)>
+     <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String,java.lang.String)>
+      <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String,java.lang.String,java.lang.String)>
+       <java.net.URL: java.net.URLConnection openConnection()>
+(2) Found vul call chain:
+ <com.fastbee.data.controller.wechat.WeChatController: com.fastbee.common.core.domain.AjaxResult mobileLogin(com.fastbee.common.wechat.WeChatLoginBody)>
+  <com.fastbee.iot.wechat.impl.WeChatServiceImpl: com.fastbee.common.wechat.WeChatLoginResult mobileLogin(com.fastbee.common.wechat.WeChatLoginBody)>
+   <com.fastbee.iot.wechat.impl.WeChatServiceImpl: com.fastbee.common.wechat.WeChatAppResult getAccessTokenOpenId(java.lang.String,com.fastbee.iot.domain.SocialPlatform)>
+    <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String)>
+     <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String,java.lang.String)>
+      <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String,java.lang.String,java.lang.String)>
+       <java.net.URL: java.net.URLConnection openConnection()>
+(3) Found vul call chain:
+ <com.fastbee.data.controller.wechat.WeChatController: com.fastbee.common.core.domain.AjaxResult bind(com.fastbee.iot.wechat.vo.WxBindReqVO)>
+  <com.fastbee.iot.wechat.impl.WeChatServiceImpl: com.fastbee.common.core.domain.AjaxResult bind(com.fastbee.iot.wechat.vo.WxBindReqVO)>
+   <com.fastbee.iot.wechat.impl.WeChatServiceImpl: com.fastbee.common.wechat.WeChatMiniProgramResult codeToSession(java.lang.String,com.fastbee.iot.domain.SocialPlatform)>
+    <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String)>
+     <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String,java.lang.String)>
+      <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String,java.lang.String,java.lang.String)>
+       <java.net.URL: java.net.URLConnection openConnection()>
+(4) Found vul call chain:
+ <com.fastbee.data.controller.wechat.WeChatController: com.fastbee.common.core.domain.AjaxResult mobileLogin(com.fastbee.common.wechat.WeChatLoginBody)>
+  <com.fastbee.iot.wechat.impl.WeChatServiceImpl: com.fastbee.common.wechat.WeChatLoginResult mobileLogin(com.fastbee.common.wechat.WeChatLoginBody)>
+   <com.fastbee.iot.wechat.impl.WeChatServiceImpl: com.fastbee.common.wechat.WeChatUserInfo getWeChatUserInfo(java.lang.String,java.lang.String)>
+    <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String)>
+     <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String,java.lang.String)>
+      <com.fastbee.common.utils.http.HttpUtils: java.lang.String sendGet(java.lang.String,java.lang.String,java.lang.String)>
+       <java.net.URL: java.net.URLConnection openConnection()>
+========================================
+[3] Found sink method:
+ <com.fastbee.system.mapper.SysUserMapper: java.util.List selectUnallocatedList(com.fastbee.common.core.domain.entity.SysUser)>
+(1) Found vul call chain:
+ <com.fastbee.web.controller.system.SysRoleController: com.fastbee.common.core.page.TableDataInfo unallocatedList(com.fastbee.common.core.domain.entity.SysUser)>
+  <com.fastbee.system.service.impl.SysUserServiceImpl: java.util.List selectUnallocatedList(com.fastbee.common.core.domain.entity.SysUser)>
+   <com.fastbee.system.mapper.SysUserMapper: java.util.List selectUnallocatedList(com.fastbee.common.core.domain.entity.SysUser)>
+========================================
+[4] Found sink method:
+ <com.fastbee.system.mapper.SysUserMapper: java.util.List selectUserList(com.fastbee.common.core.domain.entity.SysUser)>
+(1) Found vul call chain:
+ <com.fastbee.web.controller.system.SysUserController: void export(javax.servlet.http.HttpServletResponse,com.fastbee.common.core.domain.entity.SysUser)>
+  <com.fastbee.system.service.impl.SysUserServiceImpl: java.util.List selectUserList(com.fastbee.common.core.domain.entity.SysUser)>
+   <com.fastbee.system.mapper.SysUserMapper: java.util.List selectUserList(com.fastbee.common.core.domain.entity.SysUser)>
+(2) Found vul call chain:
+ <com.fastbee.data.controller.ToolController: com.fastbee.common.core.page.TableDataInfo list(com.fastbee.common.core.domain.entity.SysUser)>
+  <com.fastbee.iot.service.impl.ToolServiceImpl: java.util.List selectUserList(com.fastbee.common.core.domain.entity.SysUser)>
+   <com.fastbee.system.mapper.SysUserMapper: java.util.List selectUserList(com.fastbee.common.core.domain.entity.SysUser)>
+(3) Found vul call chain:
+ <com.fastbee.web.controller.system.SysUserController: com.fastbee.common.core.page.TableDataInfo list(com.fastbee.common.core.domain.entity.SysUser)>
+  <com.fastbee.system.service.impl.SysUserServiceImpl: java.util.List selectUserList(com.fastbee.common.core.domain.entity.SysUser)>
+   <com.fastbee.system.mapper.SysUserMapper: java.util.List selectUserList(com.fastbee.common.core.domain.entity.SysUser)>
+========================================
+[5] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.fastbee.web.controller.common.CommonController: void fileDownload(java.lang.String,java.lang.Boolean,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)>
+  <com.fastbee.common.utils.file.FileUtils: void writeBytes(java.lang.String,java.io.OutputStream)>
+   <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <com.fastbee.data.controller.ToolController: void download(java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)>
+  <com.fastbee.common.utils.file.FileUtils: void writeBytes(java.lang.String,java.io.OutputStream)>
+   <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <com.fastbee.web.controller.common.CommonController: void fileDownload(java.lang.String,java.lang.Boolean,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)>
+  <com.fastbee.common.utils.file.FileUtils: boolean deleteFile(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(4) Found vul call chain:
+ <com.fastbee.data.controller.media.SipDeviceController: void getSnap(javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)>
+  <java.io.File: void <init>(java.lang.String)>
+========================================
+[6] Found sink method:
+ <com.fastbee.system.mapper.SysDeptMapper: java.util.List selectDeptList(com.fastbee.common.core.domain.entity.SysDept)>
+(1) Found vul call chain:
+ <com.fastbee.web.controller.system.SysDeptController: com.fastbee.common.core.domain.AjaxResult list(com.fastbee.common.core.domain.entity.SysDept)>
+  <com.fastbee.system.service.impl.SysDeptServiceImpl: java.util.List selectDeptList(com.fastbee.common.core.domain.entity.SysDept)>
+   <com.fastbee.system.mapper.SysDeptMapper: java.util.List selectDeptList(com.fastbee.common.core.domain.entity.SysDept)>
+(2) Found vul call chain:
+ <com.fastbee.web.controller.system.SysUserController: com.fastbee.common.core.domain.AjaxResult deptTree(com.fastbee.common.core.domain.entity.SysDept)>
+  <com.fastbee.system.service.impl.SysDeptServiceImpl: java.util.List selectDeptTreeList(com.fastbee.common.core.domain.entity.SysDept)>
+   <com.fastbee.system.service.impl.SysDeptServiceImpl: java.util.List selectDeptList(com.fastbee.common.core.domain.entity.SysDept)>
+    <com.fastbee.system.mapper.SysDeptMapper: java.util.List selectDeptList(com.fastbee.common.core.domain.entity.SysDept)>
+========================================
+[7] Found sink method:
+ <com.fastbee.system.mapper.SysRoleMapper: java.util.List selectRoleList(com.fastbee.common.core.domain.entity.SysRole)>
+(1) Found vul call chain:
+ <com.fastbee.web.controller.system.SysRoleController: com.fastbee.common.core.page.TableDataInfo list(com.fastbee.common.core.domain.entity.SysRole)>
+  <com.fastbee.system.service.impl.SysRoleServiceImpl: java.util.List selectRoleList(com.fastbee.common.core.domain.entity.SysRole)>
+   <com.fastbee.system.mapper.SysRoleMapper: java.util.List selectRoleList(com.fastbee.common.core.domain.entity.SysRole)>
+(2) Found vul call chain:
+ <com.fastbee.web.controller.system.SysRoleController: void export(javax.servlet.http.HttpServletResponse,com.fastbee.common.core.domain.entity.SysRole)>
+  <com.fastbee.system.service.impl.SysRoleServiceImpl: java.util.List selectRoleList(com.fastbee.common.core.domain.entity.SysRole)>
+   <com.fastbee.system.mapper.SysRoleMapper: java.util.List selectRoleList(com.fastbee.common.core.domain.entity.SysRole)>
+========================================
+[8] Found sink method:
+ <com.fastbee.system.mapper.SysUserMapper: java.util.List selectAllocatedList(com.fastbee.common.core.domain.entity.SysUser)>
+(1) Found vul call chain:
+ <com.fastbee.web.controller.system.SysRoleController: com.fastbee.common.core.page.TableDataInfo allocatedList(com.fastbee.common.core.domain.entity.SysUser)>
+  <com.fastbee.system.service.impl.SysUserServiceImpl: java.util.List selectAllocatedList(com.fastbee.common.core.domain.entity.SysUser)>
+   <com.fastbee.system.mapper.SysUserMapper: java.util.List selectAllocatedList(com.fastbee.common.core.domain.entity.SysUser)>
+Cost 66 seconds

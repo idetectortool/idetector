@@ -1,0 +1,762 @@
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'upload' in Class 'org.jeecg.common.util.oss.OssBootUtil' includes calls to 'FileTypeFilter.fileTypeFilter(file)' and 'StrAttackFilter.filter(fileDir)', which indicate filtering for file type and potential security filters for directory traversal."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method getDeptUserByOrgCode checks for the presence of special strings in paths (e.g., '..' for path traversal) to prevent directory traversal vulnerabilities."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason":"The method getDeptUserByOrgCode does not contain any logic that checks for the presence of special strings in paths (e.g., '..' for path traversal). It mainly deals with querying departments and users based on organization codes."
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The importExcel method checks for file upload and performs security filtering by validating the filename suffix."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The importExcel method does not explicitly check the file extensions or perform any validation on the filename suffix. It reads the file input stream directly without any specific filtering for file types or extensions. Therefore, it cannot be considered a filtering function based on the provided rules."
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method 'getSqlRuleParams' in Class 'org.jeecg.common.system.query.QueryGenerator' uses regular expressions to identify SQL rule parameters, which is typically a part of SQL injection prevention mechanisms."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method 'getSqlRuleParams' in Class 'org.jeecg.common.system.query.QueryGenerator' uses regular expressions to identify SQL rule parameters, which is a part of dynamic query construction and not necessarily a filtering operation to prevent SQL injection as per the provided audit rules. It does not filter SQL-sensitive keywords or prevent SQL injection directly."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The filterContent method in the SqlInjectionUtil class checks for SQL injection keywords such as 'select', 'insert', 'delete', 'update', etc., using a blacklist and regular expressions. It also logs errors and throws exceptions if such keywords are found, which is indicative of SQL injection filtering."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The upload method in the CommonController class includes file upload operations and utilizes the method uploadLocal to save files locally. Within the uploadLocal method, there is security filtering for path traversal by removing instances of '..' and '../' from the file path."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method 'doMultiFieldsOrder' includes a call to 'SqlInjectionUtil.filterContent(column)', indicating it performs SQL injection filtering by checking and filtering potentially dangerous content in the 'column' parameter."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method 'validate' checks the JDBC URL for specific disallowed properties to prevent SQL injection or security risks related to JDBC connections."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The method 'validate' in the provided code checks for specific disallowed JDBC properties, such as 'authenticationPluginClassName', 'sslhostnameverifier', 'socketFactory', 'sslfactory', and 'sslpasswordcallback'. This is a whitelist/blacklist check, but it does not filter SQL-sensitive keywords like 'and', 'or', 'update', etc. Therefore, it cannot be considered an SQL injection filtering function as per audit rule 4."
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method 'doSuperQuery' involves security filtering for SQL injection. It includes operations like URL decoding of query parameters, parsing query conditions, and adding them to the query wrapper using various query rules. Additionally, it employs the method 'QueryGenerator.addEasyQuery', which is responsible for constructing SQL queries with different conditions, ensuring security against SQL injection."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method getFileName in the class org.jeecg.common.util.CommonUtils performs security filtering for the filename by removing potentially dangerous characters and enforcing a specific regex pattern."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method getFileName in the class org.jeecg.common.util.CommonUtils does not perform security filtering for path traversal or file upload vulnerabilities. It primarily cleans the filename by removing specific special characters and applying a regex pattern, which does not fulfill the criteria for being considered a filtering function as per audit rules 3 and 6."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method 'getSqlRuleValue' in the class 'org.jeecg.common.system.query.QueryGenerator' processes SQL rules and applies security filtering by replacing variable parameters with their values, preventing potential SQL injection."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The function 'getSqlRuleValue' does not contain any obvious filters for SQL-sensitive keywords such as and, or, update, ', and \". It only replaces variables in the SQL rule with their corresponding values. Hence, it does not qualify as an SQL injection filtering function based on the provided audit rules."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `uploadLocal` performs security filtering for file upload by checking for path traversal strings ('../' or '..\\') in the `bizPath` parameter."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The function 'getDictItems' calls 'SqlInjectionUtil.filterContent' and 'SqlInjectionUtil.specialFilterContent', which are likely used for SQL injection filtering."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'view' method in the 'CommonController' class includes filtering operations for path traversal issues by replacing '..' and '../' in the file path."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The 'loadDict' method checks for SQL injection vulnerabilities by invoking 'SqlInjectionUtil.filterContent' and 'SqlInjectionUtil.specialFilterContent' on potentially dangerous parameters before using them in SQL queries."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The 'loadDict' method does not directly invoke 'SqlInjectionUtil.filterContent' or 'SqlInjectionUtil.specialFilterContent' within its own implementation. Instead, these checks are performed in the 'getDictItems' method, which is not directly called by 'loadDict'. The 'loadDict' method itself does not contain explicit filtering operations to prevent SQL injection."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'uploadLocal' includes security filtering operations for file upload. It uses 'FileTypeFilter.fileTypeFilter(mf)' to filter file types and 'CommonUtils.getFileName(orgName)' to sanitize the file name."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The filterContent method checks for the presence of SQL injection keywords such as 'select', 'insert', 'delete', and other sensitive keywords by using blacklists and regular expressions. If any of these keywords are found, an exception is thrown, indicating potential SQL injection risks."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method `addQueryByRule` in Class `QueryGenerator` is performing SQL injection filtering by checking and replacing values against specific SQL keywords and patterns. The method `SqlInjectionUtil.filterContent(column)` is used to filter content, which indicates SQL injection filtering."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method saveOneFileComment includes security filtering for path traversal by checking for '../' in the bizPath parameter."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The uploadLocal method includes security filtering for file uploads. The method checks and processes the filename, and it ensures that the filepath does not contain path traversal sequences such as '../'. Additionally, it replaces backslashes with forward slashes in the filepath, which further enhances security."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method specialFilterContentForDictSql performs security filtering for SQL injection by checking for the presence of sensitive SQL keywords such as 'exec', 'insert', 'select', etc., and uses regular expressions to detect potentially dangerous patterns."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The installMplus method in the QueryGenerator class includes SQL injection filtering by checking and replacing SQL keywords and patterns. Specifically, it uses methods like SqlInjectionUtil.filterContent and checks for SQL_RULES_COLUMN to apply SQL rules to the query."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The importExcel method involves file upload operations and includes security filtering by checking the filename suffix and performing necessary validations such as setting ImportParams and handling exceptions appropriately."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The importExcel method does not explicitly check for file extensions or perform any obvious filtering operations. It sets import parameters for the Excel file and handles exceptions, but it does not contain security filters for file extensions or other validation checks as described in audit_rule6."
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'upload' method in the 'MinioUtil' class includes security filtering operations. It uses 'StrAttackFilter.filter' to filter the 'bizPath' to prevent path traversal attacks and 'FileTypeFilter.fileTypeFilter' to check the file type for security."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+

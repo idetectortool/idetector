@@ -1,0 +1,30 @@
+========================================
+[1] Found sink method:
+ <com.luckyframe.project.system.role.mapper.RoleMapper: java.util.List selectRoleList(com.luckyframe.project.system.role.domain.Role)>
+(1) Found vul call chain:
+ <com.luckyframe.project.system.role.controller.RoleController: com.luckyframe.framework.web.page.TableDataInfo list(com.luckyframe.project.system.role.domain.Role)>
+  <com.luckyframe.project.system.role.service.RoleServiceImpl: java.util.List selectRoleList(com.luckyframe.project.system.role.domain.Role)>
+   <com.luckyframe.project.system.role.mapper.RoleMapper: java.util.List selectRoleList(com.luckyframe.project.system.role.domain.Role)>
+(2) Found vul call chain:
+ <com.luckyframe.project.system.role.controller.RoleController: com.luckyframe.framework.web.domain.AjaxResult export(com.luckyframe.project.system.role.domain.Role)>
+  <com.luckyframe.project.system.role.service.RoleServiceImpl: java.util.List selectRoleList(com.luckyframe.project.system.role.domain.Role)>
+   <com.luckyframe.project.system.role.mapper.RoleMapper: java.util.List selectRoleList(com.luckyframe.project.system.role.domain.Role)>
+========================================
+[2] Found sink method:
+ <com.luckyframe.project.system.dept.mapper.DeptMapper: java.util.List selectDeptList(com.luckyframe.project.system.dept.domain.Dept)>
+(1) Found vul call chain:
+ <com.luckyframe.project.system.dept.controller.DeptController: java.util.List list(com.luckyframe.project.system.dept.domain.Dept)>
+  <com.luckyframe.project.system.dept.service.DeptServiceImpl: java.util.List selectDeptList(com.luckyframe.project.system.dept.domain.Dept)>
+   <com.luckyframe.project.system.dept.mapper.DeptMapper: java.util.List selectDeptList(com.luckyframe.project.system.dept.domain.Dept)>
+========================================
+[3] Found sink method:
+ <com.luckyframe.project.system.user.mapper.UserMapper: java.util.List selectUserList(com.luckyframe.project.system.user.domain.User)>
+(1) Found vul call chain:
+ <com.luckyframe.project.system.user.controller.UserController: com.luckyframe.framework.web.domain.AjaxResult export(com.luckyframe.project.system.user.domain.User)>
+  <com.luckyframe.project.system.user.service.UserServiceImpl: java.util.List selectUserList(com.luckyframe.project.system.user.domain.User)>
+   <com.luckyframe.project.system.user.mapper.UserMapper: java.util.List selectUserList(com.luckyframe.project.system.user.domain.User)>
+(2) Found vul call chain:
+ <com.luckyframe.project.system.user.controller.UserController: com.luckyframe.framework.web.page.TableDataInfo list(com.luckyframe.project.system.user.domain.User)>
+  <com.luckyframe.project.system.user.service.UserServiceImpl: java.util.List selectUserList(com.luckyframe.project.system.user.domain.User)>
+   <com.luckyframe.project.system.user.mapper.UserMapper: java.util.List selectUserList(com.luckyframe.project.system.user.domain.User)>
+Cost 34 seconds

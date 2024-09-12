@@ -1,0 +1,96 @@
+========================================
+[1] Found sink method:
+ <org.jeecg.modules.system.mapper.SysCategoryMapper: java.util.List queryListByPid(java.lang.String,java.util.Map)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysCategoryController: org.jeecg.common.api.vo.Result loadDict(java.lang.String,java.lang.String,java.lang.String)>
+  <org.jeecg.modules.system.service.impl.SysCategoryServiceImpl: java.util.List queryListByPid(java.lang.String,java.util.Map)>
+   <org.jeecg.modules.system.mapper.SysCategoryMapper: java.util.List queryListByPid(java.lang.String,java.util.Map)>
+(2) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysCategoryController: org.jeecg.common.api.vo.Result loadTreeChildren(java.lang.String)>
+  <org.jeecg.modules.system.service.impl.SysCategoryServiceImpl: java.util.List queryListByPid(java.lang.String)>
+   <org.jeecg.modules.system.mapper.SysCategoryMapper: java.util.List queryListByPid(java.lang.String,java.util.Map)>
+========================================
+[2] Found sink method:
+ <org.springframework.util.FileCopyUtils: void copy(byte[],java.io.File)>
+(1) Found vul call chain:
+ <org.jeecg.common.system.controller.CommonController: org.jeecg.common.api.vo.Result upload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <org.jeecg.common.system.controller.CommonController: java.lang.String uploadLocal(org.springframework.web.multipart.MultipartFile,java.lang.String)>
+   <org.springframework.util.FileCopyUtils: void copy(byte[],java.io.File)>
+========================================
+[3] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictItemsByCode(java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result getDictItems(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryTableDictItemsByCode(java.lang.String,java.lang.String,java.lang.String)>
+   <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictItemsByCode(java.lang.String,java.lang.String,java.lang.String)>
+This vul call chain contains filtering operations!!!
+========================================
+[4] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictByKeys(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result loadDictItem(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryTableDictByKeys(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])>
+   <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictByKeys(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])>
+========================================
+[5] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTreeList(java.util.Map,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result loadTreeData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryTreeList(java.util.Map,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+   <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTreeList(java.util.Map,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[6] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictItemsByCodeAndFilter(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result getDictItems(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryTableDictItemsByCodeAndFilter(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+   <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictItemsByCodeAndFilter(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+This vul call chain contains filtering operations!!!
+========================================
+[7] Found sink method:
+ <org.jeecg.modules.system.mapper.SysUserMapper: int deleteLogicDeleted(java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysUserController: org.jeecg.common.api.vo.Result deleteRecycleBin(java.lang.String)>
+  <org.jeecg.modules.system.service.impl.SysUserServiceImpl: boolean removeLogicDeleted(java.util.List)>
+   <org.jeecg.modules.system.mapper.SysUserMapper: int deleteLogicDeleted(java.lang.String)>
+========================================
+[8] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.common.system.controller.CommonController: org.jeecg.common.api.vo.Result upload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <org.jeecg.common.system.controller.CommonController: java.lang.String uploadLocal(org.springframework.web.multipart.MultipartFile,java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+========================================
+[9] Found sink method:
+ <org.jeecg.modules.ngalain.mapper.NgAlainMapper: java.util.List getDictByTable(java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.modules.ngalain.controller.NgAlainController: java.lang.Object getDictItemsByTable(java.lang.String,java.lang.String,java.lang.String)>
+  <org.jeecg.modules.ngalain.service.impl.NgAlainServiceImpl: java.util.List getDictByTable(java.lang.String,java.lang.String,java.lang.String)>
+   <org.jeecg.modules.ngalain.mapper.NgAlainMapper: java.util.List getDictByTable(java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[10] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.lang.Long duplicateCheckCountSqlNoDataId(org.jeecg.modules.system.model.DuplicateCheckVo)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.DuplicateCheckController: org.jeecg.common.api.vo.Result doDuplicateCheck(org.jeecg.modules.system.model.DuplicateCheckVo,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.mapper.SysDictMapper: java.lang.Long duplicateCheckCountSqlNoDataId(org.jeecg.modules.system.model.DuplicateCheckVo)>
+========================================
+[11] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictItems(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result loadDict(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryTableDictItems(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+   <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictItems(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[12] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page queryDictTablePageList(com.baomidou.mybatisplus.extension.plugins.pagination.Page,org.jeecg.common.system.vo.DictQuery)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result queryTableData(org.jeecg.common.system.vo.DictQuery,java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryDictTablePageList(org.jeecg.common.system.vo.DictQuery,int,int)>
+   <org.jeecg.modules.system.mapper.SysDictMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page queryDictTablePageList(com.baomidou.mybatisplus.extension.plugins.pagination.Page,org.jeecg.common.system.vo.DictQuery)>
+========================================
+[13] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.lang.Long duplicateCheckCountSql(org.jeecg.modules.system.model.DuplicateCheckVo)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.DuplicateCheckController: org.jeecg.common.api.vo.Result doDuplicateCheck(org.jeecg.modules.system.model.DuplicateCheckVo,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.mapper.SysDictMapper: java.lang.Long duplicateCheckCountSql(org.jeecg.modules.system.model.DuplicateCheckVo)>
+Cost 69 seconds

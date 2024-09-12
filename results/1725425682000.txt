@@ -1,0 +1,75 @@
+========================================
+[1] Found sink method:
+ <cc.iteachyou.cms.dao.ArchivesMapper: int insertAdditional(java.lang.String,java.util.Map)>
+(1) Found vul call chain:
+ <cc.iteachyou.cms.controller.FrontController: cc.iteachyou.cms.common.ResponseResult input(java.util.Map)>
+  <cc.iteachyou.cms.service.impl.ArchivesServiceImpl: int save(cc.iteachyou.cms.entity.Archives,java.lang.String,java.util.Map)>
+   <cc.iteachyou.cms.dao.ArchivesMapper: int insertAdditional(java.lang.String,java.util.Map)>
+========================================
+[2] Found sink method:
+ <cc.iteachyou.cms.dao.ArchivesMapper: int updateAdditional(java.lang.String,java.util.Map,java.lang.String)>
+(1) Found vul call chain:
+ <cc.iteachyou.cms.controller.admin.ArchivesController: java.lang.String edit(org.springframework.ui.Model,java.util.Map)>
+  <cc.iteachyou.cms.service.impl.ArchivesServiceImpl: int update(cc.iteachyou.cms.entity.Archives,java.lang.String,java.util.Map,java.lang.String)>
+   <cc.iteachyou.cms.dao.ArchivesMapper: int updateAdditional(java.lang.String,java.util.Map,java.lang.String)>
+========================================
+[3] Found sink method:
+ <cc.iteachyou.cms.dao.ArchivesMapper: java.util.List queryListByPage(java.util.Map)>
+(1) Found vul call chain:
+ <cc.iteachyou.cms.controller.FrontController: void list(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)>
+  <cc.iteachyou.cms.taglib.ParseEngine: java.lang.String parsePageList(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)>
+   <cc.iteachyou.cms.taglib.tags.PageListTag: java.lang.String parse(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)>
+    <cc.iteachyou.cms.dao.ArchivesMapper: java.util.List queryListByPage(java.util.Map)>
+(2) Found vul call chain:
+ <cc.iteachyou.cms.controller.admin.ArchivesController: java.lang.String toIndex(org.springframework.ui.Model,cc.iteachyou.cms.common.SearchEntity)>
+  <cc.iteachyou.cms.service.impl.ArchivesServiceImpl: com.github.pagehelper.PageInfo queryListByPage(cc.iteachyou.cms.common.SearchEntity)>
+   <cc.iteachyou.cms.dao.ArchivesMapper: java.util.List queryListByPage(java.util.Map)>
+========================================
+[4] Found sink method:
+ <cc.iteachyou.cms.dao.DatabaseMapper: java.util.Map showTableStruct(java.lang.String)>
+(1) Found vul call chain:
+ <cc.iteachyou.cms.controller.admin.DataBaseController: cc.iteachyou.cms.common.ResponseResult showStruct(org.springframework.ui.Model,java.lang.String)>
+  <cc.iteachyou.cms.service.impl.DatabaseServiceImpl: java.lang.String showStruct(java.lang.String)>
+   <cc.iteachyou.cms.dao.DatabaseMapper: java.util.Map showTableStruct(java.lang.String)>
+========================================
+[5] Found sink method:
+ <cc.iteachyou.cms.dao.ArchivesMapper: java.util.Map queryArticleById(java.util.Map)>
+(1) Found vul call chain:
+ <cc.iteachyou.cms.controller.admin.ArchivesController: java.lang.String toEdit(org.springframework.ui.Model,java.lang.String,java.lang.String)>
+  <cc.iteachyou.cms.service.impl.ArchivesServiceImpl: java.util.Map queryArticleById(java.util.Map)>
+   <cc.iteachyou.cms.dao.ArchivesMapper: java.util.Map queryArticleById(java.util.Map)>
+(2) Found vul call chain:
+ <cc.iteachyou.cms.controller.admin.ArchivesController: java.lang.String delete(org.springframework.ui.Model,java.lang.String,java.lang.String)>
+  <cc.iteachyou.cms.service.impl.ArchivesServiceImpl: java.util.Map queryArticleById(java.util.Map)>
+   <cc.iteachyou.cms.dao.ArchivesMapper: java.util.Map queryArticleById(java.util.Map)>
+========================================
+[6] Found sink method:
+ <cc.iteachyou.cms.dao.FormMapper: void renameTable(java.util.Map)>
+(1) Found vul call chain:
+ <cc.iteachyou.cms.controller.admin.FormController: java.lang.String edit(org.springframework.ui.Model,cc.iteachyou.cms.entity.Form)>
+  <cc.iteachyou.cms.service.impl.FormServiceImpl: int update(cc.iteachyou.cms.entity.Form,cc.iteachyou.cms.entity.Form)>
+   <cc.iteachyou.cms.dao.FormMapper: void renameTable(java.util.Map)>
+========================================
+[7] Found sink method:
+ <cc.iteachyou.cms.dao.ArchivesMapper: int deleteAdditional(java.util.Map)>
+(1) Found vul call chain:
+ <cc.iteachyou.cms.controller.admin.ArchivesController: java.lang.String delete(org.springframework.ui.Model,java.lang.String,java.lang.String)>
+  <cc.iteachyou.cms.service.impl.ArchivesServiceImpl: int delete(java.lang.String,java.util.Map)>
+   <cc.iteachyou.cms.dao.ArchivesMapper: int deleteAdditional(java.util.Map)>
+========================================
+[8] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <cc.iteachyou.cms.controller.admin.UploadController: void upload(org.springframework.web.multipart.MultipartFile)>
+  <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <cc.iteachyou.cms.controller.admin.UploadController: void uploadMarkDown(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String)>
+========================================
+[9] Found sink method:
+ <cc.iteachyou.cms.dao.FormMapper: void alterTableChangeColumn(java.lang.String)>
+(1) Found vul call chain:
+ <cc.iteachyou.cms.controller.admin.FieldController: java.lang.String edit(org.springframework.ui.Model,cc.iteachyou.cms.entity.Field)>
+  <cc.iteachyou.cms.service.impl.FieldServiceImpl: int update(cc.iteachyou.cms.entity.Field,cc.iteachyou.cms.entity.Form,cc.iteachyou.cms.entity.Field)>
+   <cc.iteachyou.cms.dao.FormMapper: void alterTableChangeColumn(java.lang.String)>
+Cost 36 seconds

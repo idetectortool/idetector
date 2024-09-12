@@ -1,0 +1,17 @@
+========================================
+[1] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <co.yiiu.pybbs.controller.api.IndexApiController: co.yiiu.pybbs.util.Result register(java.util.Map,javax.servlet.http.HttpSession)>
+  <co.yiiu.pybbs.service.impl.UserService: co.yiiu.pybbs.model.User addUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+   <co.yiiu.pybbs.util.identicon.Identicon: java.lang.String generator(java.lang.String)>
+    <co.yiiu.pybbs.util.identicon.Identicon: java.lang.String saveFile(java.lang.String,java.awt.image.BufferedImage)>
+     <java.io.File: void <init>(java.lang.String)>
+========================================
+[2] Found sink method:
+ <co.yiiu.pybbs.mapper.TopicMapper: co.yiiu.pybbs.util.MyPage search(co.yiiu.pybbs.util.MyPage,java.lang.String)>
+(1) Found vul call chain:
+ <co.yiiu.pybbs.directive.SearchDirective: void execute(freemarker.core.Environment,java.util.Map,freemarker.template.TemplateModel[],freemarker.template.TemplateDirectiveBody)>
+  <co.yiiu.pybbs.service.impl.TopicService: co.yiiu.pybbs.util.MyPage search(java.lang.Integer,java.lang.Integer,java.lang.String)>
+   <co.yiiu.pybbs.mapper.TopicMapper: co.yiiu.pybbs.util.MyPage search(co.yiiu.pybbs.util.MyPage,java.lang.String)>
+Cost 29 seconds

@@ -1,0 +1,9 @@
+========================================
+[1] Found sink method:
+ <java.sql.PreparedStatement: java.sql.ResultSet executeQuery()>
+(1) Found vul call chain:
+ <edu.cmu.sv.ws.ssnoc.rest.UsersService: java.util.List findChatUsers(java.lang.String)>
+  <edu.cmu.sv.ws.ssnoc.data.dao.UserDAOImpl: edu.cmu.sv.ws.ssnoc.data.po.UserPO findByName(java.lang.String)>
+   <edu.cmu.sv.ws.ssnoc.data.dao.UserDAOImpl: java.util.List processResults(java.sql.PreparedStatement)>
+    <java.sql.PreparedStatement: java.sql.ResultSet executeQuery()>
+Cost 18 seconds

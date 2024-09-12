@@ -1,0 +1,45 @@
+========================================
+[1] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictByKeysAndFilterSql(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List)>
+(1) Found vul call chain:
+ <org.jeecg.modules.api.controller.SystemApiController: java.util.List loadDictItem(java.lang.String,java.lang.String)>
+  <org.jeecg.modules.system.service.impl.SysBaseApiImpl: java.util.List loadDictItem(java.lang.String,java.lang.String)>
+   <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryTableDictByKeys(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+    <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictByKeysAndFilterSql(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List)>
+This vul call chain contains filtering operations!!!
+(2) Found vul call chain:
+ <org.jeecg.modules.api.controller.SystemApiController: java.lang.String translateDictFromTable(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+  <org.jeecg.modules.system.service.impl.SysBaseApiImpl: java.lang.String translateDictFromTable(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+   <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.lang.String queryTableDictTextByKey(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictByKeysAndFilterSql(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List)>
+This vul call chain contains filtering operations!!!
+(3) Found vul call chain:
+ <org.jeecg.modules.api.controller.SystemApiController: java.util.List queryTableDictByKeys(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])>
+  <org.jeecg.modules.system.service.impl.SysBaseApiImpl: java.util.List queryTableDictByKeys(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])>
+   <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryTableDictByKeys(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryTableDictByKeys(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)>
+     <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictByKeysAndFilterSql(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List)>
+This vul call chain contains filtering operations!!!
+(4) Found vul call chain:
+ <org.jeecg.modules.api.controller.SystemApiController: java.util.List translateDictFromTableByKeys(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+  <org.jeecg.modules.system.service.impl.SysBaseApiImpl: java.util.List translateDictFromTableByKeys(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+   <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryTableDictTextByKeys(java.lang.String,java.lang.String,java.lang.String,java.util.List,java.lang.String)>
+    <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTableDictByKeysAndFilterSql(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.List)>
+This vul call chain contains filtering operations!!!
+========================================
+[2] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTreeList(java.util.Map,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result loadTreeData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryTreeList(java.util.Map,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)>
+   <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTreeList(java.util.Map,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)>
+This vul call chain contains filtering operations!!!
+========================================
+[3] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page queryDictTablePageList(com.baomidou.mybatisplus.extension.plugins.pagination.Page,org.jeecg.common.system.vo.DictQuery)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result queryTableData(org.jeecg.common.system.vo.DictQuery,java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryDictTablePageList(org.jeecg.common.system.vo.DictQuery,int,int)>
+   <org.jeecg.modules.system.mapper.SysDictMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page queryDictTablePageList(com.baomidou.mybatisplus.extension.plugins.pagination.Page,org.jeecg.common.system.vo.DictQuery)>
+This vul call chain contains filtering operations!!!
+Cost 117 seconds

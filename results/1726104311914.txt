@@ -1,0 +1,229 @@
+========================================
+[1] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <cms.web.action.staff.StaffManageAction: java.lang.String editStaff(org.springframework.ui.ModelMap,java.lang.String,cms.bean.staff.SysUsers,java.lang.String[],java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: java.lang.Boolean deleteFile(java.lang.String)>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: java.lang.Boolean deleteFile(java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <cms.web.action.forumCode.ForumCodeAction: java.lang.String queryForumDirectory(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.forumCode.ForumCodeManage: java.util.List forumCodeNodeList(java.lang.String)>
+   <cms.web.action.forumCode.ForumCodeManage: java.util.List readForumCodeFile(java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <cms.web.action.template.ForumManageAction: java.lang.String editUI(java.lang.Integer,java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.forumCode.ForumCodeManage: java.util.List getForumCodeNode(java.lang.String,java.lang.String)>
+   <cms.web.action.forumCode.ForumCodeManage: java.util.List forumCodeNodeList(java.lang.String)>
+    <cms.web.action.forumCode.ForumCodeManage: java.util.List readForumCodeFile(java.lang.String)>
+     <java.io.File: void <init>(java.lang.String)>
+(4) Found vul call chain:
+ <cms.web.action.forumCode.ForumCodeManageAction: java.lang.String edit(org.springframework.ui.ModelMap,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.forumCode.ForumCodeManage: java.util.List forumCodeNodeList(java.lang.String)>
+   <cms.web.action.forumCode.ForumCodeManage: java.util.List readForumCodeFile(java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(5) Found vul call chain:
+ <cms.web.action.template.LayoutAction: java.lang.String execute(java.lang.String,cms.bean.PageForm,org.springframework.ui.ModelMap)>
+  <java.io.File: void <init>(java.lang.String)>
+(6) Found vul call chain:
+ <cms.web.action.template.TemplateManageAction: java.lang.String directoryRename(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String)>
+(7) Found vul call chain:
+ <cms.web.action.template.TemplateManageAction: java.lang.String upload(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String)>
+(8) Found vul call chain:
+ <cms.web.action.template.TemplateManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.template.Templates,org.springframework.validation.BindingResult,java.lang.String,org.springframework.web.multipart.MultipartHttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.utils.FileUtil: java.lang.Boolean createFolder(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(9) Found vul call chain:
+ <cms.web.action.template.ResourceManageAction: java.lang.String rename(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.utils.FileUtil: boolean renameFile(java.lang.String,java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(10) Found vul call chain:
+ <cms.web.action.template.LayoutManageAction: java.lang.String deleteLayout(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.localImpl.LocalFileManage: java.lang.Boolean deleteFile(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(11) Found vul call chain:
+ <cms.web.action.template.ForumManageAction: java.lang.String forumTemplateFileNameUI(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)>
+  <cms.web.action.forumCode.ForumCodeManage: java.util.List getForumCodeNode(java.lang.String,java.lang.String)>
+   <cms.web.action.forumCode.ForumCodeManage: java.util.List forumCodeNodeList(java.lang.String)>
+    <cms.web.action.forumCode.ForumCodeManage: java.util.List readForumCodeFile(java.lang.String)>
+     <java.io.File: void <init>(java.lang.String)>
+(12) Found vul call chain:
+ <cms.web.action.forumCode.ForumCodeManageAction: java.lang.String forumSourceUI(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.template.TemplateManage: java.lang.String readExample(java.lang.String)>
+   <cms.utils.FileUtil: java.lang.String readFileToString(java.lang.String,java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(13) Found vul call chain:
+ <cms.web.action.staff.StaffManageAction: java.lang.String deleteStaff(org.springframework.ui.ModelMap,java.lang.String)>
+  <cms.web.action.fileSystem.FileManage: java.lang.Boolean deleteFile(java.lang.String)>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: java.lang.Boolean deleteFile(java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(14) Found vul call chain:
+ <cms.web.action.template.LayoutManageAction: java.lang.String editLayoutCodeUI(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String)>
+(15) Found vul call chain:
+ <cms.web.action.template.ResourceManageAction: java.lang.String rename(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String)>
+(16) Found vul call chain:
+ <cms.web.action.template.ForumManageAction: java.lang.String edit(cms.bean.template.Forum,org.springframework.validation.BindingResult,java.lang.Integer,java.lang.String,java.lang.String,java.lang.Integer[],org.springframework.web.multipart.MultipartHttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap,org.springframework.web.servlet.mvc.support.RedirectAttributes)>
+  <cms.web.action.template.ForumManageAction: cms.bean.template.Forum forumExtend(cms.bean.template.Forum,cms.bean.template.Forum,java.lang.String,java.lang.Integer[],java.lang.String,java.util.Map,org.springframework.web.multipart.MultipartHttpServletRequest)>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void addLock(java.lang.String,java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(17) Found vul call chain:
+ <cms.web.action.template.LayoutManageAction: java.lang.String editLayoutCode(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.utils.FileUtil: void writeStringToFile(java.lang.String,java.lang.String,java.lang.String,boolean)>
+   <java.io.File: void <init>(java.lang.String)>
+(18) Found vul call chain:
+ <cms.web.action.template.ForumManageAction: java.lang.String edit(cms.bean.template.Forum,org.springframework.validation.BindingResult,java.lang.Integer,java.lang.String,java.lang.String,java.lang.Integer[],org.springframework.web.multipart.MultipartHttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap,org.springframework.web.servlet.mvc.support.RedirectAttributes)>
+  <cms.web.action.template.ForumManageAction: cms.bean.template.Forum forumExtend(cms.bean.template.Forum,cms.bean.template.Forum,java.lang.String,java.lang.Integer[],java.lang.String,java.util.Map,org.springframework.web.multipart.MultipartHttpServletRequest)>
+   <cms.utils.FileUtil: java.lang.Boolean createFolder(java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(19) Found vul call chain:
+ <cms.web.action.forumCode.ForumCodeAction: java.lang.String queryForumCode(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.forumCode.ForumCodeManage: java.util.List getForumCodeNode(java.lang.String,java.lang.String)>
+   <cms.web.action.forumCode.ForumCodeManage: java.util.List forumCodeNodeList(java.lang.String)>
+    <cms.web.action.forumCode.ForumCodeManage: java.util.List readForumCodeFile(java.lang.String)>
+     <java.io.File: void <init>(java.lang.String)>
+(20) Found vul call chain:
+ <cms.web.action.template.ForumManageAction: java.lang.String addUI(cms.bean.template.Forum,java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.forumCode.ForumCodeManage: java.util.List forumCodeNodeList(java.lang.String)>
+   <cms.web.action.forumCode.ForumCodeManage: java.util.List readForumCodeFile(java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+========================================
+[2] Found sink method:
+ <java.io.FileOutputStream: void write(byte[])>
+(1) Found vul call chain:
+ <cms.web.action.staff.StaffManageAction: java.lang.String addStaff(org.springframework.ui.ModelMap,cms.bean.staff.SysUsers,java.lang.String[],java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(2) Found vul call chain:
+ <cms.web.action.topic.TopicManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(3) Found vul call chain:
+ <cms.web.action.question.QuestionManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(4) Found vul call chain:
+ <cms.web.action.template.ResourceManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.FileOutputStream: void write(byte[])>
+(5) Found vul call chain:
+ <cms.web.action.user.UserManageAction: java.lang.String updateAvatar(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartFile,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(6) Found vul call chain:
+ <cms.web.action.template.TemplateManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.template.Templates,org.springframework.validation.BindingResult,java.lang.String,org.springframework.web.multipart.MultipartHttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <java.io.FileOutputStream: void write(byte[])>
+(7) Found vul call chain:
+ <cms.web.action.help.HelpTypeManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.help.HelpType,org.springframework.validation.BindingResult,java.lang.Long,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(8) Found vul call chain:
+ <cms.web.action.common.HomeManageAction: java.lang.String updateAvatar(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(9) Found vul call chain:
+ <cms.web.action.common.AnswerFormAction: java.lang.String uploadImage(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(10) Found vul call chain:
+ <cms.web.action.topic.CommentManageAction: java.lang.String uploadImage(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.Boolean,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(11) Found vul call chain:
+ <cms.web.action.template.ForumManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <java.io.FileOutputStream: void write(byte[])>
+(12) Found vul call chain:
+ <cms.web.action.template.TemplateManageAction: java.lang.String upload(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.FileOutputStream: void write(byte[])>
+(13) Found vul call chain:
+ <cms.web.action.report.ReportManageAction: java.lang.String edit(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile[],java.lang.String[],java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(14) Found vul call chain:
+ <cms.web.action.filterWord.FilterWordManageAction: java.lang.String uploadFilterWord(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartHttpServletRequest)>
+  <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <java.io.FileOutputStream: void write(byte[])>
+(15) Found vul call chain:
+ <cms.web.action.topic.TagManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.topic.Tag,org.springframework.validation.BindingResult,java.lang.Long,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(16) Found vul call chain:
+ <cms.web.action.help.HelpManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(17) Found vul call chain:
+ <cms.web.action.question.AnswerManageAction: java.lang.String uploadImage(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.Boolean,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(18) Found vul call chain:
+ <cms.web.action.common.TopicFormAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(19) Found vul call chain:
+ <cms.web.action.staff.StaffManageAction: java.lang.String editSelfInfo(org.springframework.ui.ModelMap,cms.bean.staff.SysUsers,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(20) Found vul call chain:
+ <cms.web.action.question.QuestionTagManageAction: java.lang.String edit(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(21) Found vul call chain:
+ <cms.web.action.common.CommentFormAction: java.lang.String uploadImage(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(22) Found vul call chain:
+ <cms.web.action.common.QuestionFormAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(23) Found vul call chain:
+ <cms.web.action.membershipCard.MembershipCardManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(24) Found vul call chain:
+ <cms.web.action.staff.StaffManageAction: java.lang.String editStaff(org.springframework.ui.ModelMap,java.lang.String,cms.bean.staff.SysUsers,java.lang.String[],java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+(25) Found vul call chain:
+ <cms.web.action.links.LinksManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.links.Links,org.springframework.validation.BindingResult,java.lang.Integer,java.lang.String,org.springframework.web.multipart.MultipartFile,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.FileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.FileOutputStream: void write(byte[])>
+========================================
+[3] Found sink method:
+ <java.io.File: void <init>(java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <cms.web.action.template.ForumManageAction: java.lang.String edit(cms.bean.template.Forum,org.springframework.validation.BindingResult,java.lang.Integer,java.lang.String,java.lang.String,java.lang.Integer[],org.springframework.web.multipart.MultipartHttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap,org.springframework.web.servlet.mvc.support.RedirectAttributes)>
+  <cms.web.action.template.ForumManageAction: cms.bean.template.Forum forumExtend(cms.bean.template.Forum,cms.bean.template.Forum,java.lang.String,java.lang.Integer[],java.lang.String,java.util.Map,org.springframework.web.multipart.MultipartHttpServletRequest)>
+   <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+    <java.io.File: void <init>(java.lang.String,java.lang.String)>
+(2) Found vul call chain:
+ <cms.web.action.template.TemplateManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.template.Templates,org.springframework.validation.BindingResult,java.lang.String,org.springframework.web.multipart.MultipartHttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <java.io.File: void <init>(java.lang.String,java.lang.String)>
+(3) Found vul call chain:
+ <cms.web.action.template.TemplateManageAction: java.lang.String upload(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String,java.lang.String)>
+Cost 702 seconds

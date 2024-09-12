@@ -1,0 +1,61 @@
+========================================
+[1] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.tugos.dst.admin.controller.BackupController: void download(java.lang.String,javax.servlet.http.HttpServletResponse)>
+  <com.tugos.dst.admin.service.BackupService: void download(java.lang.String,javax.servlet.http.HttpServletResponse)>
+   <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <com.tugos.dst.admin.controller.BackupController: com.tugos.dst.admin.common.ResultVO upload(org.springframework.web.multipart.MultipartFile)>
+  <com.tugos.dst.admin.service.BackupService: com.tugos.dst.admin.common.ResultVO upload(org.springframework.web.multipart.MultipartFile)>
+   <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <com.tugos.dst.admin.controller.BackupController: com.tugos.dst.admin.common.ResultVO deleteBackup(java.lang.String[])>
+  <com.tugos.dst.admin.service.BackupService: boolean deleteBackup(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(4) Found vul call chain:
+ <com.tugos.dst.admin.controller.BackupController: com.tugos.dst.admin.common.ResultVO rename(java.lang.String,java.lang.String)>
+  <com.tugos.dst.admin.service.BackupService: com.tugos.dst.admin.common.ResultVO rename(java.lang.String,java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+========================================
+[2] Found sink method:
+ <java.lang.Runtime: java.lang.Process exec(java.lang.String[],java.lang.String[],java.io.File)>
+(1) Found vul call chain:
+ <com.tugos.dst.admin.controller.HomeController: com.tugos.dst.admin.common.ResultVO cavesConsole(java.util.Map)>
+  <com.tugos.dst.admin.service.ShellService: void cavesConsole(java.lang.String)>
+   <com.tugos.dst.admin.utils.ShellUtil: void execShellBin(java.lang.String)>
+    <java.lang.Runtime: java.lang.Process exec(java.lang.String[],java.lang.String[],java.io.File)>
+(2) Found vul call chain:
+ <com.tugos.dst.admin.controller.HomeController: com.tugos.dst.admin.common.ResultVO sendBroadcast(java.lang.String)>
+  <com.tugos.dst.admin.service.ShellService: void sendBroadcast(java.lang.String)>
+   <com.tugos.dst.admin.utils.ShellUtil: void execShellBin(java.lang.String)>
+    <java.lang.Runtime: java.lang.Process exec(java.lang.String[],java.lang.String[],java.io.File)>
+(3) Found vul call chain:
+ <com.tugos.dst.admin.controller.HomeController: com.tugos.dst.admin.common.ResultVO playerOperate(java.lang.String,java.lang.String)>
+  <com.tugos.dst.admin.service.ShellService: com.tugos.dst.admin.common.ResultVO playerOperate(java.lang.String,java.lang.String)>
+   <com.tugos.dst.admin.service.ShellService: void cavesConsole(java.lang.String)>
+    <com.tugos.dst.admin.utils.ShellUtil: void execShellBin(java.lang.String)>
+     <java.lang.Runtime: java.lang.Process exec(java.lang.String[],java.lang.String[],java.io.File)>
+(4) Found vul call chain:
+ <com.tugos.dst.admin.controller.HomeController: com.tugos.dst.admin.common.ResultVO restore(java.lang.String)>
+  <com.tugos.dst.admin.service.BackupService: com.tugos.dst.admin.common.ResultVO restore(java.lang.String)>
+   <com.tugos.dst.admin.service.ShellService: void revertBackup(java.lang.String)>
+    <com.tugos.dst.admin.utils.ShellUtil: java.util.List runShell(java.lang.String)>
+     <java.lang.Runtime: java.lang.Process exec(java.lang.String[],java.lang.String[],java.io.File)>
+(5) Found vul call chain:
+ <com.tugos.dst.admin.controller.HomeController: com.tugos.dst.admin.common.ResultVO kickPlayer(java.lang.String)>
+  <com.tugos.dst.admin.service.ShellService: void kickPlayer(java.lang.String)>
+   <com.tugos.dst.admin.utils.ShellUtil: void execShellBin(java.lang.String)>
+    <java.lang.Runtime: java.lang.Process exec(java.lang.String[],java.lang.String[],java.io.File)>
+(6) Found vul call chain:
+ <com.tugos.dst.admin.controller.HomeController: com.tugos.dst.admin.common.ResultVO masterConsole(java.util.Map)>
+  <com.tugos.dst.admin.service.ShellService: void masterConsole(java.lang.String)>
+   <com.tugos.dst.admin.utils.ShellUtil: void execShellBin(java.lang.String)>
+    <java.lang.Runtime: java.lang.Process exec(java.lang.String[],java.lang.String[],java.io.File)>
+(7) Found vul call chain:
+ <com.tugos.dst.admin.controller.HomeController: com.tugos.dst.admin.common.ResultVO playerOperate(java.lang.String,java.lang.String)>
+  <com.tugos.dst.admin.service.ShellService: com.tugos.dst.admin.common.ResultVO playerOperate(java.lang.String,java.lang.String)>
+   <com.tugos.dst.admin.service.ShellService: void masterConsole(java.lang.String)>
+    <com.tugos.dst.admin.utils.ShellUtil: void execShellBin(java.lang.String)>
+     <java.lang.Runtime: java.lang.Process exec(java.lang.String[],java.lang.String[],java.io.File)>
+Cost 22 seconds

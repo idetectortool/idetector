@@ -1,0 +1,395 @@
+<com.xnx3.wangmarket.admin.controller.NewsController: com.xnx3.BaseVO saveNews(com.xnx3.wangmarket.admin.entity.News,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model)>
+<com.xnx3.j2ee.service.impl.UserServiceImpl: com.xnx3.j2ee.vo.BaseVO reg(com.xnx3.j2ee.entity.User,javax.servlet.http.HttpServletRequest)>
+<com.xnx3.wangmarket.admin.controller.SiteController: void popupQrImageUpdateSubmit(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile)>
+<com.xnx3.wangmarket.admin.controller.TemplateController: java.lang.String templatePageList(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,java.lang.String)>
+<com.xnx3.wangmarket.admin.controller.InputModelController: com.xnx3.j2ee.vo.BaseVO save(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,com.xnx3.wangmarket.admin.entity.InputModel)>
+<com.xnx3.wangmarket.admin.service.impl.TemplateServiceImpl: com.xnx3.wangmarket.admin.vo.TemplatePageVO getTemplatePageByNameForCache(javax.servlet.http.HttpServletRequest,java.lang.String)>
+<com.xnx3.wangmarket.admin.controller.ColumnController: java.lang.String popupColumnForTemplate(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,int,int)>
+<com.xnx3.j2ee.service.impl.UserServiceImpl: com.xnx3.j2ee.vo.BaseVO loginByUsernameAndPassword(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)>
+<com.xnx3.wangmarket.domain.controller.PublicController: java.lang.String dns(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model)>
+<com.xnx3.wangmarket.plugin.templateDevelop.controller.TemplateDevelopController: com.xnx3.j2ee.vo.BaseVO exportTemplate(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,com.xnx3.wangmarket.admin.entity.Template)>
+<com.xnx3.wangmarket.superadmin.service.impl.TransactionalServiceImpl: com.xnx3.wangmarket.admin.vo.UserVO regUser(com.xnx3.j2ee.entity.User,javax.servlet.http.HttpServletRequest,boolean)>
+<com.xnx3.wangmarket.admin.service.impl.NewsServiceImpl: void generateViewHtmlForTemplate(com.xnx3.wangmarket.admin.entity.News,com.xnx3.wangmarket.admin.entity.SiteColumn,com.xnx3.wangmarket.admin.bean.NewsDataBean,javax.servlet.http.HttpServletRequest)>
+<com.xnx3.j2ee.controller.InstallController_: com.xnx3.j2ee.vo.BaseVO accessKeySave(java.lang.String,java.lang.String)>
+<com.xnx3.j2ee.service.impl.UserServiceImpl: com.xnx3.j2ee.vo.UploadFileVO updateHeadByOSS(org.springframework.web.multipart.MultipartFile)>
+<com.xnx3.wangmarket.domain.controller.PublicController: com.xnx3.wangmarket.domain.vo.SImpleSiteVO getCurrentSimpleSite(javax.servlet.http.HttpServletRequest)>
+<com.xnx3.wangmarket.admin.cache.GenerateHTML: java.lang.String replaceSiteColumnTag(java.lang.String,com.xnx3.wangmarket.admin.entity.SiteColumn)>
+<com.xnx3.wangmarket.domain.bean.SimpleSite: void setDomain(java.lang.String)>
+<com.xnx3.wangmarket.superadmin.controller.agency.AgencyUserController: com.xnx3.wangmarket.admin.vo.UserVO apiIdentityVerify(java.lang.String)>
+<com.xnx3.j2ee.service.impl.UserServiceImpl: com.xnx3.j2ee.vo.BaseVO loginByUserid(javax.servlet.http.HttpServletRequest,int)>
+<com.xnx3.wangmarket.domain.bean.SimpleSite: void setBindDomain(java.lang.String)>
+<com.xnx3.wangmarket.admin.cache.pc.Index: void updateKeywords(com.xnx3.wangmarket.admin.entity.Site,java.lang.String)>
+<com.xnx3.wangmarket.admin.controller.ColumnController: com.xnx3.j2ee.vo.BaseVO savePopupColumnGaoJiUpdate(com.xnx3.wangmarket.admin.entity.SiteColumn,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)>
+<com.xnx3.wangmarket.admin.cache.GenerateHTML: java.lang.String replaceNewsListItem(java.lang.String,com.xnx3.wangmarket.admin.entity.News)>
+<com.xnx3.j2ee.service.impl.ApiServiceImpl: com.xnx3.j2ee.vo.UserVO identityVerify(java.lang.String)>
+<com.xnx3.wangmarket.admin.controller.ColumnController: com.xnx3.j2ee.vo.BaseVO popupColumnUpdateSubmit(javax.servlet.http.HttpServletRequest,com.xnx3.wangmarket.admin.entity.SiteColumn)>
+<com.xnx3.j2ee.controller.InstallController_: com.xnx3.j2ee.vo.BaseVO systemSetSave(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+<com.xnx3.j2ee.func.Captcha: com.xnx3.j2ee.vo.BaseVO compare(java.lang.String,javax.servlet.http.HttpServletRequest)>
+<com.xnx3.wangmarket.admin.entity.Site: java.lang.String getDomain()>
+<com.xnx3.wangmarket.admin.controller.TemplateController: void uploadImportTemplate(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)>
+<com.xnx3.wangmarket.admin.cache.Template: java.lang.String replaceHtmlAnnoTag(java.lang.String,java.lang.String,java.lang.String)>
+<com.xnx3.wangmarket.admin.cache.GenerateHTML: java.lang.String restoreNewsText(java.lang.String)>
+<com.xnx3.wangmarket.admin.controller.TemplateController: java.lang.String getTemplatePageText(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,java.lang.String)>
+<com.xnx3.wangmarket.admin.service.impl.SiteServiceImpl: com.xnx3.wangmarket.admin.vo.SiteVO saveSite(com.xnx3.wangmarket.admin.entity.Site,int,javax.servlet.http.HttpServletRequest)>
+<com.xnx3.wangmarket.plugin.templateDevelop.controller.TemplateDevelopController: boolean clientCheck(javax.servlet.http.HttpServletRequest)>
+<com.xnx3.wangmarket.admin.cache.GenerateHTML: java.lang.String replaceListTag(java.lang.String,com.xnx3.j2ee.util.Page,com.xnx3.wangmarket.admin.entity.SiteColumn)>
+<com.xnx3.wangmarket.admin.cache.GenerateHTML: java.lang.String replacePublicTag(java.lang.String)>
+<com.xnx3.wangmarket.admin.service.impl.NewsServiceImpl: java.lang.String generateListHtml(java.lang.String,java.lang.String,com.xnx3.j2ee.util.Page,com.xnx3.wangmarket.admin.entity.SiteColumn,int,java.util.List,com.xnx3.wangmarket.admin.entity.Site,boolean)>
+<com.xnx3.wangmarket.admin.cache.GenerateHTML: void generateViewHtml(com.xnx3.wangmarket.admin.entity.Site,com.xnx3.wangmarket.admin.entity.News,com.xnx3.wangmarket.admin.entity.SiteColumn,java.lang.String)>
+<com.xnx3.j2ee.controller.InstallController_: java.lang.String setLocalAttachmentFile(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,java.lang.String)>
+<com.xnx3.wangmarket.admin.controller.NewsController: java.lang.String redirectByNews(org.springframework.ui.Model,int,int,short)>
+<com.xnx3.wangmarket.plugin.api.service.impl.KeyManageServiceImpl: com.xnx3.wangmarket.plugin.api.vo.UserBeanVO verify(java.lang.String)>
+<com.xnx3.wangmarket.admin.service.impl.SiteServiceImpl: com.xnx3.wangmarket.admin.vo.bean.TemplateCommon getTemplateCommonHtml(com.xnx3.wangmarket.admin.entity.Site,java.lang.String,org.springframework.ui.Model)>
+<com.xnx3.wangmarket.admin.service.impl.SiteServiceImpl: java.lang.String getSiteColumnId(com.xnx3.wangmarket.admin.entity.SiteColumn,com.xnx3.wangmarket.admin.entity.Site)>
+<com.xnx3.wangmarket.admin.cache.Template: java.lang.String replaceForEditModeTag(java.lang.String)>
+<com.xnx3.wangmarket.admin.controller.BaseController: java.lang.String getPcOrWapPrefix(javax.servlet.http.HttpServletRequest)>
+<com.xnx3.wangmarket.admin.service.impl.TemplateServiceImpl: java.lang.String getTemplatePageTextByCache(java.lang.String,javax.servlet.http.HttpServletRequest)>
+<com.xnx3.wangmarket.admin.service.impl.TemplateServiceImpl: com.xnx3.wangmarket.admin.vo.TemplatePageVO saveTemplatePageText(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)>
+<com.xnx3.wangmarket.admin.controller.SitePcController: java.lang.String editIndex(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)>
+<com.xnx3.wangmarket.admin.cache.GenerateHTML: void generateListHtml(java.lang.String,com.xnx3.wangmarket.admin.entity.SiteColumn,int)>
+<com.xnx3.wangmarket.admin.controller.ColumnController: com.xnx3.j2ee.vo.BaseVO saveColumn(com.xnx3.wangmarket.admin.entity.SiteColumn,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)>
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method saveNews in the provided class contains security filtering operations related to file upload. Specifically, it uses the function StringUtil.filterXss to filter potential XSS vulnerabilities in the 'title' and 'titlepic' parameters. This is a common practice to prevent file upload vulnerabilities by sanitizing the input."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method saveNews in the provided class does not specifically check file extensions or detect operations like ../. Instead, it uses StringUtil.filterXss to sanitize input for potential XSS vulnerabilities. This does not meet the criteria for file upload filtering as specified in audit_rule6."
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method 'reg' in 'com.xnx3.j2ee.service.impl.UserServiceImpl' uses 'Safety.filter' to sanitize user inputs such as email, nickname, phone, and username, which indicates security filtering to prevent SQL injection."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `popupQrImageUpdateSubmit` involves file upload operations and checks the file type to ensure it is one of the allowed image formats (jpg, png, gif)."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method templatePageList includes SQL filtering using the Sql class to prevent SQL injection. The filtering is evident in the line 'sql.setSearchTable(\"template_page\"); sql.setSearchColumn(new String[]{\"name\"}); sql.appendWhere(\"siteid = \" + this.getSiteId());', ensuring only specific columns and conditions are used in the SQL query."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method uses Safety.filter to sanitize the username input, which suggests it is performing some form of SQL injection filtering."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The regUser method includes filtering operations for email and phone fields using the Safety.filter method and for username using the StringUtil.filterXss method, which indicates SQL injection and XSS filtering."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `updateHeadByOSS` in `UserServiceImpl` includes security filtering for file uploads. It utilizes the `Safety.filter` method to sanitize the filename and checks the file suffix."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The apiIdentityVerify method checks the key parameter for specific patterns and validates parts of it against known values, which is indicative of SQL injection filtering."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The savePopupColumnGaoJiUpdate method includes security filtering for SQL injection by using the StringUtil.filterXss method to sanitize user input and the Sql.filter method to prevent SQL injection attacks."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'uploadImportTemplate' includes file upload operations and contains security filtering for the filename suffix using a whitelist approach."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The saveSite method contains the use of the Safety.filter method, which is used to sanitize input data for fields such as 'name', 'username', 'qq', 'bindDomain', 'keywords', and 'templateName'. This indicates that the method is performing some form of input validation or sanitization to prevent SQL injection."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method saveTemplatePageText uses Safety.filter to validate the fileName, which is indicative of a security filtering operation for filenames or file suffixes to prevent potential security vulnerabilities."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+

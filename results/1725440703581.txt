@@ -1,0 +1,17 @@
+========================================
+[1] Found sink method:
+ <java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>
+(1) Found vul call chain:
+ <io.lavagna.web.api.CardDataController: java.util.List uploadFiles(int,java.util.List,io.lavagna.model.User,javax.servlet.http.HttpServletResponse)>
+  <java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>
+(2) Found vul call chain:
+ <io.lavagna.web.api.CardDataController: java.util.List uploadNewCardFiles(java.util.List,io.lavagna.model.User,javax.servlet.http.HttpServletResponse)>
+  <java.nio.file.Files: long copy(java.io.InputStream,java.nio.file.Path,java.nio.file.CopyOption[])>
+========================================
+[2] Found sink method:
+ <org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate: void query(java.lang.String,org.springframework.jdbc.core.namedparam.SqlParameterSource,org.springframework.jdbc.core.RowCallbackHandler)>
+(1) Found vul call chain:
+ <io.lavagna.web.api.SearchController: java.util.Map findLabelListValueMapping(java.util.List)>
+  <io.lavagna.service.CardLabelRepository: java.util.Map findLabelListValueMapping(java.util.List)>
+   <org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate: void query(java.lang.String,org.springframework.jdbc.core.namedparam.SqlParameterSource,org.springframework.jdbc.core.RowCallbackHandler)>
+Cost 47 seconds

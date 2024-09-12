@@ -1,0 +1,47 @@
+========================================
+[1] Found sink method:
+ <org.linlinjava.litemall.db.dao.OrderMapper: java.util.List getOrderList(java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <org.linlinjava.litemall.admin.web.AdminOrderController: java.lang.Object list(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime,java.time.LocalDateTime,java.util.List,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+  <org.linlinjava.litemall.admin.service.AdminOrderService: java.lang.Object list(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime,java.time.LocalDateTime,java.util.List,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+   <org.linlinjava.litemall.db.service.LitemallOrderService: java.util.Map queryVoSelective(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime,java.time.LocalDateTime,java.util.List,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+    <org.linlinjava.litemall.db.dao.OrderMapper: java.util.List getOrderList(java.lang.String,java.lang.String)>
+========================================
+[2] Found sink method:
+ <org.linlinjava.litemall.db.dao.OrderMapper: java.util.List getOrderIds(java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <org.linlinjava.litemall.admin.web.AdminOrderController: java.lang.Object list(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime,java.time.LocalDateTime,java.util.List,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+  <org.linlinjava.litemall.admin.service.AdminOrderService: java.lang.Object list(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime,java.time.LocalDateTime,java.util.List,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+   <org.linlinjava.litemall.db.service.LitemallOrderService: java.util.Map queryVoSelective(java.lang.String,java.lang.String,java.lang.String,java.time.LocalDateTime,java.time.LocalDateTime,java.util.List,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+    <org.linlinjava.litemall.db.dao.OrderMapper: java.util.List getOrderIds(java.lang.String,java.lang.String)>
+========================================
+[3] Found sink method:
+ <org.linlinjava.litemall.db.dao.LitemallGrouponRulesMapper: java.util.List selectByExample(org.linlinjava.litemall.db.domain.LitemallGrouponRulesExample)>
+(1) Found vul call chain:
+ <org.linlinjava.litemall.admin.web.AdminGrouponController: java.lang.Object list(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+  <org.linlinjava.litemall.db.service.LitemallGrouponRulesService: java.util.List querySelective(java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+   <org.linlinjava.litemall.db.dao.LitemallGrouponRulesMapper: java.util.List selectByExample(org.linlinjava.litemall.db.domain.LitemallGrouponRulesExample)>
+(2) Found vul call chain:
+ <org.linlinjava.litemall.wx.web.WxGrouponController: java.lang.Object list(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+  <org.linlinjava.litemall.wx.service.WxGrouponRuleService: java.util.List queryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+   <org.linlinjava.litemall.db.service.LitemallGrouponRulesService: java.util.List queryList(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+    <org.linlinjava.litemall.db.dao.LitemallGrouponRulesMapper: java.util.List selectByExample(org.linlinjava.litemall.db.domain.LitemallGrouponRulesExample)>
+========================================
+[4] Found sink method:
+ <org.linlinjava.litemall.db.dao.LitemallAftersaleMapper: java.util.List selectByExample(org.linlinjava.litemall.db.domain.LitemallAftersaleExample)>
+(1) Found vul call chain:
+ <org.linlinjava.litemall.wx.web.WxAftersaleController: java.lang.Object list(java.lang.Integer,java.lang.Short,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+  <org.linlinjava.litemall.db.service.LitemallAftersaleService: java.util.List queryList(java.lang.Integer,java.lang.Short,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+   <org.linlinjava.litemall.db.dao.LitemallAftersaleMapper: java.util.List selectByExample(org.linlinjava.litemall.db.domain.LitemallAftersaleExample)>
+(2) Found vul call chain:
+ <org.linlinjava.litemall.admin.web.AdminAftersaleController: java.lang.Object list(java.lang.Integer,java.lang.String,java.lang.Short,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+  <org.linlinjava.litemall.db.service.LitemallAftersaleService: java.util.List querySelective(java.lang.Integer,java.lang.String,java.lang.Short,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+   <org.linlinjava.litemall.db.dao.LitemallAftersaleMapper: java.util.List selectByExample(org.linlinjava.litemall.db.domain.LitemallAftersaleExample)>
+========================================
+[5] Found sink method:
+ <org.linlinjava.litemall.db.dao.LitemallTopicMapper: java.util.List selectByExampleSelective(org.linlinjava.litemall.db.domain.LitemallTopicExample,org.linlinjava.litemall.db.domain.LitemallTopic$Column[])>
+(1) Found vul call chain:
+ <org.linlinjava.litemall.wx.web.WxTopicController: java.lang.Object list(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+  <org.linlinjava.litemall.db.service.LitemallTopicService: java.util.List queryList(int,int,java.lang.String,java.lang.String)>
+   <org.linlinjava.litemall.db.dao.LitemallTopicMapper: java.util.List selectByExampleSelective(org.linlinjava.litemall.db.domain.LitemallTopicExample,org.linlinjava.litemall.db.domain.LitemallTopic$Column[])>
+Cost 40 seconds

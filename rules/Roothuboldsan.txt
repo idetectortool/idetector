@@ -1,0 +1,63 @@
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'store' method in the 'FileSystemStorageService' class performs security filtering by checking for path traversal characters ('..') in the filename."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method uploadFile2OSS includes security filtering for file uploads. It checks for path traversal characters ('..') in the filename and validates the file's content type using a whitelist approach."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The cleanPath method in org.springframework.util.StringUtils is designed to clean up file paths, which involves removing path traversal sequences like '../'. This is a security filtering operation to prevent directory traversal attacks."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The getcontentType method in the OSSService class checks the filename extension to determine the content type of files being uploaded, which is a form of security filtering for file uploads."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+

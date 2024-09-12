@@ -1,0 +1,51 @@
+========================================
+[1] Found sink method:
+ <java.sql.Statement: int executeUpdate(java.lang.String)>
+(1) Found vul call chain:
+ <com.lbp.servletclasses.Registration: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: int executeUpdate(java.lang.String)>
+(2) Found vul call chain:
+ <com.lbp.servletclasses.Contact: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: int executeUpdate(java.lang.String)>
+========================================
+[2] Found sink method:
+ <java.sql.Statement: void addBatch(java.lang.String)>
+(1) Found vul call chain:
+ <com.lbp.servletclasses.join: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: void addBatch(java.lang.String)>
+(2) Found vul call chain:
+ <com.lbp.servletclasses.CreateGame: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: void addBatch(java.lang.String)>
+(3) Found vul call chain:
+ <com.lbp.jspclasses.PositionUpdate: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: void addBatch(java.lang.String)>
+========================================
+[3] Found sink method:
+ <java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>
+(1) Found vul call chain:
+ <com.lbp.servletclasses.CreateGame: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>
+(2) Found vul call chain:
+ <com.lbp.servletclasses.join: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>
+(3) Found vul call chain:
+ <com.lbp.jspclasses.CheckPassP: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>
+(4) Found vul call chain:
+ <com.lbp.jspclasses.CheckUname: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>
+(5) Found vul call chain:
+ <com.lbp.servletclasses.Login: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>
+(6) Found vul call chain:
+ <com.lbp.jspclasses.PositionUpdate: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <com.lbp.jspclasses.GetPlayerNames: java.lang.String getPlayerNames(java.lang.String)>
+   <java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>
+(7) Found vul call chain:
+ <com.lbp.jspclasses.CheckBname: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>
+(8) Found vul call chain:
+ <com.lbp.jspclasses.GetColors: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.sql.Statement: java.sql.ResultSet executeQuery(java.lang.String)>
+This vul call chain contains filtering operations!!!
+Cost 18 seconds

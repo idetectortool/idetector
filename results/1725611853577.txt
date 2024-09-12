@@ -1,0 +1,19 @@
+========================================
+[1] Found sink method:
+ <javax.persistence.EntityManager: javax.persistence.Query createNativeQuery(java.lang.String)>
+(1) Found vul call chain:
+ <com.xnx3.j2ee.controller.InstallController_: com.xnx3.j2ee.vo.BaseVO systemSetSave(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+  <com.xnx3.j2ee.service.impl.SqlServiceImpl: int executeSql(java.lang.String)>
+   <com.xnx3.j2ee.dao.SqlDAO: int executeSql(java.lang.String)>
+    <javax.persistence.EntityManager: javax.persistence.Query createNativeQuery(java.lang.String)>
+(2) Found vul call chain:
+ <com.xnx3.j2ee.controller.InstallController_: com.xnx3.j2ee.vo.BaseVO accessKeySave(java.lang.String,java.lang.String)>
+  <com.xnx3.j2ee.service.impl.SqlServiceImpl: int executeSql(java.lang.String)>
+   <com.xnx3.j2ee.dao.SqlDAO: int executeSql(java.lang.String)>
+    <javax.persistence.EntityManager: javax.persistence.Query createNativeQuery(java.lang.String)>
+(3) Found vul call chain:
+ <com.xnx3.wangmarket.plugin.dataDictionary.controller.DataDictionaryPluginController: java.lang.String tableView(org.springframework.ui.Model,java.lang.String)>
+  <com.xnx3.j2ee.service.impl.SqlServiceImpl: java.util.List findMapBySqlQuery(java.lang.String)>
+   <com.xnx3.j2ee.dao.SqlDAO: java.util.List findMapBySqlQuery(java.lang.String)>
+    <javax.persistence.EntityManager: javax.persistence.Query createNativeQuery(java.lang.String)>
+Cost 99 seconds

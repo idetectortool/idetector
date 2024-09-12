@@ -1,0 +1,26 @@
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The function toSystemPath in Class cms.utils.FileUtil involves security filtering by replacing '/' with the system's file separator, which is typically used to prevent path traversal attacks."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The function toSystemPath in Class cms.utils.FileUtil only replaces '/' with the system's file separator, which by itself does not qualify as a security filtering operation. This is a simple string manipulation and does not explicitly check for or prevent path traversal attacks."
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method `updateDatabasePassword` in the class `SystemSettingManageAction` includes logic to decrypt the current database password and encrypt the new password using methods like `DruidTool.decryptString` and `DruidTool.encryptString`. This method involves handling database credentials, which is critical for preventing SQL injection attacks."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The method `updateDatabasePassword` does not include any explicit SQL-sensitive keyword filters such as and, or, update, ', and \". Instead, it deals with encrypting and decrypting database passwords, which is not directly related to SQL injection filtering. Therefore, it cannot be considered an SQL injection filtering function."
+}

@@ -1,0 +1,8 @@
+========================================
+[1] Found sink method:
+ <java.io.File: void <init>(java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <kohgylw.kiftd.server.controller.HomeController: void downloadCheckedFilesZip(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <kohgylw.kiftd.server.service.impl.FileServiceImpl: void downloadCheckedFilesZip(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+   <java.io.File: void <init>(java.lang.String,java.lang.String)>
+Cost 41 seconds

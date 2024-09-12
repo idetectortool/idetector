@@ -1,0 +1,17 @@
+========================================
+[1] Found sink method:
+ <org.springblade.system.user.mapper.UserMapper: java.util.List exportUser(com.baomidou.mybatisplus.core.conditions.Wrapper)>
+(1) Found vul call chain:
+ <org.springblade.system.user.controller.UserController: void exportUser(java.util.Map,org.springblade.core.secure.BladeUser,javax.servlet.http.HttpServletResponse)>
+  <org.springblade.system.user.service.impl.UserServiceImpl: java.util.List exportUser(com.baomidou.mybatisplus.core.conditions.Wrapper)>
+   <org.springblade.system.user.mapper.UserMapper: java.util.List exportUser(com.baomidou.mybatisplus.core.conditions.Wrapper)>
+========================================
+[2] Found sink method:
+ <org.springframework.jdbc.core.JdbcTemplate: java.util.List query(java.lang.String,java.lang.Object[],org.springframework.jdbc.core.RowMapper)>
+(1) Found vul call chain:
+ <org.springblade.system.feign.DataScopeClient: org.springblade.core.datascope.model.DataScopeModel getDataScopeByMapper(java.lang.String,java.lang.String)>
+  <org.springframework.jdbc.core.JdbcTemplate: java.util.List query(java.lang.String,java.lang.Object[],org.springframework.jdbc.core.RowMapper)>
+(2) Found vul call chain:
+ <org.springblade.system.feign.DataScopeClient: org.springblade.core.datascope.model.DataScopeModel getDataScopeByCode(java.lang.String)>
+  <org.springframework.jdbc.core.JdbcTemplate: java.util.List query(java.lang.String,java.lang.Object[],org.springframework.jdbc.core.RowMapper)>
+Cost 36 seconds

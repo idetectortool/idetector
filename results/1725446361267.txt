@@ -1,0 +1,8 @@
+========================================
+[1] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <syncer.webapp.controller.v2.api.TaskGroupFileController: syncer.common.entity.ResponseResult createtask(syncer.webapp.request.CreateFileTaskParam)>
+  <syncer.webapp.util.DtoToTaskModelUtils: java.util.List getTaskModelList(syncer.webapp.request.CreateFileTaskParam,boolean)>
+   <java.io.File: void <init>(java.lang.String)>
+Cost 24 seconds

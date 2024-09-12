@@ -1,0 +1,156 @@
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method downloadLog in Class com.luckyframe.project.testexecution.taskScheduling.controller.TaskSchedulingController involves filename filtering by checking the suffix and assembling the filename dynamically."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method downloadLog in Class com.luckyframe.project.testexecution.taskScheduling.controller.TaskSchedulingController does not involve filename filtering. It dynamically assembles a filename based on input parameters but does not contain any filtering logic that checks for path traversal patterns or file extension validation."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The function checks the file suffix to ensure the uploaded file is either a .jar or .py format."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The fileDownload method includes security filtering to prevent directory traversal attacks by checking for the presence of path traversal special strings like '../'."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+

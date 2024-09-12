@@ -1,0 +1,91 @@
+========================================
+[1] Found sink method:
+ <com.perfree.mapper.ArticleMapper: java.util.List apiList(com.perfree.model.Article,java.lang.String)>
+(1) Found vul call chain:
+ <com.perfree.controller.api.JournalController: com.perfree.commons.Pager list(com.perfree.commons.Pager)>
+  <com.perfree.service.impl.ArticleServiceImpl: com.perfree.commons.Pager apiList(com.perfree.commons.Pager)>
+   <com.perfree.mapper.ArticleMapper: java.util.List apiList(com.perfree.model.Article,java.lang.String)>
+========================================
+[2] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean getFileContent(java.lang.String)>
+  <com.perfree.service.impl.ThemeServiceImpl: java.io.File getThemeDir(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean deleteFile(java.lang.String)>
+  <com.perfree.service.impl.ThemeServiceImpl: java.io.File getThemeDir(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean reNameFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+  <com.perfree.service.impl.ThemeServiceImpl: java.util.HashMap reNameFile(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(4) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean saveFileContent(java.lang.String,java.lang.String)>
+  <com.perfree.service.impl.ThemeServiceImpl: java.io.File getThemeDir(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(5) Found vul call chain:
+ <com.perfree.controller.front.PageController: java.lang.String page(java.lang.String,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)>
+  <com.perfree.base.BaseController: java.lang.String pageView(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(6) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean createFileOrDir(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+  <com.perfree.service.impl.ThemeServiceImpl: com.perfree.model.ThemeFile createFileOrDir(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+   <com.perfree.service.impl.ThemeServiceImpl: java.io.File getThemeDir(java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(7) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean getFileListByTheme(java.lang.String)>
+  <com.perfree.service.impl.ThemeServiceImpl: java.util.List getFileListByTheme(java.lang.String)>
+   <com.perfree.service.impl.ThemeServiceImpl: java.io.File getThemeDir(java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(8) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean switchTheme(com.perfree.model.Theme)>
+  <com.perfree.service.impl.ThemeServiceImpl: com.perfree.model.Theme getThemeByPath(java.lang.String)>
+   <com.perfree.service.impl.ThemeServiceImpl: java.io.File getThemeDir(java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(9) Found vul call chain:
+ <com.perfree.controller.admin.UserController: com.perfree.commons.ResponseBean uploadImg(javax.servlet.http.HttpServletRequest)>
+  <com.perfree.file.FileHandles: com.perfree.file.FileResult upload(org.springframework.web.multipart.MultipartFile,java.lang.String)>
+   <com.perfree.file.LocalFileHandle: com.perfree.file.FileResult upload(org.springframework.web.multipart.MultipartFile,java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(10) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean delTheme(com.perfree.model.Theme)>
+  <com.perfree.service.impl.ThemeServiceImpl: boolean delTheme(com.perfree.model.Theme)>
+   <java.io.File: void <init>(java.lang.String)>
+(11) Found vul call chain:
+ <com.perfree.controller.admin.SettingController: com.perfree.commons.ResponseBean saveFileContent(java.lang.String,java.lang.String)>
+  <com.perfree.controller.admin.SettingController: void updateEmailTpl(java.lang.String,java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(12) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean uploadFile(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)>
+  <com.perfree.service.impl.ThemeServiceImpl: java.io.File getThemeDir(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(13) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean createTheme(com.perfree.model.Theme)>
+  <com.perfree.service.impl.ThemeServiceImpl: boolean createTheme(com.perfree.model.Theme)>
+   <java.io.File: void <init>(java.lang.String)>
+(14) Found vul call chain:
+ <com.perfree.controller.admin.SettingController: com.perfree.commons.ResponseBean getFileContent(java.lang.String)>
+  <com.perfree.controller.admin.SettingController: java.lang.String getEmailTpl(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(15) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: java.lang.String themeEditPage(java.lang.String,org.springframework.ui.Model)>
+  <com.perfree.service.impl.ThemeServiceImpl: com.perfree.model.Theme getThemeByPath(java.lang.String)>
+   <com.perfree.service.impl.ThemeServiceImpl: java.io.File getThemeDir(java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(16) Found vul call chain:
+ <com.perfree.controller.SystemController: java.lang.String renderHtml(java.lang.String)>
+  <com.perfree.base.BaseController: java.lang.String view(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(17) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean createTheme(com.perfree.model.Theme)>
+  <java.io.File: void <init>(java.lang.String)>
+(18) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean switchTheme(com.perfree.model.Theme)>
+  <com.perfree.service.impl.ThemeServiceImpl: java.io.File getThemeDir(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(19) Found vul call chain:
+ <com.perfree.controller.admin.ThemeController: com.perfree.commons.ResponseBean createFileOrDir(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+  <com.perfree.service.impl.ThemeServiceImpl: com.perfree.model.ThemeFile createFileOrDir(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+Cost 32 seconds

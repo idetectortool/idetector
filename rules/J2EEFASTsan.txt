@@ -1,0 +1,103 @@
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The function uploadLic includes security filtering operations for file uploads by checking the filename against a specific value ('license.lic') and ensuring the file is not empty."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The uploadLic method includes security filtering for file uploads. It checks the filename to ensure it matches 'license.lic' and manages file operations such as renaming and moving files."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The checkAllowDownload method checks for path traversal patterns by looking for '..' in the resource name and verifies the file extension against a whitelist of allowed extensions."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method includes file download operations and employs a security check using ToolUtil.checkAllowDownload to validate the file name, which indicates security filtering for filename or suffixes."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'download' in the 'SysLicenseController' class checks for file existence and validates the path provided using a check code before allowing the file download operation, indicating it performs security filtering related to file download operations."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The provided method 'download' in the 'SysLicenseController' class checks for file existence and validates the path using a check code, but it does not explicitly filter for path traversal patterns like '../'. Hence, it does not meet the criteria for an obvious path traversal filter as per audit_rule3."
+}

@@ -1,0 +1,51 @@
+========================================
+[1] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <cms.web.action.forumCode.ForumCodeManageAction: java.lang.String forumSourceUI(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.template.TemplateManage: java.lang.String readExample(java.lang.String)>
+   <cms.utils.FileUtil: java.lang.String readFileToString(java.lang.String,java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <cms.web.action.template.LayoutAction: java.lang.String execute(java.lang.String,cms.bean.PageForm,org.springframework.ui.ModelMap)>
+  <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <cms.web.action.template.TemplateManageAction: java.lang.String directoryRename(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String)>
+(4) Found vul call chain:
+ <cms.web.action.template.LayoutManageAction: java.lang.String editLayoutCodeUI(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String)>
+(5) Found vul call chain:
+ <cms.web.action.template.TemplateManageAction: java.lang.String upload(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String)>
+This vul call chain contains filtering operations!!!
+(6) Found vul call chain:
+ <cms.web.action.template.LayoutManageAction: java.lang.String editLayoutCode(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.utils.FileUtil: void writeStringToFile(java.lang.String,java.lang.String,java.lang.String,boolean)>
+   <java.io.File: void <init>(java.lang.String)>
+This vul call chain contains filtering operations!!!
+(7) Found vul call chain:
+ <cms.web.action.template.LayoutManageAction: java.lang.String deleteLayout(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <cms.web.action.fileSystem.localImpl.LocalFileManage: java.lang.Boolean deleteFile(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+This vul call chain contains filtering operations!!!
+========================================
+[2] Found sink method:
+ <java.io.FileOutputStream: void write(byte[])>
+(1) Found vul call chain:
+ <cms.web.action.template.TemplateManageAction: java.lang.String upload(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.FileOutputStream: void write(byte[])>
+This vul call chain contains filtering operations!!!
+(2) Found vul call chain:
+ <cms.web.action.filterWord.FilterWordManageAction: java.lang.String uploadFilterWord(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartHttpServletRequest)>
+  <cms.web.action.fileSystem.localImpl.LocalFileManage: void writeFile(java.lang.String,java.lang.String,byte[])>
+   <java.io.FileOutputStream: void write(byte[])>
+This vul call chain contains filtering operations!!!
+========================================
+[3] Found sink method:
+ <java.io.File: void <init>(java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <cms.web.action.template.TemplateManageAction: java.lang.String upload(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String,java.lang.String)>
+This vul call chain contains filtering operations!!!
+Cost 1097 seconds

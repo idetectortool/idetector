@@ -1,0 +1,9 @@
+========================================
+[1] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <cn.keking.web.controller.FileController: java.lang.Object directory(java.lang.String)>
+  <cn.keking.utils.RarUtils: java.util.List getTree(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+This vul call chain contains filtering operations!!!
+Cost 42 seconds

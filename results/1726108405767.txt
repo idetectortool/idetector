@@ -1,0 +1,57 @@
+========================================
+[1] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTreeList(java.util.Map,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result loadTreeData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryTreeList(java.util.Map,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+   <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryTreeList(java.util.Map,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[2] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryAllTableDictItems(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result loadDict(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List loadDict(java.lang.String,java.lang.String,java.lang.Integer)>
+   <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryAllTableDictItems(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List queryAllTableDictItems(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[3] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: com.baomidou.mybatisplus.core.metadata.IPage queryTableDictWithFilter(com.baomidou.mybatisplus.extension.plugins.pagination.Page,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result loadDict(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List loadDict(java.lang.String,java.lang.String,java.lang.Integer)>
+   <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryLittleTableDictItems(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int)>
+    <org.jeecg.modules.system.mapper.SysDictMapper: com.baomidou.mybatisplus.core.metadata.IPage queryTableDictWithFilter(com.baomidou.mybatisplus.extension.plugins.pagination.Page,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[4] Found sink method:
+ <org.jeecg.modules.system.mapper.SysUserMapper: int deleteLogicDeleted(java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysUserController: org.jeecg.common.api.vo.Result deleteRecycleBin(java.lang.String)>
+  <org.jeecg.modules.system.service.impl.SysUserServiceImpl: boolean removeLogicDeleted(java.util.List)>
+   <org.jeecg.modules.system.mapper.SysUserMapper: int deleteLogicDeleted(java.lang.String)>
+========================================
+[5] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.lang.Long duplicateCheckCountSqlNoDataId(org.jeecg.modules.system.model.DuplicateCheckVo)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.DuplicateCheckController: org.jeecg.common.api.vo.Result doDuplicateCheck(org.jeecg.modules.system.model.DuplicateCheckVo,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.mapper.SysDictMapper: java.lang.Long duplicateCheckCountSqlNoDataId(org.jeecg.modules.system.model.DuplicateCheckVo)>
+========================================
+[6] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List getDictByTableNgAlain(java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <org.jeecg.modules.ngalain.controller.NgAlainController: java.lang.Object getDictItemsByTable(java.lang.String,java.lang.String,java.lang.String)>
+  <org.jeecg.modules.ngalain.service.impl.NgAlainServiceImpl: java.util.List getDictByTable(java.lang.String,java.lang.String,java.lang.String)>
+   <org.jeecg.modules.system.mapper.SysDictMapper: java.util.List getDictByTableNgAlain(java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[7] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page queryDictTablePageList(com.baomidou.mybatisplus.extension.plugins.pagination.Page,org.jeecg.common.system.vo.DictQuery)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.SysDictController: org.jeecg.common.api.vo.Result queryTableData(org.jeecg.common.system.vo.DictQuery,java.lang.Integer,java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.service.impl.SysDictServiceImpl: java.util.List queryDictTablePageList(org.jeecg.common.system.vo.DictQuery,int,int)>
+   <org.jeecg.modules.system.mapper.SysDictMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page queryDictTablePageList(com.baomidou.mybatisplus.extension.plugins.pagination.Page,org.jeecg.common.system.vo.DictQuery)>
+========================================
+[8] Found sink method:
+ <org.jeecg.modules.system.mapper.SysDictMapper: java.lang.Long duplicateCheckCountSql(org.jeecg.modules.system.model.DuplicateCheckVo)>
+(1) Found vul call chain:
+ <org.jeecg.modules.system.controller.DuplicateCheckController: org.jeecg.common.api.vo.Result doDuplicateCheck(org.jeecg.modules.system.model.DuplicateCheckVo,javax.servlet.http.HttpServletRequest)>
+  <org.jeecg.modules.system.mapper.SysDictMapper: java.lang.Long duplicateCheckCountSql(org.jeecg.modules.system.model.DuplicateCheckVo)>
+Cost 156 seconds

@@ -1,0 +1,10 @@
+========================================
+[1] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.site.blog.my.core.controller.admin.UploadController: com.site.blog.my.core.util.Result upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)>
+  <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <com.site.blog.my.core.controller.admin.BlogController: void uploadFileByEditormd(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.multipart.MultipartFile)>
+  <java.io.File: void <init>(java.lang.String)>
+Cost 34 seconds

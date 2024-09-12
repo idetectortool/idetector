@@ -1,0 +1,65 @@
+========================================
+[1] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.thinkgem.jeesite.modules.act.web.ActProcessController: java.util.List exportDiagrams(java.lang.String)>
+  <com.thinkgem.jeesite.modules.act.service.ActProcessService: java.util.List exportDiagrams(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <com.thinkgem.jeesite.common.servlet.UserfilesDownloadServlet: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <com.thinkgem.jeesite.common.servlet.UserfilesDownloadServlet: void fileOutputStream(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+   <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <com.thinkgem.jeesite.common.servlet.UserfilesDownloadServlet: void doGet(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <com.thinkgem.jeesite.common.servlet.UserfilesDownloadServlet: void fileOutputStream(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+   <java.io.File: void <init>(java.lang.String)>
+========================================
+[2] Found sink method:
+ <com.thinkgem.jeesite.modules.act.dao.ActDao: int updateProcInsIdByBusinessId(com.thinkgem.jeesite.modules.act.entity.Act)>
+(1) Found vul call chain:
+ <com.thinkgem.jeesite.modules.oa.web.TestAuditController: java.lang.String save(com.thinkgem.jeesite.modules.oa.entity.TestAudit,org.springframework.ui.Model,org.springframework.web.servlet.mvc.support.RedirectAttributes)>
+  <com.thinkgem.jeesite.modules.oa.service.TestAuditService: void save(com.thinkgem.jeesite.modules.oa.entity.TestAudit)>
+   <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Map)>
+     <com.thinkgem.jeesite.modules.act.dao.ActDao: int updateProcInsIdByBusinessId(com.thinkgem.jeesite.modules.act.entity.Act)>
+(2) Found vul call chain:
+ <com.thinkgem.jeesite.modules.cms.web.front.FrontController: java.lang.String commentSave(com.thinkgem.jeesite.modules.cms.entity.Comment,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <com.thinkgem.jeesite.modules.oa.service.TestAuditService: void save(com.thinkgem.jeesite.common.persistence.DataEntity)>
+   <com.thinkgem.jeesite.modules.oa.service.TestAuditService: void save(com.thinkgem.jeesite.modules.oa.entity.TestAudit)>
+    <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+     <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Map)>
+      <com.thinkgem.jeesite.modules.act.dao.ActDao: int updateProcInsIdByBusinessId(com.thinkgem.jeesite.modules.act.entity.Act)>
+(3) Found vul call chain:
+ <com.thinkgem.jeesite.modules.cms.web.front.FrontGuestbookController: java.lang.String guestbookSave(com.thinkgem.jeesite.modules.cms.entity.Guestbook,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.web.servlet.mvc.support.RedirectAttributes)>
+  <com.thinkgem.jeesite.modules.oa.service.TestAuditService: void save(com.thinkgem.jeesite.common.persistence.DataEntity)>
+   <com.thinkgem.jeesite.modules.oa.service.TestAuditService: void save(com.thinkgem.jeesite.modules.oa.entity.TestAudit)>
+    <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+     <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Map)>
+      <com.thinkgem.jeesite.modules.act.dao.ActDao: int updateProcInsIdByBusinessId(com.thinkgem.jeesite.modules.act.entity.Act)>
+(4) Found vul call chain:
+ <com.thinkgem.jeesite.modules.act.web.ActTaskController: java.lang.String start(com.thinkgem.jeesite.modules.act.entity.Act,java.lang.String,java.lang.String,org.springframework.ui.Model)>
+  <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+   <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Map)>
+    <com.thinkgem.jeesite.modules.act.dao.ActDao: int updateProcInsIdByBusinessId(com.thinkgem.jeesite.modules.act.entity.Act)>
+(5) Found vul call chain:
+ <com.thinkgem.jeesite.modules.cms.web.LinkController: java.lang.String save(com.thinkgem.jeesite.modules.cms.entity.Link,org.springframework.ui.Model,org.springframework.web.servlet.mvc.support.RedirectAttributes)>
+  <com.thinkgem.jeesite.modules.oa.service.TestAuditService: void save(com.thinkgem.jeesite.common.persistence.DataEntity)>
+   <com.thinkgem.jeesite.modules.oa.service.TestAuditService: void save(com.thinkgem.jeesite.modules.oa.entity.TestAudit)>
+    <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+     <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Map)>
+      <com.thinkgem.jeesite.modules.act.dao.ActDao: int updateProcInsIdByBusinessId(com.thinkgem.jeesite.modules.act.entity.Act)>
+(6) Found vul call chain:
+ <com.thinkgem.jeesite.modules.cms.web.GuestbookController: java.lang.String save(com.thinkgem.jeesite.modules.cms.entity.Guestbook,org.springframework.ui.Model,org.springframework.web.servlet.mvc.support.RedirectAttributes)>
+  <com.thinkgem.jeesite.modules.oa.service.TestAuditService: void save(com.thinkgem.jeesite.common.persistence.DataEntity)>
+   <com.thinkgem.jeesite.modules.oa.service.TestAuditService: void save(com.thinkgem.jeesite.modules.oa.entity.TestAudit)>
+    <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+     <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Map)>
+      <com.thinkgem.jeesite.modules.act.dao.ActDao: int updateProcInsIdByBusinessId(com.thinkgem.jeesite.modules.act.entity.Act)>
+(7) Found vul call chain:
+ <com.thinkgem.jeesite.modules.cms.web.CommentController: java.lang.String save(com.thinkgem.jeesite.modules.cms.entity.Comment,org.springframework.web.servlet.mvc.support.RedirectAttributes)>
+  <com.thinkgem.jeesite.modules.oa.service.TestAuditService: void save(com.thinkgem.jeesite.common.persistence.DataEntity)>
+   <com.thinkgem.jeesite.modules.oa.service.TestAuditService: void save(com.thinkgem.jeesite.modules.oa.entity.TestAudit)>
+    <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+     <com.thinkgem.jeesite.modules.act.service.ActTaskService: java.lang.String startProcess(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Map)>
+      <com.thinkgem.jeesite.modules.act.dao.ActDao: int updateProcInsIdByBusinessId(com.thinkgem.jeesite.modules.act.entity.Act)>
+Cost 37 seconds

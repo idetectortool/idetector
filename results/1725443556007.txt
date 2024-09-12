@@ -1,0 +1,27 @@
+========================================
+[1] Found sink method:
+ <org.springframework.util.FileCopyUtils: void copy(byte[],java.io.File)>
+(1) Found vul call chain:
+ <ltd.newbee.mall.controller.CommonController: void froalaUploadFile(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <ltd.newbee.mall.util.file.FileUploadUtil: java.lang.String uploadFile(org.springframework.web.multipart.MultipartFile,java.lang.String)>
+   <org.springframework.mock.web.MockMultipartFile: void transferTo(java.io.File)>
+    <org.springframework.util.FileCopyUtils: void copy(byte[],java.io.File)>
+(2) Found vul call chain:
+ <ltd.newbee.mall.controller.CommonController: ltd.newbee.mall.util.R uploadFile(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)>
+  <ltd.newbee.mall.util.file.FileUploadUtil: java.lang.String uploadFile(org.springframework.web.multipart.MultipartFile,java.lang.String)>
+   <org.springframework.mock.web.MockMultipartFile: void transferTo(java.io.File)>
+    <org.springframework.util.FileCopyUtils: void copy(byte[],java.io.File)>
+========================================
+[2] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <ltd.newbee.mall.controller.CommonController: void fileDownload(java.lang.String,java.lang.Boolean,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)>
+  <ltd.newbee.mall.util.file.FileUtils: boolean deleteFile(java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+This vul call chain contains filtering operations!!!
+(2) Found vul call chain:
+ <ltd.newbee.mall.controller.CommonController: void fileDownload(java.lang.String,java.lang.Boolean,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)>
+  <ltd.newbee.mall.util.file.FileUtils: void writeBytes(java.lang.String,java.io.OutputStream)>
+   <java.io.File: void <init>(java.lang.String)>
+This vul call chain contains filtering operations!!!
+Cost 31 seconds

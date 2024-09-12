@@ -1,0 +1,22 @@
+========================================
+[1] Found sink method:
+ <com.easytoolsoft.easyreport.membership.data.ModuleRepository: int updatePath(java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.easytoolsoft.easyreport.web.controller.member.ModuleController: com.easytoolsoft.easyreport.support.model.ResponseResult move(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String)>
+  <com.easytoolsoft.easyreport.membership.service.impl.ModuleServiceImpl: void move(int,int,int,java.lang.String)>
+   <com.easytoolsoft.easyreport.membership.data.ModuleRepository: int updatePath(java.lang.String,java.lang.String)>
+========================================
+[2] Found sink method:
+ <java.sql.DriverManager: java.sql.Connection getConnection(java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.easytoolsoft.easyreport.web.controller.report.DataSourceController: com.easytoolsoft.easyreport.support.model.ResponseResult testConnection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+  <com.easytoolsoft.easyreport.meta.service.impl.DataSourceServiceImpl: boolean testConnection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+   <java.sql.DriverManager: java.sql.Connection getConnection(java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[3] Found sink method:
+ <com.easytoolsoft.easyreport.meta.data.CategoryRepository: int updatePath(java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.easytoolsoft.easyreport.web.controller.report.CategoryController: com.easytoolsoft.easyreport.support.model.ResponseResult move(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String)>
+  <com.easytoolsoft.easyreport.meta.service.impl.CategoryServiceImpl: void move(int,int,int,java.lang.String)>
+   <com.easytoolsoft.easyreport.meta.data.CategoryRepository: int updatePath(java.lang.String,java.lang.String)>
+Cost 65 seconds

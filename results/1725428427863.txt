@@ -1,0 +1,149 @@
+========================================
+[1] Found sink method:
+ <com.skyeye.eve.dao.PlanProjectDao: java.util.List queryPlanProjectList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.PlanProjectController: void queryPlanProjectList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.PlanProjectServiceImpl: void queryPlanProjectList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.PlanProjectDao: java.util.List queryPlanProjectList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[2] Found sink method:
+ <com.skyeye.eve.dao.SysEveIconDao: java.util.List querySysIconList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.SysEveIconController: void querySysIconList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.SysEveIconServiceImpl: void querySysIconList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.SysEveIconDao: java.util.List querySysIconList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[3] Found sink method:
+ <com.skyeye.eve.dao.DsFormContentDao: java.util.List queryDsFormContentList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.DsFormContentController: void queryDsFormContentList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.DsFormContentServiceImpl: void queryDsFormContentList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.DsFormContentDao: java.util.List queryDsFormContentList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[4] Found sink method:
+ <java.io.FileOutputStream: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.CodeModelHistoryController: void insertCodeModelHistoryCreate(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.CodeModelHistoryServiceImpl: void insertCodeModelHistoryCreate(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <java.io.FileOutputStream: void <init>(java.lang.String)>
+========================================
+[5] Found sink method:
+ <com.skyeye.eve.dao.RmGroupDao: java.util.List queryRmGroupList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.RmGroupController: void queryRmGroupList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.RmGroupServiceImpl: void queryRmGroupList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.RmGroupDao: java.util.List queryRmGroupList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[6] Found sink method:
+ <com.skyeye.eve.dao.CodeModelGroupDao: java.util.List queryCodeModelGroupList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.CodeModelGroupController: void queryCodeModelGroupList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.CodeModelGroupServiceImpl: void queryCodeModelGroupList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.CodeModelGroupDao: java.util.List queryCodeModelGroupList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[7] Found sink method:
+ <com.skyeye.eve.dao.SysEveWinThemeColorDao: java.util.List querySysEveWinThemeColorList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.SysEveWinThemeColorController: void querySysEveWinThemeColorList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.SysEveWinThemeColorServiceImpl: void querySysEveWinThemeColorList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.SysEveWinThemeColorDao: java.util.List querySysEveWinThemeColorList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[8] Found sink method:
+ <com.skyeye.eve.dao.SmProjectDao: java.util.List querySmProjectList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.SmProjectController: void querySmProjectList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.SmProjectServiceImpl: void querySmProjectList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.SmProjectDao: java.util.List querySmProjectList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[9] Found sink method:
+ <com.skyeye.eve.dao.SysEveRoleDao: java.util.List querySysRoleList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.SysEveRoleController: void querySysRoleList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.SysEveRoleServiceImpl: void querySysRoleList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.SysEveRoleDao: java.util.List querySysRoleList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[10] Found sink method:
+ <com.skyeye.eve.dao.DsFormDisplayTemplateDao: java.util.List queryDsFormDisplayTemplateList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.DsFormDisplayTemplateController: void queryDsFormDisplayTemplateList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.DsFormDisplayTemplateServiceImpl: void queryDsFormDisplayTemplateList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.DsFormDisplayTemplateDao: java.util.List queryDsFormDisplayTemplateList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[11] Found sink method:
+ <com.skyeye.eve.dao.SysEveUserDao: java.util.List querySysUserList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.SysEveUserController: void querySysUserList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.SysEveUserServiceImpl: void querySysUserList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.SysEveUserDao: java.util.List querySysUserList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[12] Found sink method:
+ <com.skyeye.eve.dao.DsFormLimitRequirementDao: java.util.List queryDsFormLimitRequirementList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.DsFormLimitRequirementController: void queryDsFormLimitRequirementList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.DsFormLimitRequirementServiceImpl: void queryDsFormLimitRequirementList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.DsFormLimitRequirementDao: java.util.List queryDsFormLimitRequirementList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[13] Found sink method:
+ <com.skyeye.eve.dao.CompanyDepartmentDao: java.util.List queryCompanyDepartmentList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.CompanyDepartmentController: void queryCompanyDepartmentList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.CompanyDepartmentServiceImpl: void queryCompanyDepartmentList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.CompanyDepartmentDao: java.util.List queryCompanyDepartmentList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[14] Found sink method:
+ <com.skyeye.eve.dao.CompanyMationDao: java.util.List queryCompanyMationList(java.util.Map)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.CompanyMationController: void queryCompanyMationList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.CompanyMationServiceImpl: void queryCompanyMationList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.CompanyMationDao: java.util.List queryCompanyMationList(java.util.Map)>
+========================================
+[15] Found sink method:
+ <com.skyeye.eve.dao.CompanyJobDao: java.util.List queryCompanyJobList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.CompanyJobController: void queryCompanyJobList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.CompanyJobServiceImpl: void queryCompanyJobList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.CompanyJobDao: java.util.List queryCompanyJobList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[16] Found sink method:
+ <com.skyeye.eve.dao.SysEveMenuDao: java.util.List querySysMenuList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.SysEveMenuController: void querySysMenuList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.SysEveMenuServiceImpl: void querySysMenuList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.SysEveMenuDao: java.util.List querySysMenuList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[17] Found sink method:
+ <com.skyeye.eve.dao.RmTypeDao: java.util.List queryRmTypeList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.RmTypeController: void queryRmTypeList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.RmTypeServiceImpl: void queryRmTypeList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.RmTypeDao: java.util.List queryRmTypeList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[18] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.CodeModelHistoryController: void downloadCodeModelHistory(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.CodeModelHistoryServiceImpl: void downloadCodeModelHistory(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <com.skyeye.eve.controller.CodeModelHistoryController: void insertCodeModelHistoryCreate(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.CodeModelHistoryServiceImpl: void insertCodeModelHistoryCreate(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <com.skyeye.eve.controller.CommonController: void uploadFile(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.CommonServiceImpl: void uploadFile(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <java.io.File: void <init>(java.lang.String)>
+========================================
+[19] Found sink method:
+ <com.skyeye.eve.dao.RmPropertyValueDao: java.util.List queryRmPropertyValueList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.RmPropertyValueController: void queryRmPropertyValueList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.RmPropertyValueServiceImpl: void queryRmPropertyValueList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.RmPropertyValueDao: java.util.List queryRmPropertyValueList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+========================================
+[20] Found sink method:
+ <com.skyeye.eve.dao.RmPropertyDao: java.util.List queryRmPropertyList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+(1) Found vul call chain:
+ <com.skyeye.eve.controller.RmPropertyController: void queryRmPropertyList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+  <com.skyeye.eve.service.impl.RmPropertyServiceImpl: void queryRmPropertyList(com.skyeye.common.object.InputObject,com.skyeye.common.object.OutputObject)>
+   <com.skyeye.eve.dao.RmPropertyDao: java.util.List queryRmPropertyList(java.util.Map,com.github.miemiedev.mybatis.paginator.domain.PageBounds)>
+Cost 82 seconds

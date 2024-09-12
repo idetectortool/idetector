@@ -1,0 +1,135 @@
+========================================
+[1] Found sink method:
+ <org.hibernate.Session: org.hibernate.Query createQuery(java.lang.String)>
+(1) Found vul call chain:
+ <org.akaza.openclinica.controller.IdtViewController: org.springframework.http.ResponseEntity postSDVedItemDataAndEventCrfWorkflow(java.util.ArrayList)>
+  <org.akaza.openclinica.controller.IdtViewController: void saveOrUpdateEventCrfFlag(int,java.lang.String,org.akaza.openclinica.domain.user.UserAccount)>
+   <org.akaza.openclinica.dao.hibernate.ItemDataFlagDao: java.util.List findAllByEventCrfPath(int,java.lang.String)>
+    <org.hibernate.Session: org.hibernate.Query createQuery(java.lang.String)>
+(2) Found vul call chain:
+ <org.akaza.openclinica.controller.IdtViewController: org.springframework.http.ResponseEntity postSDVedItemDataAndEventCrfWorkflow(java.util.ArrayList)>
+  <org.akaza.openclinica.controller.IdtViewController: void saveOrUpdateEventCrfFlag(int,java.lang.String,org.akaza.openclinica.domain.user.UserAccount)>
+   <org.akaza.openclinica.dao.hibernate.EventCrfFlagDao: org.akaza.openclinica.domain.datamap.EventCrfFlag findByEventCrfPath(int,java.lang.String)>
+    <org.hibernate.Session: org.hibernate.Query createQuery(java.lang.String)>
+(3) Found vul call chain:
+ <org.akaza.openclinica.controller.IdtViewController: org.springframework.http.ResponseEntity postSDVedItemDataAndEventCrfWorkflow(java.util.ArrayList)>
+  <org.akaza.openclinica.controller.IdtViewController: void saveOrUpdateItemDataFlag(int,java.lang.String,java.lang.String)>
+   <org.akaza.openclinica.dao.hibernate.ItemDataFlagDao: org.akaza.openclinica.domain.datamap.ItemDataFlag findByItemDataPath(int,java.lang.String)>
+    <org.hibernate.Session: org.hibernate.Query createQuery(java.lang.String)>
+========================================
+[2] Found sink method:
+ <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(1) Found vul call chain:
+ <org.akaza.openclinica.controller.DiscrepancyNoteController: org.springframework.http.ResponseEntity buidDiscrepancyNote(java.util.HashMap,javax.servlet.http.HttpServletRequest)>
+  <org.akaza.openclinica.controller.DiscrepancyNoteController: org.akaza.openclinica.bean.managestudy.DiscrepancyNoteBean createDiscrepancyNoteBean(java.lang.String,java.lang.String,int,java.lang.String,org.akaza.openclinica.bean.managestudy.StudyBean,org.akaza.openclinica.bean.login.UserAccountBean,org.akaza.openclinica.bean.login.UserAccountBean,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String)>
+   <org.akaza.openclinica.dao.managestudy.DiscrepancyNoteDAO: org.akaza.openclinica.bean.core.EntityBean create(org.akaza.openclinica.bean.core.EntityBean)>
+    <org.akaza.openclinica.bean.core.AuditableEntityBean: org.akaza.openclinica.bean.login.UserAccountBean getOwner()>
+     <org.akaza.openclinica.dao.login.UserAccountDAO: org.akaza.openclinica.bean.core.EntityBean findByPK(int)>
+      <org.akaza.openclinica.dao.core.EntityDAO: java.util.ArrayList select(java.lang.String,java.util.HashMap)>
+       <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(2) Found vul call chain:
+ <org.akaza.openclinica.controller.DiscrepancyNoteController: org.springframework.http.ResponseEntity buidDiscrepancyNote(java.util.HashMap,javax.servlet.http.HttpServletRequest)>
+  <org.akaza.openclinica.controller.DiscrepancyNoteController: org.akaza.openclinica.bean.managestudy.DiscrepancyNoteBean createDiscrepancyNoteBean(java.lang.String,java.lang.String,int,java.lang.String,org.akaza.openclinica.bean.managestudy.StudyBean,org.akaza.openclinica.bean.login.UserAccountBean,org.akaza.openclinica.bean.login.UserAccountBean,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String)>
+   <org.akaza.openclinica.dao.managestudy.DiscrepancyNoteDAO: org.akaza.openclinica.bean.core.EntityBean create(org.akaza.openclinica.bean.core.EntityBean)>
+    <org.akaza.openclinica.bean.core.AuditableEntityBean: org.akaza.openclinica.bean.login.UserAccountBean getOwner()>
+     <org.akaza.openclinica.dao.login.UserAccountDAO: org.akaza.openclinica.bean.core.EntityBean findByPK(int)>
+      <org.akaza.openclinica.dao.login.UserAccountDAO: java.lang.Object getEntityFromHashMap(java.util.HashMap,boolean)>
+       <org.akaza.openclinica.dao.login.UserAccountDAO: java.util.Collection findAllRolesByUserName(java.lang.String)>
+        <org.akaza.openclinica.dao.core.EntityDAO: java.util.ArrayList select(java.lang.String,java.util.HashMap)>
+         <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(3) Found vul call chain:
+ <org.akaza.openclinica.controller.AccountController: org.springframework.http.ResponseEntity updateTimezone(java.util.HashMap)>
+  <org.akaza.openclinica.controller.AccountController: void updateStudySubjectBean(org.akaza.openclinica.bean.managestudy.StudySubjectBean)>
+   <org.akaza.openclinica.dao.managestudy.StudySubjectDAO: org.akaza.openclinica.bean.core.EntityBean update(org.akaza.openclinica.bean.core.EntityBean)>
+    <org.akaza.openclinica.dao.managestudy.StudySubjectDAO: org.akaza.openclinica.bean.core.EntityBean update(org.akaza.openclinica.bean.core.EntityBean,java.sql.Connection)>
+     <org.akaza.openclinica.bean.core.AuditableEntityBean: org.akaza.openclinica.bean.login.UserAccountBean getUpdater()>
+      <org.akaza.openclinica.dao.login.UserAccountDAO: org.akaza.openclinica.bean.core.EntityBean findByPK(int)>
+       <org.akaza.openclinica.dao.core.EntityDAO: java.util.ArrayList select(java.lang.String,java.util.HashMap)>
+        <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(4) Found vul call chain:
+ <org.akaza.openclinica.web.restful.ODMClinicaDataResource: java.lang.String getODMClinicaldata(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.akaza.openclinica.web.restful.MetadataCollectorResource: org.akaza.openclinica.bean.extract.odm.FullReportBean collectODMMetadataForClinicalData(java.lang.String,java.lang.String,java.util.LinkedHashMap)>
+   <org.akaza.openclinica.logic.odmExport.MetaDataCollector: void collectFileData(java.lang.String)>
+    <org.akaza.openclinica.logic.odmExport.MetaDataCollector: void collectMetadataUnitMap(java.lang.String)>
+     <org.akaza.openclinica.logic.odmExport.MetadataUnit: void collectOdmStudy(java.lang.String)>
+      <org.akaza.openclinica.logic.odmExport.MetadataUnit: void collectBasicDefinitions(java.lang.String)>
+       <org.akaza.openclinica.dao.extract.OdmExtractDAO: void getBasicDefinitions(java.lang.String,org.akaza.openclinica.bean.odmbeans.BasicDefinitionsBean)>
+        <org.akaza.openclinica.dao.core.EntityDAO: java.util.ArrayList select(java.lang.String)>
+         <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(5) Found vul call chain:
+ <org.akaza.openclinica.controller.AccountController: org.springframework.http.ResponseEntity updateTimezone(java.util.HashMap)>
+  <org.akaza.openclinica.controller.AccountController: void updateStudySubjectBean(org.akaza.openclinica.bean.managestudy.StudySubjectBean)>
+   <org.akaza.openclinica.dao.managestudy.StudySubjectDAO: org.akaza.openclinica.bean.core.EntityBean update(org.akaza.openclinica.bean.core.EntityBean)>
+    <org.akaza.openclinica.dao.managestudy.StudySubjectDAO: org.akaza.openclinica.bean.core.EntityBean update(org.akaza.openclinica.bean.core.EntityBean,java.sql.Connection)>
+     <org.akaza.openclinica.bean.core.AuditableEntityBean: org.akaza.openclinica.bean.login.UserAccountBean getUpdater()>
+      <org.akaza.openclinica.dao.login.UserAccountDAO: org.akaza.openclinica.bean.core.EntityBean findByPK(int)>
+       <org.akaza.openclinica.dao.login.UserAccountDAO: java.lang.Object getEntityFromHashMap(java.util.HashMap,boolean)>
+        <org.akaza.openclinica.dao.login.UserAccountDAO: java.util.Collection findAllRolesByUserName(java.lang.String)>
+         <org.akaza.openclinica.dao.core.EntityDAO: java.util.ArrayList select(java.lang.String,java.util.HashMap)>
+          <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(6) Found vul call chain:
+ <org.akaza.openclinica.web.restful.ODMMetadataRestResource: java.lang.String getODMMetadataWithFormVersionOID(java.lang.String,java.lang.String)>
+  <org.akaza.openclinica.web.restful.MetadataCollectorResource: java.lang.String collectODMMetadataForForm(java.lang.String,java.lang.String)>
+   <org.akaza.openclinica.logic.odmExport.MetaDataCollector: void collectFileData(java.lang.String)>
+    <org.akaza.openclinica.logic.odmExport.MetaDataCollector: void collectMetadataUnitMap(java.lang.String)>
+     <org.akaza.openclinica.logic.odmExport.MetadataUnit: void collectOdmStudy(java.lang.String)>
+      <org.akaza.openclinica.logic.odmExport.MetadataUnit: void collectBasicDefinitions(java.lang.String)>
+       <org.akaza.openclinica.dao.extract.OdmExtractDAO: void getBasicDefinitions(java.lang.String,org.akaza.openclinica.bean.odmbeans.BasicDefinitionsBean)>
+        <org.akaza.openclinica.dao.core.EntityDAO: java.util.ArrayList select(java.lang.String)>
+         <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(7) Found vul call chain:
+ <org.akaza.openclinica.web.restful.ODMMetadataRestResource: java.lang.String getODMMetadataJson(java.lang.String,java.lang.String)>
+  <org.akaza.openclinica.web.restful.MetadataCollectorResource: java.lang.String collectODMMetadataJsonString(java.lang.String,java.lang.String)>
+   <org.akaza.openclinica.web.restful.MetadataCollectorResource: java.lang.String collectODMMetadataForForm(java.lang.String,java.lang.String)>
+    <org.akaza.openclinica.logic.odmExport.MetaDataCollector: void collectFileData(java.lang.String)>
+     <org.akaza.openclinica.logic.odmExport.MetaDataCollector: void collectMetadataUnitMap(java.lang.String)>
+      <org.akaza.openclinica.logic.odmExport.MetadataUnit: void collectOdmStudy(java.lang.String)>
+       <org.akaza.openclinica.logic.odmExport.MetadataUnit: void collectBasicDefinitions(java.lang.String)>
+        <org.akaza.openclinica.dao.extract.OdmExtractDAO: void getBasicDefinitions(java.lang.String,org.akaza.openclinica.bean.odmbeans.BasicDefinitionsBean)>
+         <org.akaza.openclinica.dao.core.EntityDAO: java.util.ArrayList select(java.lang.String)>
+          <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(8) Found vul call chain:
+ <org.akaza.openclinica.web.restful.ODMClinicaDataResource: java.lang.String getODMMetadata(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)>
+  <org.akaza.openclinica.web.restful.MetadataCollectorResource: org.akaza.openclinica.bean.extract.odm.FullReportBean collectODMMetadataForClinicalData(java.lang.String,java.lang.String,java.util.LinkedHashMap)>
+   <org.akaza.openclinica.logic.odmExport.MetaDataCollector: void collectFileData(java.lang.String)>
+    <org.akaza.openclinica.logic.odmExport.MetaDataCollector: void collectMetadataUnitMap(java.lang.String)>
+     <org.akaza.openclinica.logic.odmExport.MetadataUnit: void collectOdmStudy(java.lang.String)>
+      <org.akaza.openclinica.logic.odmExport.MetadataUnit: void collectBasicDefinitions(java.lang.String)>
+       <org.akaza.openclinica.dao.extract.OdmExtractDAO: void getBasicDefinitions(java.lang.String,org.akaza.openclinica.bean.odmbeans.BasicDefinitionsBean)>
+        <org.akaza.openclinica.dao.core.EntityDAO: java.util.ArrayList select(java.lang.String)>
+         <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(9) Found vul call chain:
+ <org.akaza.openclinica.controller.DiscrepancyNoteController: org.springframework.http.ResponseEntity buidDiscrepancyNote(java.util.HashMap,javax.servlet.http.HttpServletRequest)>
+  <org.akaza.openclinica.controller.DiscrepancyNoteController: org.akaza.openclinica.bean.managestudy.DiscrepancyNoteBean createDiscrepancyNoteBean(java.lang.String,java.lang.String,int,java.lang.String,org.akaza.openclinica.bean.managestudy.StudyBean,org.akaza.openclinica.bean.login.UserAccountBean,org.akaza.openclinica.bean.login.UserAccountBean,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String)>
+   <org.akaza.openclinica.dao.managestudy.DiscrepancyNoteDAO: org.akaza.openclinica.bean.core.EntityBean create(org.akaza.openclinica.bean.core.EntityBean)>
+    <org.akaza.openclinica.bean.core.AuditableEntityBean: org.akaza.openclinica.bean.login.UserAccountBean getOwner()>
+     <org.akaza.openclinica.dao.login.UserAccountDAO: org.akaza.openclinica.bean.core.EntityBean findByPK(int)>
+      <org.akaza.openclinica.dao.login.UserAccountDAO: java.lang.Object getEntityFromHashMap(java.util.HashMap,boolean)>
+       <org.akaza.openclinica.dao.login.UserAccountDAO: org.akaza.openclinica.bean.core.EntityBean findByPK(int,boolean)>
+        <org.akaza.openclinica.dao.core.EntityDAO: java.util.ArrayList select(java.lang.String,java.util.HashMap)>
+         <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(10) Found vul call chain:
+ <org.akaza.openclinica.controller.AccountController: org.springframework.http.ResponseEntity updateTimezone(java.util.HashMap)>
+  <org.akaza.openclinica.controller.AccountController: void updateStudySubjectBean(org.akaza.openclinica.bean.managestudy.StudySubjectBean)>
+   <org.akaza.openclinica.dao.managestudy.StudySubjectDAO: org.akaza.openclinica.bean.core.EntityBean update(org.akaza.openclinica.bean.core.EntityBean)>
+    <org.akaza.openclinica.dao.managestudy.StudySubjectDAO: org.akaza.openclinica.bean.core.EntityBean update(org.akaza.openclinica.bean.core.EntityBean,java.sql.Connection)>
+     <org.akaza.openclinica.bean.core.AuditableEntityBean: org.akaza.openclinica.bean.login.UserAccountBean getUpdater()>
+      <org.akaza.openclinica.dao.login.UserAccountDAO: org.akaza.openclinica.bean.core.EntityBean findByPK(int)>
+       <org.akaza.openclinica.dao.login.UserAccountDAO: java.lang.Object getEntityFromHashMap(java.util.HashMap,boolean)>
+        <org.akaza.openclinica.dao.login.UserAccountDAO: org.akaza.openclinica.bean.core.EntityBean findByPK(int,boolean)>
+         <org.akaza.openclinica.dao.core.EntityDAO: java.util.ArrayList select(java.lang.String,java.util.HashMap)>
+          <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+========================================
+[3] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <org.akaza.openclinica.controller.openrosa.OpenRosaSubmissionController: org.springframework.http.ResponseEntity doSubmission(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)>
+  <org.akaza.openclinica.controller.openrosa.OpenRosaSubmissionController: java.io.File processUploadedFile(org.apache.commons.fileupload.FileItem,java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <org.akaza.openclinica.controller.openrosa.OpenRosaSubmissionController: org.springframework.http.ResponseEntity doSubmission(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)>
+  <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <org.akaza.openclinica.controller.BatchCRFMigrationController: void getLogFile(java.lang.String,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String)>
+Cost 111 seconds

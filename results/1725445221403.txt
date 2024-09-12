@@ -1,0 +1,13 @@
+========================================
+[1] Found sink method:
+ <cn.gson.oasys.mappers.AddressMapper: java.util.List allDirector(java.lang.Long,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <cn.gson.oasys.controller.address.AddrController: java.lang.String outAddress(int,org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String,java.lang.Long)>
+  <cn.gson.oasys.mappers.AddressMapper: java.util.List allDirector(java.lang.Long,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[2] Found sink method:
+ <cn.gson.oasys.mappers.NoticeMapper: java.util.List sortMyNotice(java.lang.Long,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer)>
+(1) Found vul call chain:
+ <cn.gson.oasys.controller.inform.InformController: java.lang.String informListPaging(int,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Long,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)>
+  <cn.gson.oasys.mappers.NoticeMapper: java.util.List sortMyNotice(java.lang.Long,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer)>
+Cost 32 seconds

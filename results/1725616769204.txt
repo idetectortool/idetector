@@ -1,0 +1,47 @@
+========================================
+[1] Found sink method:
+ <com.yf.exam.modules.sys.depart.mapper.SysDepartMapper: com.baomidou.mybatisplus.core.metadata.IPage paging(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.sys.depart.dto.SysDepartDTO)>
+(1) Found vul call chain:
+ <com.yf.exam.modules.sys.depart.controller.SysDepartController: com.yf.exam.core.api.ApiRest paging(com.yf.exam.core.api.dto.PagingReqDTO)>
+  <com.yf.exam.modules.sys.depart.service.impl.SysDepartServiceImpl: com.baomidou.mybatisplus.core.metadata.IPage paging(com.yf.exam.core.api.dto.PagingReqDTO)>
+   <com.yf.exam.modules.sys.depart.mapper.SysDepartMapper: com.baomidou.mybatisplus.core.metadata.IPage paging(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.sys.depart.dto.SysDepartDTO)>
+========================================
+[2] Found sink method:
+ <com.yf.exam.modules.exam.mapper.ExamMapper: com.baomidou.mybatisplus.core.metadata.IPage online(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.exam.dto.ExamDTO)>
+(1) Found vul call chain:
+ <com.yf.exam.modules.exam.controller.ExamController: com.yf.exam.core.api.ApiRest myPaging(com.yf.exam.core.api.dto.PagingReqDTO)>
+  <com.yf.exam.modules.exam.service.impl.ExamServiceImpl: com.baomidou.mybatisplus.core.metadata.IPage onlinePaging(com.yf.exam.core.api.dto.PagingReqDTO)>
+   <com.yf.exam.modules.exam.mapper.ExamMapper: com.baomidou.mybatisplus.core.metadata.IPage online(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.exam.dto.ExamDTO)>
+========================================
+[3] Found sink method:
+ <com.yf.exam.modules.repo.mapper.RepoMapper: com.baomidou.mybatisplus.core.metadata.IPage paging(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.repo.dto.RepoDTO)>
+(1) Found vul call chain:
+ <com.yf.exam.modules.repo.controller.RepoController: com.yf.exam.core.api.ApiRest paging(com.yf.exam.core.api.dto.PagingReqDTO)>
+  <com.yf.exam.modules.repo.service.impl.RepoServiceImpl: com.baomidou.mybatisplus.core.metadata.IPage paging(com.yf.exam.core.api.dto.PagingReqDTO)>
+   <com.yf.exam.modules.repo.mapper.RepoMapper: com.baomidou.mybatisplus.core.metadata.IPage paging(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.repo.dto.RepoDTO)>
+========================================
+[4] Found sink method:
+ <com.yf.exam.modules.paper.mapper.PaperMapper: com.baomidou.mybatisplus.core.metadata.IPage paging(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.paper.dto.request.PaperListReqDTO)>
+(1) Found vul call chain:
+ <com.yf.exam.modules.paper.controller.PaperController: com.yf.exam.core.api.ApiRest paging(com.yf.exam.core.api.dto.PagingReqDTO)>
+  <com.yf.exam.modules.paper.service.impl.PaperServiceImpl: com.baomidou.mybatisplus.core.metadata.IPage paging(com.yf.exam.core.api.dto.PagingReqDTO)>
+   <com.yf.exam.modules.paper.mapper.PaperMapper: com.baomidou.mybatisplus.core.metadata.IPage paging(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.paper.dto.request.PaperListReqDTO)>
+========================================
+[5] Found sink method:
+ <com.yf.exam.modules.exam.mapper.ExamMapper: com.baomidou.mybatisplus.core.metadata.IPage paging(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.exam.dto.ExamDTO)>
+(1) Found vul call chain:
+ <com.yf.exam.modules.exam.controller.ExamController: com.yf.exam.core.api.ApiRest paging(com.yf.exam.core.api.dto.PagingReqDTO)>
+  <com.yf.exam.modules.exam.service.impl.ExamServiceImpl: com.baomidou.mybatisplus.core.metadata.IPage paging(com.yf.exam.core.api.dto.PagingReqDTO)>
+   <com.yf.exam.modules.exam.mapper.ExamMapper: com.baomidou.mybatisplus.core.metadata.IPage paging(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.exam.dto.ExamDTO)>
+========================================
+[6] Found sink method:
+ <com.yf.exam.modules.user.exam.mapper.UserExamMapper: com.baomidou.mybatisplus.core.metadata.IPage paging(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.user.exam.dto.request.UserExamReqDTO)>
+(1) Found vul call chain:
+ <com.yf.exam.modules.user.exam.controller.UserExamController: com.yf.exam.core.api.ApiRest MyPaging(com.yf.exam.core.api.dto.PagingReqDTO)>
+  <com.yf.exam.modules.user.exam.service.impl.UserExamServiceImpl: com.baomidou.mybatisplus.core.metadata.IPage myPaging(com.yf.exam.core.api.dto.PagingReqDTO)>
+   <com.yf.exam.modules.user.exam.mapper.UserExamMapper: com.baomidou.mybatisplus.core.metadata.IPage paging(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.user.exam.dto.request.UserExamReqDTO)>
+(2) Found vul call chain:
+ <com.yf.exam.modules.user.exam.controller.UserExamController: com.yf.exam.core.api.ApiRest paging(com.yf.exam.core.api.dto.PagingReqDTO)>
+  <com.yf.exam.modules.user.exam.service.impl.UserExamServiceImpl: com.baomidou.mybatisplus.core.metadata.IPage paging(com.yf.exam.core.api.dto.PagingReqDTO)>
+   <com.yf.exam.modules.user.exam.mapper.UserExamMapper: com.baomidou.mybatisplus.core.metadata.IPage paging(com.baomidou.mybatisplus.extension.plugins.pagination.Page,com.yf.exam.modules.user.exam.dto.request.UserExamReqDTO)>
+Cost 26 seconds

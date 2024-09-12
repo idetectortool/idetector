@@ -1,0 +1,150 @@
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `typeFromUrl` in the `FileType` class includes logic to determine the file type based on the file extension. This involves extracting the file name from the URL and then mapping the file extension to a known type. This can be considered a form of security filtering to ensure that only supported file types are processed."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The getCorsFile method involves downloading a file from a URL. It includes a check to decode and normalize the URL, and validate it against certain criteria (e.g., must start with http, https, or ftp). This indicates security filtering to prevent unauthorized access or path traversal vulnerabilities."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The deleteFileCheck method includes security filtering for filename by checking for illegal characters and path traversal."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method isIllegalFileName in Class cn.keking.utils.KkFileUtils checks for the presence of path traversal strings in the file name, which is a security filtering operation to prevent directory traversal attacks."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The getFileAttribute method in the cn.keking.service.FileHandlerService class performs security filtering for file operations by checking the filename suffix and decoding the filename. It also escapes HTML characters in the filename to prevent injection attacks."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The getFileAttribute method is performing operations related to file handling such as extracting file attributes and decoding filenames, but it does not contain explicit filtering checks for security-sensitive patterns like path traversal sequences (../) or SQL keywords. It primarily manipulates strings and checks for URL encoding, which does not qualify as a filtering operation according to the specified audit rules."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+

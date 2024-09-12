@@ -1,0 +1,39 @@
+========================================
+[1] Found sink method:
+ <java.io.FileOutputStream: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <edp.davinci.controller.WidgetController: org.springframework.http.ResponseEntity downloadWidget(java.lang.Long,java.lang.String,edp.davinci.dto.viewDto.ViewExecuteParam,org.springframework.validation.BindingResult,edp.davinci.model.User,javax.servlet.http.HttpServletRequest)>
+  <edp.davinci.service.impl.WidgetServiceImpl: java.lang.String generationFile(java.lang.Long,edp.davinci.dto.viewDto.ViewExecuteParam,edp.davinci.model.User,java.lang.String)>
+   <edp.davinci.service.impl.WidgetServiceImpl: java.io.File writeExcel(java.util.Set,edp.davinci.dto.projectDto.ProjectDetail,java.util.Map,java.lang.String,edp.davinci.model.User,boolean)>
+    <java.io.FileOutputStream: void <init>(java.lang.String)>
+========================================
+[2] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <edp.davinci.controller.WidgetController: org.springframework.http.ResponseEntity downloadWidget(java.lang.Long,java.lang.String,edp.davinci.dto.viewDto.ViewExecuteParam,org.springframework.validation.BindingResult,edp.davinci.model.User,javax.servlet.http.HttpServletRequest)>
+  <edp.davinci.service.impl.WidgetServiceImpl: java.lang.String generationFile(java.lang.Long,edp.davinci.dto.viewDto.ViewExecuteParam,edp.davinci.model.User,java.lang.String)>
+   <edp.davinci.service.impl.WidgetServiceImpl: java.io.File writeExcel(java.util.Set,edp.davinci.dto.projectDto.ProjectDetail,java.util.Map,java.lang.String,edp.davinci.model.User,boolean)>
+    <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <edp.davinci.controller.WidgetController: org.springframework.http.ResponseEntity downloadWidget(java.lang.Long,java.lang.String,edp.davinci.dto.viewDto.ViewExecuteParam,org.springframework.validation.BindingResult,edp.davinci.model.User,javax.servlet.http.HttpServletRequest)>
+  <edp.davinci.service.impl.WidgetServiceImpl: java.lang.String generationFile(java.lang.Long,edp.davinci.dto.viewDto.ViewExecuteParam,edp.davinci.model.User,java.lang.String)>
+   <edp.davinci.core.utils.CsvUtils: java.lang.String formatCsvWithFirstAsHeader(java.lang.String,java.lang.String,java.util.List,java.util.List)>
+    <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <edp.davinci.controller.WidgetController: org.springframework.http.ResponseEntity downloadWidget(java.lang.Long,java.lang.String,edp.davinci.dto.viewDto.ViewExecuteParam,org.springframework.validation.BindingResult,edp.davinci.model.User,javax.servlet.http.HttpServletRequest)>
+  <edp.davinci.service.impl.WidgetServiceImpl: java.lang.String generationFile(java.lang.Long,edp.davinci.dto.viewDto.ViewExecuteParam,edp.davinci.model.User,java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+(4) Found vul call chain:
+ <edp.davinci.controller.DisplayController: org.springframework.http.ResponseEntity uploadSlideBGImage(java.lang.Long,org.springframework.web.multipart.MultipartFile,edp.davinci.model.User,javax.servlet.http.HttpServletRequest)>
+  <edp.davinci.service.impl.DisplaySlideServiceImpl: java.lang.String uploadSlideBGImage(java.lang.Long,org.springframework.web.multipart.MultipartFile,edp.davinci.model.User)>
+   <edp.core.utils.FileUtils: java.lang.String upload(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String)>
+    <java.io.File: void <init>(java.lang.String)>
+========================================
+[3] Found sink method:
+ <edp.davinci.dao.DisplayMapper: java.lang.Integer selectMaxNameOrderByName(java.lang.String,java.lang.Long)>
+(1) Found vul call chain:
+ <edp.davinci.controller.DisplayController: org.springframework.http.ResponseEntity copyDisplay(java.lang.Long,edp.davinci.dto.displayDto.DisplayCopy,org.springframework.validation.BindingResult,edp.davinci.model.User,javax.servlet.http.HttpServletRequest)>
+  <edp.davinci.service.impl.DisplayServiceImpl: edp.davinci.model.Display copyDisplay(java.lang.Long,edp.davinci.dto.displayDto.DisplayCopy,edp.davinci.model.User)>
+   <edp.davinci.service.impl.DisplayServiceImpl: java.lang.String getCopyName(java.lang.String,java.lang.Long)>
+    <edp.davinci.dao.DisplayMapper: java.lang.Integer selectMaxNameOrderByName(java.lang.String,java.lang.Long)>
+Cost 35 seconds

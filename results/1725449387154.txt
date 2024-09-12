@@ -1,0 +1,60 @@
+========================================
+[1] Found sink method:
+ <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(1) Found vul call chain:
+ <com.zyc.zdh.controller.ZdhSelfServiceController: com.zyc.zdh.entity.ReturnInfo data_ware_house_export(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)>
+  <com.zyc.zdh.util.DBUtil: java.util.List R5(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[])>
+   <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(2) Found vul call chain:
+ <com.zyc.zdh.controller.ZdhSelfServiceController: com.zyc.zdh.entity.ReturnInfo self_service_execute(java.lang.String,java.lang.String)>
+  <com.zyc.zdh.util.DBUtil: java.util.List R5(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[])>
+   <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+(3) Found vul call chain:
+ <com.zyc.zdh.controller.ZdhEtlController: com.zyc.zdh.entity.ReturnInfo etl_task_schema(java.lang.String,java.lang.String)>
+  <com.zyc.zdh.controller.ZdhEtlController: java.util.List schema(com.zyc.zdh.entity.DataSourcesInfo,java.lang.String)>
+   <com.zyc.zdh.util.DBUtil: java.util.List R4(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[])>
+    <java.sql.Connection: java.sql.PreparedStatement prepareStatement(java.lang.String)>
+========================================
+[2] Found sink method:
+ <org.springframework.util.FileCopyUtils: int copy(java.io.InputStream,java.io.OutputStream)>
+(1) Found vul call chain:
+ <com.zyc.zdh.controller.digitalmarket.CrowdFileController: com.zyc.zdh.entity.ReturnInfo crowd_file_add(com.zyc.zdh.entity.CrowdFileInfo,org.springframework.web.multipart.MultipartFile[])>
+  <org.springframework.util.FileCopyUtils: int copy(java.io.InputStream,java.io.OutputStream)>
+(2) Found vul call chain:
+ <com.zyc.zdh.controller.ZdhEtlController: com.zyc.zdh.entity.ReturnInfo etl_task_add_file(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)>
+  <org.springframework.util.FileCopyUtils: int copy(java.io.InputStream,java.io.OutputStream)>
+(3) Found vul call chain:
+ <com.zyc.zdh.controller.ZdhUnstructureController: com.zyc.zdh.entity.ReturnInfo etl_task_unstructure_upload(com.zyc.zdh.entity.EtlTaskUnstructureInfo,org.springframework.web.multipart.MultipartFile[])>
+  <org.springframework.util.FileCopyUtils: int copy(java.io.InputStream,java.io.OutputStream)>
+========================================
+[3] Found sink method:
+ <java.net.URL: java.net.URLConnection openConnection()>
+(1) Found vul call chain:
+ <com.zyc.zdh.controller.ZdhUnstructureController: com.zyc.zdh.entity.ReturnInfo etl_task_unstructure_upload(com.zyc.zdh.entity.EtlTaskUnstructureInfo,org.springframework.web.multipart.MultipartFile[])>
+  <com.zyc.zdh.job.JobCommon2: void writeFtp(com.zyc.zdh.entity.Dsi_Info,com.zyc.zdh.entity.EtlTaskUnstructureInfo,byte[])>
+   <java.net.URL: java.net.URLConnection openConnection()>
+========================================
+[4] Found sink method:
+ <java.sql.DriverManager: java.sql.Connection getConnection(java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.zyc.zdh.controller.ZdhDataSourcesController: com.zyc.zdh.entity.ReturnInfo test_connect(com.zyc.zdh.entity.DataSourcesInfo)>
+  <com.zyc.zdh.util.DBUtil: java.util.List R3(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Object[])>
+   <com.zyc.zdh.util.DBUtil: java.sql.Connection getConnection(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <java.sql.DriverManager: java.sql.Connection getConnection(java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[5] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.zyc.zdh.controller.ZdhUnstructureController: com.zyc.zdh.entity.ReturnInfo etl_task_unstructure_upload(com.zyc.zdh.entity.EtlTaskUnstructureInfo,org.springframework.web.multipart.MultipartFile[])>
+  <com.zyc.zdh.job.JobCommon2: void writeHdfs(com.zyc.zdh.entity.Dsi_Info,com.zyc.zdh.entity.EtlTaskUnstructureInfo,byte[])>
+   <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <com.zyc.zdh.controller.digitalmarket.CrowdFileController: com.zyc.zdh.entity.ReturnInfo crowd_file_add(com.zyc.zdh.entity.CrowdFileInfo,org.springframework.web.multipart.MultipartFile[])>
+  <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <com.zyc.zdh.controller.ZdhUnstructureController: com.zyc.zdh.entity.ReturnInfo etl_task_unstructure_upload(com.zyc.zdh.entity.EtlTaskUnstructureInfo,org.springframework.web.multipart.MultipartFile[])>
+  <java.io.File: void <init>(java.lang.String)>
+(4) Found vul call chain:
+ <com.zyc.zdh.controller.ZdhEtlController: com.zyc.zdh.entity.ReturnInfo etl_task_add_file(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest)>
+  <java.io.File: void <init>(java.lang.String)>
+Cost 31 seconds

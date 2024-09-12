@@ -1,0 +1,34 @@
+========================================
+[1] Found sink method:
+ <cn.niter.forum.mapper.UserMapper: java.util.List selectByExampleWithRowbounds(cn.niter.forum.model.UserExample,org.apache.ibatis.session.RowBounds)>
+(1) Found vul call chain:
+ <cn.niter.forum.controller.JumpController: java.lang.String jump(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model,java.lang.String,java.lang.String)>
+  <cn.niter.forum.service.UserService: cn.niter.forum.dto.PaginationDTO list(cn.niter.forum.dto.UserQueryDTO)>
+   <cn.niter.forum.mapper.UserMapper: java.util.List selectByExampleWithRowbounds(cn.niter.forum.model.UserExample,org.apache.ibatis.session.RowBounds)>
+(2) Found vul call chain:
+ <cn.niter.forum.api.UserApi: java.lang.Object commentList(java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+  <cn.niter.forum.service.UserService: cn.niter.forum.dto.PaginationDTO list(cn.niter.forum.dto.UserQueryDTO)>
+   <cn.niter.forum.mapper.UserMapper: java.util.List selectByExampleWithRowbounds(cn.niter.forum.model.UserExample,org.apache.ibatis.session.RowBounds)>
+========================================
+[2] Found sink method:
+ <java.net.URL: java.net.URLConnection openConnection()>
+(1) Found vul call chain:
+ <cn.niter.forum.controller.FileController: java.util.Map uploadAvatar(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)>
+  <cn.niter.forum.provider.QCloudProvider: java.lang.String uploadAvatar(java.io.InputStream,java.lang.String,cn.niter.forum.dto.UserDTO,java.lang.String,java.lang.Long)>
+   <cn.niter.forum.provider.QCloudProvider: java.lang.String uploadUrltoBucket(java.lang.String,java.lang.String,java.lang.String,cn.niter.forum.dto.UserDTO,java.lang.String)>
+    <java.net.URL: java.net.URLConnection openConnection()>
+========================================
+[3] Found sink method:
+ <cn.niter.forum.mapper.TalkMapper: java.util.List selectByExampleWithRowbounds(cn.niter.forum.model.TalkExample,org.apache.ibatis.session.RowBounds)>
+(1) Found vul call chain:
+ <cn.niter.forum.api.TalkApi: java.lang.Object commentList(javax.servlet.http.HttpServletRequest,java.lang.Long,java.lang.Integer,java.lang.Long,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+  <cn.niter.forum.service.TalkService: cn.niter.forum.dto.PaginationDTO list(cn.niter.forum.dto.TalkQueryDTO,cn.niter.forum.dto.UserDTO)>
+   <cn.niter.forum.mapper.TalkMapper: java.util.List selectByExampleWithRowbounds(cn.niter.forum.model.TalkExample,org.apache.ibatis.session.RowBounds)>
+========================================
+[4] Found sink method:
+ <cn.niter.forum.mapper.CommentMapper: java.util.List selectByExampleWithRowbounds(cn.niter.forum.model.CommentExample,org.apache.ibatis.session.RowBounds)>
+(1) Found vul call chain:
+ <cn.niter.forum.api.CommentApi: java.lang.Object commentList(java.lang.Long,java.lang.Long,java.lang.Integer,java.lang.Long,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String)>
+  <cn.niter.forum.service.CommentService: cn.niter.forum.dto.PaginationDTO list(cn.niter.forum.dto.CommentQueryDTO)>
+   <cn.niter.forum.mapper.CommentMapper: java.util.List selectByExampleWithRowbounds(cn.niter.forum.model.CommentExample,org.apache.ibatis.session.RowBounds)>
+Cost 27 seconds

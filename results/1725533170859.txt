@@ -1,0 +1,90 @@
+========================================
+[1] Found sink method:
+ <cn.itechyou.cms.dao.ArchivesMapper: int insertAdditional(java.lang.String,java.util.Map)>
+(1) Found vul call chain:
+ <cn.itechyou.cms.controller.FrontController: java.lang.String input(org.springframework.ui.Model,java.util.Map)>
+  <cn.itechyou.cms.service.impl.ArchivesServiceImpl: int save(cn.itechyou.cms.entity.Archives,java.lang.String,java.util.Map)>
+   <cn.itechyou.cms.dao.ArchivesMapper: int insertAdditional(java.lang.String,java.util.Map)>
+========================================
+[2] Found sink method:
+ <cn.itechyou.cms.dao.DatabaseMapper: java.util.Map showTableStruct(java.lang.String)>
+(1) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.DataBaseController: cn.itechyou.cms.common.ResponseResult showStruct(org.springframework.ui.Model,java.lang.String)>
+  <cn.itechyou.cms.service.impl.DatabaseServiceImpl: java.lang.String showStruct(java.lang.String)>
+   <cn.itechyou.cms.dao.DatabaseMapper: java.util.Map showTableStruct(java.lang.String)>
+========================================
+[3] Found sink method:
+ <cn.itechyou.cms.dao.ArchivesMapper: java.util.Map queryArticleById(java.util.Map)>
+(1) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.ArchivesController: java.lang.String toEdit(org.springframework.ui.Model,java.lang.String,java.lang.String)>
+  <cn.itechyou.cms.service.impl.ArchivesServiceImpl: java.util.Map queryArticleById(java.util.Map)>
+   <cn.itechyou.cms.dao.ArchivesMapper: java.util.Map queryArticleById(java.util.Map)>
+(2) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.ArchivesController: java.lang.String delete(org.springframework.ui.Model,java.lang.String,java.lang.String)>
+  <cn.itechyou.cms.service.impl.ArchivesServiceImpl: java.util.Map queryArticleById(java.util.Map)>
+   <cn.itechyou.cms.dao.ArchivesMapper: java.util.Map queryArticleById(java.util.Map)>
+========================================
+[4] Found sink method:
+ <cn.itechyou.cms.dao.ArchivesMapper: int deleteAdditional(java.util.Map)>
+(1) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.ArchivesController: java.lang.String delete(org.springframework.ui.Model,java.lang.String,java.lang.String)>
+  <cn.itechyou.cms.service.impl.ArchivesServiceImpl: int delete(java.lang.String,java.util.Map)>
+   <cn.itechyou.cms.dao.ArchivesMapper: int deleteAdditional(java.util.Map)>
+========================================
+[5] Found sink method:
+ <cn.itechyou.cms.dao.ArchivesMapper: int updateAdditional(java.lang.String,java.util.Map,java.lang.String)>
+(1) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.ArchivesController: java.lang.String edit(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,java.util.Map)>
+  <cn.itechyou.cms.service.impl.ArchivesServiceImpl: int update(cn.itechyou.cms.entity.Archives,java.lang.String,java.util.Map,java.lang.String)>
+   <cn.itechyou.cms.dao.ArchivesMapper: int updateAdditional(java.lang.String,java.util.Map,java.lang.String)>
+========================================
+[6] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.UploadController: void upload(org.springframework.web.multipart.MultipartFile)>
+  <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.UploadController: void editormdPic(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+  <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.TemplateController: java.lang.String save(cn.itechyou.cms.vo.TemplateVo)>
+  <java.io.File: void <init>(java.lang.String)>
+========================================
+[7] Found sink method:
+ <cn.itechyou.cms.dao.FormMapper: void alterTableChangeColumn(java.lang.String)>
+(1) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.FieldController: java.lang.String edit(org.springframework.ui.Model,cn.itechyou.cms.entity.Field)>
+  <cn.itechyou.cms.service.impl.FieldServiceImpl: int update(cn.itechyou.cms.entity.Field,cn.itechyou.cms.entity.Form,cn.itechyou.cms.entity.Field)>
+   <cn.itechyou.cms.dao.FormMapper: void alterTableChangeColumn(java.lang.String)>
+========================================
+[8] Found sink method:
+ <cn.itechyou.cms.dao.FormMapper: void renameTable(java.util.Map)>
+(1) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.FormController: java.lang.String edit(org.springframework.ui.Model,cn.itechyou.cms.entity.Form)>
+  <cn.itechyou.cms.service.impl.FormServiceImpl: int update(cn.itechyou.cms.entity.Form,cn.itechyou.cms.entity.Form)>
+   <cn.itechyou.cms.dao.FormMapper: void renameTable(java.util.Map)>
+========================================
+[9] Found sink method:
+ <cn.itechyou.cms.dao.ArchivesMapper: java.util.List queryListByPage(java.util.Map)>
+(1) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.ArchivesController: java.lang.String toIndex(org.springframework.ui.Model,cn.itechyou.cms.common.SearchEntity)>
+  <cn.itechyou.cms.service.impl.ArchivesServiceImpl: com.github.pagehelper.PageInfo queryListByPage(cn.itechyou.cms.common.SearchEntity)>
+   <cn.itechyou.cms.dao.ArchivesMapper: java.util.List queryListByPage(java.util.Map)>
+(2) Found vul call chain:
+ <cn.itechyou.cms.controller.FrontController: void list(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)>
+  <cn.itechyou.cms.taglib.ParseEngine: java.lang.String parsePageList(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)>
+   <cn.itechyou.cms.taglib.tags.PageListTag: java.lang.String parse(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)>
+    <cn.itechyou.cms.dao.ArchivesMapper: java.util.List queryListByPage(java.util.Map)>
+========================================
+[10] Found sink method:
+ <cn.itechyou.cms.dao.ArchivesMapper: java.util.List queryListByKeywords(java.util.Map)>
+(1) Found vul call chain:
+ <cn.itechyou.cms.controller.FrontController: void search(org.springframework.ui.Model,cn.itechyou.cms.common.SearchEntity)>
+  <cn.itechyou.cms.taglib.ParseEngine: java.lang.String parsePageList(java.lang.String,cn.itechyou.cms.common.SearchEntity)>
+   <cn.itechyou.cms.taglib.tags.PageListTag: java.lang.String parse(java.lang.String,cn.itechyou.cms.common.SearchEntity)>
+    <cn.itechyou.cms.dao.ArchivesMapper: java.util.List queryListByKeywords(java.util.Map)>
+(2) Found vul call chain:
+ <cn.itechyou.cms.controller.admin.SearchController: java.lang.String doSearch(org.springframework.ui.Model,cn.itechyou.cms.common.SearchEntity)>
+  <cn.itechyou.cms.service.impl.ArchivesServiceImpl: com.github.pagehelper.PageInfo queryListByKeywords(cn.itechyou.cms.common.SearchEntity)>
+   <cn.itechyou.cms.dao.ArchivesMapper: java.util.List queryListByKeywords(java.util.Map)>
+Cost 31 seconds

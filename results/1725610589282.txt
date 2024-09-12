@@ -1,0 +1,54 @@
+========================================
+[1] Found sink method:
+ <wang.miansen.roothub.modules.post.dao.PostDao: int countLike(java.lang.String)>
+(1) Found vul call chain:
+ <wang.miansen.roothub.modules.sys.controller.front.IndexController: java.lang.String search(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer)>
+  <wang.miansen.roothub.modules.post.service.impl.PostServiceImpl: wang.miansen.roothub.common.beans.Page pageLike(java.lang.Integer,java.lang.Integer,java.lang.String)>
+   <wang.miansen.roothub.modules.post.dao.PostDao: int countLike(java.lang.String)>
+========================================
+[2] Found sink method:
+ <wang.miansen.roothub.modules.comment.dao.CommentDao: java.util.List selectAllForAdmin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)>
+(1) Found vul call chain:
+ <wang.miansen.roothub.modules.comment.controller.CommentAdminController: java.lang.String list(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,org.springframework.ui.Model)>
+  <wang.miansen.roothub.modules.comment.service.impl.CommentServiceImpl: wang.miansen.roothub.common.beans.Page pageForAdmin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)>
+   <wang.miansen.roothub.modules.comment.dao.CommentDao: java.util.List selectAllForAdmin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)>
+========================================
+[3] Found sink method:
+ <wang.miansen.roothub.modules.post.dao.PostDao: java.util.List selectByLike(java.lang.String,java.lang.Integer,java.lang.Integer)>
+(1) Found vul call chain:
+ <wang.miansen.roothub.modules.sys.controller.front.IndexController: java.lang.String search(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer)>
+  <wang.miansen.roothub.modules.post.service.impl.PostServiceImpl: wang.miansen.roothub.common.beans.Page pageLike(java.lang.Integer,java.lang.Integer,java.lang.String)>
+   <wang.miansen.roothub.modules.post.dao.PostDao: java.util.List selectByLike(java.lang.String,java.lang.Integer,java.lang.Integer)>
+========================================
+[4] Found sink method:
+ <wang.miansen.roothub.modules.node.dao.NodeDao: java.util.List listForAdmin(java.lang.String,java.lang.Integer,java.lang.Integer)>
+(1) Found vul call chain:
+ <wang.miansen.roothub.modules.node.controller.admin.NodeAdminController: java.lang.String parentNode(java.lang.String,java.lang.Integer,org.springframework.ui.Model)>
+  <wang.miansen.roothub.modules.node.service.impl.NodeServiceImpl: wang.miansen.roothub.common.beans.Page pageForAdmin(java.lang.String,java.lang.Integer,java.lang.Integer)>
+   <wang.miansen.roothub.modules.node.dao.NodeDao: java.util.List listForAdmin(java.lang.String,java.lang.Integer,java.lang.Integer)>
+(2) Found vul call chain:
+ <wang.miansen.roothub.modules.node.controller.admin.NodeAdminController: java.lang.String list(java.lang.String,java.lang.Integer,org.springframework.ui.Model)>
+  <wang.miansen.roothub.modules.node.service.impl.NodeServiceImpl: wang.miansen.roothub.common.beans.Page pageForAdmin(java.lang.String,java.lang.Integer,java.lang.Integer)>
+   <wang.miansen.roothub.modules.node.dao.NodeDao: java.util.List listForAdmin(java.lang.String,java.lang.Integer,java.lang.Integer)>
+========================================
+[5] Found sink method:
+ <wang.miansen.roothub.modules.node.dao.NodeDao: int count(java.lang.String)>
+(1) Found vul call chain:
+ <wang.miansen.roothub.modules.node.controller.admin.NodeAdminController: java.lang.String list(java.lang.String,java.lang.Integer,org.springframework.ui.Model)>
+  <wang.miansen.roothub.modules.node.service.impl.NodeServiceImpl: wang.miansen.roothub.common.beans.Page pageForAdmin(java.lang.String,java.lang.Integer,java.lang.Integer)>
+   <wang.miansen.roothub.modules.node.service.impl.NodeServiceImpl: int count(java.lang.String)>
+    <wang.miansen.roothub.modules.node.dao.NodeDao: int count(java.lang.String)>
+(2) Found vul call chain:
+ <wang.miansen.roothub.modules.node.controller.admin.NodeAdminController: java.lang.String parentNode(java.lang.String,java.lang.Integer,org.springframework.ui.Model)>
+  <wang.miansen.roothub.modules.node.service.impl.NodeServiceImpl: wang.miansen.roothub.common.beans.Page pageForAdmin(java.lang.String,java.lang.Integer,java.lang.Integer)>
+   <wang.miansen.roothub.modules.node.service.impl.NodeServiceImpl: int count(java.lang.String)>
+    <wang.miansen.roothub.modules.node.dao.NodeDao: int count(java.lang.String)>
+========================================
+[6] Found sink method:
+ <wang.miansen.roothub.modules.comment.dao.CommentDao: int countAllForAdmin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <wang.miansen.roothub.modules.comment.controller.CommentAdminController: java.lang.String list(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,org.springframework.ui.Model)>
+  <wang.miansen.roothub.modules.comment.service.impl.CommentServiceImpl: wang.miansen.roothub.common.beans.Page pageForAdmin(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)>
+   <wang.miansen.roothub.modules.comment.service.impl.CommentServiceImpl: int countAllForAdmin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+    <wang.miansen.roothub.modules.comment.dao.CommentDao: int countAllForAdmin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+Cost 32 seconds

@@ -1,0 +1,170 @@
+========================================
+[1] Found sink method:
+ <com.j2eefast.common.config.mapper.SysLangMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.common.config.entity.SysLangEntity,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysLangController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map,com.j2eefast.common.config.entity.SysLangEntity)>
+  <com.j2eefast.common.config.service.SysLangService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map,com.j2eefast.common.config.entity.SysLangEntity)>
+   <com.j2eefast.common.config.mapper.SysLangMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.common.config.entity.SysLangEntity,java.lang.String)>
+========================================
+[2] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysMsgPushMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findUserPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.sys.entity.SysMsgPushEntity,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysMsgPushController: com.j2eefast.common.core.utils.ResponseData userList(java.util.Map,com.j2eefast.framework.sys.entity.SysMsgPushEntity)>
+  <com.j2eefast.framework.sys.service.SysMsgPushService: com.j2eefast.common.core.utils.PageUtil findUserPage(java.util.Map,com.j2eefast.framework.sys.entity.SysMsgPushEntity)>
+   <com.j2eefast.framework.sys.mapper.SysMsgPushMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findUserPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.sys.entity.SysMsgPushEntity,java.lang.String)>
+========================================
+[3] Found sink method:
+ <com.j2eefast.framework.log.mapper.SysOperLogMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysLogController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map)>
+  <com.j2eefast.framework.log.service.SysOperLogSerice: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map)>
+   <com.j2eefast.framework.log.mapper.SysOperLogMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[4] Found sink method:
+ <com.j2eefast.framework.log.mapper.SysLoginInfoMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysLoginInfoController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map)>
+  <com.j2eefast.framework.log.service.SysLoginInfoSerice: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map)>
+   <com.j2eefast.framework.log.mapper.SysLoginInfoMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[5] Found sink method:
+ <com.j2eefast.flowable.bpm.mapper.BpmTaskMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findApplyingTasksPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.flowable.bpm.controller.TaskController: com.j2eefast.common.core.utils.ResponseData applayingList(java.util.Map)>
+  <com.j2eefast.flowable.bpm.service.impl.FlowableTaskServiceImpl: com.j2eefast.common.core.utils.PageUtil findApplyingTasksPage(java.util.Map)>
+   <com.j2eefast.flowable.bpm.mapper.BpmTaskMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findApplyingTasksPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[6] Found sink method:
+ <com.j2eefast.flowable.bpm.mapper.BpmTaskMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findApplyedTasksPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.flowable.bpm.controller.TaskController: com.j2eefast.common.core.utils.ResponseData applyedList(java.util.Map)>
+  <com.j2eefast.flowable.bpm.service.impl.FlowableTaskServiceImpl: com.j2eefast.common.core.utils.PageUtil findApplyedTasksPage(java.util.Map)>
+   <com.j2eefast.flowable.bpm.mapper.BpmTaskMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findApplyedTasksPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[7] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysMsgPushMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.sys.entity.SysMsgPushEntity,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysMsgPushController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map,com.j2eefast.framework.sys.entity.SysMsgPushEntity)>
+  <com.j2eefast.framework.sys.service.SysMsgPushService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map,com.j2eefast.framework.sys.entity.SysMsgPushEntity)>
+   <com.j2eefast.framework.sys.mapper.SysMsgPushMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.sys.entity.SysMsgPushEntity,java.lang.String)>
+========================================
+[8] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysUserMapper: java.util.List findList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Long[],java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysUserController: com.j2eefast.common.core.utils.ResponseData export(java.util.Map)>
+  <com.j2eefast.framework.sys.service.SysUserService: java.util.List findList(java.util.Map)>
+   <com.j2eefast.framework.sys.mapper.SysUserMapper: java.util.List findList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Long[],java.lang.String)>
+(2) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysUserController: com.j2eefast.common.core.utils.ResponseData delete(java.lang.Long[])>
+  <com.j2eefast.framework.sys.service.SysUserService: void checkDataScope(java.lang.Long[])>
+   <com.j2eefast.framework.sys.service.SysUserService: java.util.List findList(java.util.Map)>
+    <com.j2eefast.framework.sys.mapper.SysUserMapper: java.util.List findList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Long[],java.lang.String)>
+========================================
+[9] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysRoleMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysUserController: com.j2eefast.common.core.utils.ResponseData authRoleList(java.util.Map)>
+  <com.j2eefast.framework.sys.service.SysRoleService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map)>
+   <com.j2eefast.framework.sys.mapper.SysRoleMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String)>
+(2) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysRoleController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map)>
+  <com.j2eefast.framework.sys.service.SysRoleService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map)>
+   <com.j2eefast.framework.sys.mapper.SysRoleMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[10] Found sink method:
+ <com.j2eefast.flowable.bpm.mapper.ProcessInstanceMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.flowable.bpm.controller.ProcessController: com.j2eefast.common.core.utils.ResponseData myProcessList(java.util.Map)>
+  <com.j2eefast.flowable.bpm.service.impl.FlowableProcessInstanceServiceImpl: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map)>
+   <com.j2eefast.flowable.bpm.mapper.ProcessInstanceMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(2) Found vul call chain:
+ <com.j2eefast.flowable.bpm.controller.ProcessInstanceController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map)>
+  <com.j2eefast.flowable.bpm.service.impl.FlowableProcessInstanceServiceImpl: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map)>
+   <com.j2eefast.flowable.bpm.mapper.ProcessInstanceMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[11] Found sink method:
+ <com.j2eefast.flowable.bpm.mapper.ProcessDefinitionMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.flowable.bpm.controller.ProcdefController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map)>
+  <com.j2eefast.flowable.bpm.service.ProcdefService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map)>
+   <com.j2eefast.flowable.bpm.mapper.ProcessDefinitionMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(2) Found vul call chain:
+ <com.j2eefast.flowable.bpm.controller.DeModelController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map)>
+  <com.j2eefast.flowable.bpm.service.ProcdefService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map)>
+   <com.j2eefast.flowable.bpm.mapper.ProcessDefinitionMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[12] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysMsgCommentsMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.sys.entity.SysMsgCommentsEntity,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysMsgPushController: com.j2eefast.common.core.utils.ResponseData commetList(java.util.Map,com.j2eefast.framework.sys.entity.SysMsgCommentsEntity)>
+  <com.j2eefast.framework.sys.service.SysMsgCommentsService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map,com.j2eefast.framework.sys.entity.SysMsgCommentsEntity)>
+   <com.j2eefast.framework.sys.mapper.SysMsgCommentsMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.sys.entity.SysMsgCommentsEntity,java.lang.String)>
+========================================
+[13] Found sink method:
+ <com.j2eefast.flowable.bpm.mapper.BpmTaskFromMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.flowable.bpm.controller.ProcessController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map)>
+  <com.j2eefast.flowable.bpm.service.BpmTaskFromService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map)>
+   <com.j2eefast.flowable.bpm.mapper.BpmTaskFromMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[14] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysCompMapper: java.util.List getDeptList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Long[],java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysCompController: java.util.List list(java.util.Map)>
+  <com.j2eefast.framework.sys.service.SysCompService: java.util.List findList(java.util.Map)>
+   <com.j2eefast.framework.sys.service.SysCompService: java.util.List getDeptList(java.util.Map)>
+    <com.j2eefast.framework.sys.mapper.SysCompMapper: java.util.List getDeptList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Long[],java.lang.String)>
+(2) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysDeptController: java.util.List list(java.util.Map)>
+  <com.j2eefast.framework.sys.service.SysCompService: java.util.List getDeptList(java.util.Map)>
+   <com.j2eefast.framework.sys.mapper.SysCompMapper: java.util.List getDeptList(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Long[],java.lang.String)>
+========================================
+[15] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysTenantMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.sys.entity.SysTenantEntity,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysTenantController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map,com.j2eefast.framework.sys.entity.SysTenantEntity)>
+  <com.j2eefast.framework.sys.service.SysTenantService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map,com.j2eefast.framework.sys.entity.SysTenantEntity)>
+   <com.j2eefast.framework.sys.mapper.SysTenantMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.sys.entity.SysTenantEntity,java.lang.String)>
+========================================
+[16] Found sink method:
+ <com.j2eefast.framework.quartz.mapper.SysJobLogMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.quartz.entity.SysJobLogEntity)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysJobLogController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map,com.j2eefast.framework.quartz.entity.SysJobLogEntity)>
+  <com.j2eefast.framework.quartz.service.SysJobLogService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map,com.j2eefast.framework.quartz.entity.SysJobLogEntity)>
+   <com.j2eefast.framework.quartz.mapper.SysJobLogMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.quartz.entity.SysJobLogEntity)>
+========================================
+[17] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysUserMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysUserController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map)>
+  <com.j2eefast.framework.sys.service.SysUserService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map)>
+   <com.j2eefast.framework.sys.mapper.SysUserMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[18] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysUreportFileMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.sys.entity.SysUreportFileEntity,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysUreportFileController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map,com.j2eefast.framework.sys.entity.SysUreportFileEntity)>
+  <com.j2eefast.framework.sys.service.SysUreportFileService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map,com.j2eefast.framework.sys.entity.SysUreportFileEntity)>
+   <com.j2eefast.framework.sys.mapper.SysUreportFileMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,com.j2eefast.framework.sys.entity.SysUreportFileEntity,java.lang.String)>
+========================================
+[19] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysUserMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findUnallocatedList(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysRoleController: com.j2eefast.common.core.utils.ResponseData unallocatedList(java.util.Map)>
+  <com.j2eefast.framework.sys.service.SysUserService: com.j2eefast.common.core.utils.PageUtil findUnallocatedList(java.util.Map)>
+   <com.j2eefast.framework.sys.mapper.SysUserMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findUnallocatedList(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[20] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysPostMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysPostController: com.j2eefast.common.core.utils.ResponseData list(java.util.Map)>
+  <com.j2eefast.framework.sys.service.SysPostService: com.j2eefast.common.core.utils.PageUtil findPage(java.util.Map)>
+   <com.j2eefast.framework.sys.mapper.SysPostMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findPage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+========================================
+[21] Found sink method:
+ <com.j2eefast.framework.sys.mapper.SysUserMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findUserByRolePage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+(1) Found vul call chain:
+ <com.j2eefast.framework.sys.controller.SysRoleController: com.j2eefast.common.core.utils.ResponseData authUserList(java.util.Map)>
+  <com.j2eefast.framework.sys.service.SysUserService: com.j2eefast.common.core.utils.PageUtil findUserByRolePage(java.util.Map)>
+   <com.j2eefast.framework.sys.mapper.SysUserMapper: com.baomidou.mybatisplus.extension.plugins.pagination.Page findUserByRolePage(com.baomidou.mybatisplus.core.metadata.IPage,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+Cost 85 seconds

@@ -1,0 +1,3060 @@
+<cms.web.action.staff.ACLManageAction: java.lang.String addRoles(org.springframework.ui.ModelMap,cms.bean.staff.SysRoles,java.lang.String[])>
+<cms.web.action.common.TopicFormAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String deletePrivateMessage(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.forumCode.ForumCodeManageAction: java.lang.String edit(org.springframework.ui.ModelMap,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserManageAction: java.lang.String allComment(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.TemplateManageAction: java.lang.String directoryRename(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.QuestionAction: java.lang.String allAuditQuestion(cms.bean.PageForm,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.UserFormManageAction: java.lang.String verification(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String answerReplyListUI(org.springframework.ui.ModelMap,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TopicAction: java.lang.String allAuditReply(cms.bean.PageForm,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.AnswerManageAction: java.lang.String edit(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String replyListUI(org.springframework.ui.ModelMap,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.ForumManageAction: java.lang.String editUI(java.lang.Integer,java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.CommentFormAction: java.lang.String editReply(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.FileUtil: java.lang.String getName(java.lang.String)>
+<cms.web.action.message.SystemNotifyValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.web.action.staff.StaffManageAction: java.lang.String addStaff(org.springframework.ui.ModelMap,cms.bean.staff.SysUsers,java.lang.String[],java.lang.String)>
+<cms.web.action.forumCode.ForumCodeManageAction: java.lang.String forumSourceUI(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.UserFormManageAction: java.lang.String register(org.springframework.ui.ModelMap,cms.bean.user.User,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String updateAvatar(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.favorite.FavoriteAction: java.lang.String questionFavoriteList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String privateMessageChatList(org.springframework.ui.ModelMap,java.lang.Integer,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String deleteLike(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.like.LikeAction: java.lang.String topicLikeList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TopicManageAction: java.lang.String edit(org.springframework.ui.ModelMap,java.lang.Long,java.lang.Long,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.Integer,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserManageAction: java.lang.String allAuditAnswerReply(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.FileUtil: java.lang.String getFullPath(java.lang.String)>
+<cms.web.action.AdminManageAction: java.lang.String loginUI(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<org.springframework.context.support.AbstractMessageSource: java.lang.String getDefaultMessage(org.springframework.context.MessageSourceResolvable,java.util.Locale)>
+<cms.web.action.common.HomeManageAction: java.lang.String deleteFavorite(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.help.HelpTypeManageAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.forumCode.ForumCodeManage: java.util.List forumCodeNodeList(java.lang.String)>
+<cms.web.action.common.ThirdPartyFormAction: void createUserInfo(java.lang.String,java.lang.String,java.util.Map,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.AnswerManageAction: java.lang.String editAnswerReply(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.CommentFormAction: java.lang.String addQuote(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.LayoutManageAction: java.lang.String checkUrlName(cms.bean.template.Layout,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserManageAction: java.lang.String addUI(org.springframework.ui.ModelMap,cms.bean.user.User,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.payment.PaymentLogAction: java.lang.String execute(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.PaymentFormAction: java.lang.String payment(org.springframework.ui.ModelMap,org.springframework.web.servlet.mvc.support.RedirectAttributes,java.lang.Integer,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserAction: java.lang.String search(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.platformShare.QuestionRewardPlatformShareAction: java.lang.String execute(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.lucene.TopicLuceneManage: cms.bean.QueryResult findIndexByCondition(int,int,java.lang.String,java.lang.Long,java.lang.String,java.util.Date,java.util.Date,java.lang.Integer,int)>
+<cms.web.action.thumbnail.ThumbnailManage: void createImage(java.io.InputStream,java.lang.String,java.lang.String,int,int)>
+<cms.web.action.help.HelpManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.data.DataBaseManageAction: java.lang.String reset(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.ColumnManageAction: java.lang.String queryColumn(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String topicFavoriteList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.TemplateManageAction: org.springframework.http.ResponseEntity templateDownload(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.message.PrivateMessageManageAction: java.lang.String reductionPrivateMessage(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String updatePhoneBinding_2UI(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String followList(org.springframework.ui.ModelMap,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TopicAction: java.lang.String execute(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.Boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.FileUtil: boolean validateFileName(java.lang.String)>
+<cms.web.action.membershipCard.MembershipCardManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.UserFormManageAction: java.lang.String findPassWord_step2(org.springframework.ui.ModelMap,cms.bean.user.User,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.web.action.common.MoreAction: java.lang.String execute(java.lang.String,java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.TopicFormAction: java.lang.String edit(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.GradeValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.web.action.question.QuestionManageAction: java.lang.String deleteAppendQuestion(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.setting.SystemSettingManageAction: java.lang.String deleteUserLoginLogData(org.springframework.ui.ModelMap,java.lang.String)>
+<cms.web.action.common.HomeManageAction: java.lang.String deleteRemind(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserLoginLogAction: java.lang.String execute(org.springframework.ui.ModelMap,java.lang.Long,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.payment.PaymentLogManageAction: java.lang.String paymentVerificationLogPage(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Integer,java.lang.Long,java.lang.String)>
+<cms.utils.Verification: boolean isAmount(java.lang.String)>
+<org.springframework.util.AntPathMatcher$AntPathStringMatcher: boolean matchStrings(java.lang.String,java.util.Map)>
+<cms.web.action.common.PaymentFormAction: java.lang.String paySuccess(org.springframework.ui.ModelMap,java.lang.Integer,java.lang.Integer,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.CommentFormAction: java.lang.String addReply(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.QuestionFormAction: java.lang.String appendQuestion(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.filePackage.FilePackageManageAction: java.lang.String deleteExport(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.LayoutAction: java.lang.String execute(java.lang.String,cms.bean.PageForm,org.springframework.ui.ModelMap)>
+<cms.web.action.template.LayoutManageAction: java.lang.String editLayoutCode(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.QuestionManageAction: java.lang.String appendQuestion(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.CommentManageAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.Long[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.forumCode.ForumCodeManage: java.util.List readForumCodeFile(java.lang.String)>
+<cms.web.action.template.ResourceAction: java.lang.String execute(java.lang.String,cms.bean.PageForm,org.springframework.ui.ModelMap)>
+<cms.web.action.thirdParty.ThirdPartyManage: cms.bean.thirdParty.WeiXinAccessToken queryWeiXinAccessToken(java.lang.String,java.lang.String,java.lang.String)>
+<cms.web.action.template.ResourceManageAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.QuestionFormAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.TemplateManageAction: java.lang.String importTemplateList(org.springframework.ui.ModelMap)>
+<cms.web.action.template.ForumAction: java.lang.String execute(java.lang.String,java.lang.String,cms.bean.PageForm,org.springframework.ui.ModelMap)>
+<cms.web.action.payment.PaymentLogManageAction: java.lang.String addUI(org.springframework.ui.ModelMap,java.lang.String,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.membershipCard.MembershipCardManageAction: java.lang.String editUI(org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.TemplateManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.template.Templates,org.springframework.validation.BindingResult,java.lang.String,org.springframework.web.multipart.MultipartHttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.CommentManageAction: java.lang.String addQuote(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String privateMessageList(org.springframework.ui.ModelMap,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.thirdParty.ThirdPartyLoginInterfaceManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.thirdParty.ThirdPartyLoginInterface,org.springframework.validation.BindingResult,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.CommentManageAction: java.lang.String addReply(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.SearchAction: java.lang.String execute(org.springframework.ui.ModelMap,java.lang.String,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.LayoutManageAction: java.lang.String editLayoutCodeUI(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserGradeManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.user.UserGrade,org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.help.HelpManageAction: java.lang.String searchHelpPage(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.String)>
+<cms.web.action.template.TemplateValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.web.action.staff.StaffLoginLogAction: java.lang.String execute(org.springframework.ui.ModelMap,java.lang.String,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.upgrade.UpgradeManageAction: java.lang.String queryUpgrade(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TopicManageAction: java.lang.String view(java.lang.Long,java.lang.Long,org.springframework.ui.ModelMap,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.sms.SmsManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.sms.SmsInterface,org.springframework.validation.BindingResult,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.WebUtil: boolean isWeChatBrowser(javax.servlet.http.HttpServletRequest)>
+<cms.web.action.question.QuestionManage: java.lang.String generateFileNumber(java.lang.String,java.lang.Boolean)>
+<cms.web.action.thirdParty.ThirdPartyLoginInterfaceManageAction: java.lang.String addUI(org.springframework.ui.ModelMap,cms.bean.thirdParty.ThirdPartyLoginInterface,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserManageAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.Long[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.TemplateManage: java.lang.String readExample(java.lang.String)>
+<cms.web.action.favorite.FavoriteAction: java.lang.String favoriteList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.Verification: boolean isNumericLettersUnderscore(java.lang.String)>
+<cms.web.action.forumCode.ForumCodeManageAction: java.lang.String sourceUI(java.lang.String,java.lang.String,java.lang.Integer,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.FileUtil: java.lang.String toRelativePath(java.lang.String)>
+<cms.web.action.template.ForumValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<org.springframework.validation.beanvalidation.SpringValidatorAdapter: java.lang.Object getRejectedValue(java.lang.String,javax.validation.ConstraintViolation,org.springframework.validation.BindingResult)>
+<cms.web.action.common.HomeManageAction: java.lang.String addPrivateMessage(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.FileDowloadAction: java.lang.String execute(org.springframework.ui.ModelMap,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.UserFormManageAction: java.lang.String loginUI(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserManageAction: java.lang.String payment(org.springframework.ui.ModelMap,java.lang.Long,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String topicLikeList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.help.HelpTypeValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.web.action.template.ResourceManageAction: java.lang.String newFolder(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.staff.ACLManageAction: java.lang.String editRolesUI(org.springframework.ui.ModelMap,java.lang.String)>
+<cms.web.action.TextFilterManage: java.lang.Object[] filterHtml(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String,cms.bean.setting.EditorTag)>
+<cms.web.action.question.QuestionManageAction: java.lang.String editQuestionUI(org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.setting.SystemSettingValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.web.action.question.QuestionManageAction: java.lang.String editAppendQuestionUI(java.lang.Long,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.CommentManageAction: java.lang.String edit(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.forumCode.ForumCodeManage: java.util.List getForumCodeNode(java.lang.String,java.lang.String)>
+<cms.web.action.template.TemplateManageAction: java.lang.String setTemplate(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TopicAction: java.lang.String allAuditComment(cms.bean.PageForm,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.CommentFormAction: java.lang.String deleteReply(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.help.HelpManageAction: java.lang.String edit(org.springframework.ui.ModelMap,java.lang.Long,java.lang.Long,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.FileUtil: java.lang.String getExtension(java.lang.String)>
+<org.springframework.validation.AbstractErrors: java.lang.String fixedField(java.lang.String)>
+<cms.web.action.template.ResourceManageAction: java.lang.String rename(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.follow.FollowAction: java.lang.String followList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TopicAction: java.lang.String allAuditTopic(cms.bean.PageForm,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.QuestionTagValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.web.action.common.HomeManageAction: java.lang.String receiveRedEnvelopeUI(org.springframework.ui.ModelMap,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TopicManage: java.lang.String generateFileNumber(java.lang.String,java.lang.Boolean)>
+<cms.web.action.links.LinksManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.links.Links,org.springframework.validation.BindingResult,java.lang.Integer,java.lang.String,org.springframework.web.multipart.MultipartFile,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.feedback.FeedbackManageAction: java.lang.String view(org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String userDynamicList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.Verification: boolean isNumeric(java.lang.String)>
+<cms.web.action.staff.StaffManageAction: java.lang.String addStaffUI(org.springframework.ui.ModelMap,cms.bean.staff.SysUsers)>
+<cms.utils.Verification: boolean isNumericLetters(java.lang.String)>
+<cms.web.action.message.SystemNotifyManageAction: java.lang.String reductionSubscriptionSystemNotify(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.ForumManageAction: java.lang.String edit(cms.bean.template.Forum,org.springframework.validation.BindingResult,java.lang.Integer,java.lang.String,java.lang.String,java.lang.Integer[],org.springframework.web.multipart.MultipartHttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.ModelMap,org.springframework.web.servlet.mvc.support.RedirectAttributes)>
+<cms.web.action.question.QuestionAction: java.lang.String allAuditAnswer(cms.bean.PageForm,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.AnswerFormAction: java.lang.String edit(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TopicManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.forumCode.ForumCodeAction: java.lang.String execute(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String SMS_verificationCode(org.springframework.ui.ModelMap,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<org.springframework.validation.beanvalidation.SpringValidatorAdapter: void processConstraintViolations(java.util.Set,org.springframework.validation.Errors)>
+<cms.web.action.common.HomeManageAction: java.lang.String deleteSystemNotify(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.follow.FollowAction: java.lang.String followerList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.TopicFormAction: java.lang.String topicUnhide(org.springframework.ui.ModelMap,java.lang.Long,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.AnswerFormAction: java.lang.String addAnswerReply(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserRoleManageAction: java.lang.String setAsDefault(org.springframework.ui.ModelMap,java.lang.String,java.lang.Boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.ColumnManage: java.util.List columnList(java.lang.String)>
+<cms.web.action.user.UserRoleManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.user.UserRole,java.lang.String,java.lang.String[],org.springframework.validation.BindingResult,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.install.InstallManageAction: void doPost(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.service.user.impl.UserServiceBean: cms.bean.QueryResult findUserByCondition(java.lang.String,java.util.List,int,int,boolean)>
+<cms.web.action.payment.OnlinePaymentInterfaceValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.web.action.template.ResourceManageAction: java.lang.String editFile(java.lang.String,java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserCustomManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.user.UserCustom,java.lang.String,java.lang.String,java.lang.String,java.lang.String[],java.lang.String[],java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserManageAction: java.lang.String allReply(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.service.staff.impl.StaffServiceBean: void deleteUser(java.lang.String,java.lang.String)>
+<cms.web.action.forumCode.ForumCodeAction: java.lang.String queryForumDirectory(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.TemplateManageAction: java.lang.String editUI(org.springframework.ui.ModelMap,java.lang.String)>
+<cms.web.action.template.ForumManageAction: java.lang.String addUI(cms.bean.template.Forum,java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.statistic.PageViewAction: java.lang.String execute(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.AdminAction: java.lang.String home(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserCustomManageAction: java.lang.String editUI(org.springframework.ui.ModelMap,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.ColumnManageAction: java.lang.String edit(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserManageAction: java.lang.String edit(cms.bean.user.User,java.lang.String[],org.springframework.ui.ModelMap,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.RefererCompare: boolean compare(javax.servlet.http.HttpServletRequest,java.lang.String)>
+<cms.web.action.common.HomeManageAction: java.lang.String redEnvelopeAmountDistributionUI(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.AnswerManageAction: java.lang.String addAnswerReply(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.CommentManageAction: java.lang.String editReply(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.WebUtil: java.lang.String parameterEncoded(java.lang.String)>
+<cms.web.action.payment.OnlinePaymentInterfaceManageAction: java.lang.String addUI(org.springframework.ui.ModelMap,cms.bean.payment.OnlinePaymentInterface,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.LayoutManageAction: java.lang.String addUI(org.springframework.ui.ModelMap,cms.bean.template.Layout,java.lang.String)>
+<cms.service.staff.impl.StaffServiceBean: void deleteUsersRoles(java.lang.String)>
+<cms.web.action.user.UserRoleManageAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.Verification: boolean isChineseCharacter(java.lang.String)>
+<cms.web.action.template.ForumManageAction: cms.bean.template.Forum forumExtend(cms.bean.template.Forum,cms.bean.template.Forum,java.lang.String,java.lang.Integer[],java.lang.String,java.util.Map,org.springframework.web.multipart.MultipartHttpServletRequest)>
+<cms.web.action.topic.CommentManageAction: java.lang.String addQuoteUI(org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.TemplateManageAction: java.lang.String deleteExport(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.QuestionAction: java.lang.String execute(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.Boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TopicAction: java.lang.String dynamicImageFavoriteList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.feedback.FeedbackAction: java.lang.String execute(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.redEnvelope.RedEnvelopeAction: java.lang.String redEnvelopeAmountDistributionPage(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.String,java.lang.Long,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserManageAction: java.lang.String allAuditAnswer(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.membershipCard.MembershipCardManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.membershipCard.MembershipCard,org.springframework.validation.BindingResult,java.lang.Long,java.lang.Integer[],java.lang.Long[],java.lang.String[],java.lang.Boolean[],java.lang.String[],java.lang.Integer[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.Integer[],javax.servlet.http.HttpServletRequest)>
+<cms.web.action.message.RemindManageAction: java.lang.String remindList(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.UserFormManageAction: java.lang.String findPassWord_step2_UI(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.Verification: boolean isTime_minute(java.lang.String)>
+<cms.web.action.thumbnail.ThumbnailValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.web.action.staff.ACLManageAction: java.lang.String deleteRoles(org.springframework.ui.ModelMap,java.lang.String)>
+<cms.web.action.setting.SystemSettingManageAction: java.lang.String editSystemSettingUI(org.springframework.ui.ModelMap,cms.bean.setting.SystemSetting,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.like.LikeAction: java.lang.String likeList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.AnswerManageAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.Long[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserManageAction: java.lang.String allQuestion(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.service.staff.impl.ACLServiceBean: void deleteRolesPermission(java.lang.String)>
+<cms.web.action.common.HomeManageAction: java.lang.String questionFavoriteList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.WebUtil: void addCookie(javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,int)>
+<cms.web.action.common.HomeManageAction: java.lang.String commentListUI(org.springframework.ui.ModelMap,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.favorite.FavoriteAction: java.lang.String topicFavoriteList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.TemplateManageAction: java.lang.String importTemplate(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.platformShare.TopicUnhidePlatformShareAction: java.lang.String execute(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.staff.StaffManageAction: java.lang.String editStaff(org.springframework.ui.ModelMap,java.lang.String,cms.bean.staff.SysUsers,java.lang.String[],java.lang.String,cms.bean.PageForm)>
+<cms.web.action.common.UserFormManageAction: java.lang.String login(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.Integer,java.lang.String,java.lang.Boolean,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.UserFormManageAction: java.lang.String registerUI(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.service.membershipCard.impl.MembershipCardServiceBean: java.lang.Integer updateMembershipCard(cms.bean.membershipCard.MembershipCard,java.util.List,java.util.List,java.util.List)>
+<cms.web.action.common.UserFormManageAction: java.lang.String findPassWord_step1(org.springframework.ui.ModelMap,java.lang.String,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.PointLogAction: java.lang.String execute(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.IpAddress: java.lang.String getClientIpAddress(javax.servlet.http.HttpServletRequest)>
+<cms.web.action.common.HomeManageAction: java.lang.String answerListUI(org.springframework.ui.ModelMap,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.upgrade.UpgradeManageAction: java.lang.String continueUpgrade(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.ThirdPartyFormAction: java.lang.String queryWeiXinOpenId(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.WebUtil: int getCookieMaxAge(javax.servlet.http.HttpServletRequest,java.lang.String)>
+<cms.utils.WebUtil: boolean submitDataMode(javax.servlet.http.HttpServletRequest)>
+<cms.web.action.sms.SmsInterfaceValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<org.springframework.validation.AbstractBindingResult: void rejectValue(java.lang.String,java.lang.String,java.lang.Object[],java.lang.String)>
+<cms.web.action.thirdParty.ThirdPartyLoginInterfaceValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.web.action.user.PointManage: boolean verificationPointLogId(java.lang.String)>
+<cms.web.action.sms.SmsManageAction: java.lang.String addUI(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.message.RemindManageAction: java.lang.String reductionRemind(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String followerList(org.springframework.ui.ModelMap,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.PaymentFormAction: java.lang.String paymentUI(org.springframework.ui.ModelMap,java.lang.Integer,java.lang.Long,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.QuestionManageAction: java.lang.String deleteQuestion(org.springframework.ui.ModelMap,java.lang.Long[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.forumCode.ForumCodeManageAction: java.lang.String delete(java.lang.String,java.lang.String)>
+<cms.web.action.AdminManageAction: java.lang.String refreshToken(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<org.springframework.util.AntPathMatcher: int skipSeparator(java.lang.String,int,java.lang.String)>
+<cms.utils.Verification: boolean isPositiveInteger(java.lang.String)>
+<cms.web.action.question.QuestionTagManageAction: java.lang.String edit(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.TemplateManageAction: java.lang.String export(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.forumCode.ForumCodeManage: java.lang.String read(java.lang.String,java.lang.String)>
+<cms.web.action.question.QuestionManageAction: java.lang.String editAppendQuestion(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.links.LinksManageAction: java.lang.String editUI(org.springframework.ui.ModelMap,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String deleteFollow(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.CommentManageAction: java.lang.String editUI(org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.Verification: boolean isLetter(java.lang.String)>
+<cms.web.action.common.PaymentFormAction: java.lang.String paymentVerification(org.springframework.ui.ModelMap,java.lang.Integer,java.lang.Long,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.lucene.QuestionLuceneManage: cms.bean.QueryResult findIndexByCondition(int,int,java.lang.String,java.lang.Long,java.lang.String,java.util.Date,java.util.Date,java.lang.Integer,int)>
+<cms.web.action.template.ResourceManageAction: org.springframework.http.ResponseEntity download(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String topicUnhideList(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.setting.SystemSettingManageAction: java.lang.String deletePageViewData(org.springframework.ui.ModelMap,java.lang.String)>
+<cms.web.action.question.AnswerManageAction: java.lang.String uploadImage(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.Boolean,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TopicManageAction: java.lang.String editUI(org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.ForumManageAction: java.lang.String forumTemplateFileNameUI(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)>
+<cms.web.action.filePackage.FilePackageManageAction: java.lang.String packages(org.springframework.ui.ModelMap,java.lang.String[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.forumCode.ForumCodeAction: java.lang.String queryForumCode(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.Verification: boolean isPositiveIntegerZero(java.lang.String)>
+<cms.web.action.common.AnswerFormAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.filePackage.FilePackageManageAction: org.springframework.http.ResponseEntity download(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.ThirdPartyFormAction: java.lang.String loginLink(org.springframework.ui.ModelMap,java.lang.Integer,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserManageAction: java.lang.String allTopic(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.ColumnManageAction: java.lang.String execute(java.lang.String,org.springframework.ui.ModelMap)>
+<cms.web.action.question.QuestionAction: java.lang.String allAuditAnswerReply(cms.bean.PageForm,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.upgrade.UpgradeManageAction: java.lang.String deleteUpgradePackage(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.QuestionManageAction: java.lang.String view(org.springframework.ui.ModelMap,java.lang.Long,java.lang.Long,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.thirdParty.ThirdPartyManage: cms.bean.thirdParty.WeiXinOpenId queryWeiXinOpenId(java.lang.String)>
+<cms.web.action.template.LayoutManage: java.lang.String getMoreName(java.lang.String,java.lang.String,java.lang.String)>
+<cms.web.action.user.UserManageAction: java.lang.String updateAvatar(org.springframework.ui.ModelMap,org.springframework.web.multipart.MultipartFile,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserRoleManageAction: java.lang.String editUI(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String phoneBinding(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.staff.ACLManageAction: java.lang.String editRoles(org.springframework.ui.ModelMap,cms.bean.staff.SysRoles,java.lang.String[],java.lang.String)>
+<cms.utils.FileType: java.lang.String getType(java.io.InputStream)>
+<cms.web.action.staff.StaffManageAction: java.lang.String editStaffUI(org.springframework.ui.ModelMap,java.lang.String)>
+<cms.web.action.user.PointLogManageAction: java.lang.String addUI(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.AnswerManageAction: java.lang.String editUI(org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.LayoutManageAction: java.lang.String editLayoutUI(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.membershipCard.MembershipCardAction: java.lang.String queryMembershipCardOrderList(cms.bean.PageForm,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.AnswerManageAction: java.lang.String editAnswerReplyUI(org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.ColumnManageAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.String,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.upgrade.UpgradeManageAction: java.lang.String upgradeSystemList(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.question.QuestionAction: java.lang.String search(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String editUser(org.springframework.ui.ModelMap,cms.bean.user.User,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String updatePhoneBinding_1(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.upgrade.UpgradeManage: void manipulationData(java.lang.String)>
+<cms.web.action.common.HomeManageAction: java.lang.String homeUI(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.PaymentFormAction: java.lang.String notify(org.springframework.ui.ModelMap,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.LayoutManageAction: java.lang.String editLayout(org.springframework.ui.ModelMap,java.lang.String,cms.bean.template.Layout,org.springframework.validation.BindingResult,cms.bean.PageForm,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String remindList(org.springframework.ui.ModelMap,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.sms.SmsManageAction: java.lang.String editUI(org.springframework.ui.ModelMap,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.FileUtil: java.lang.String getBaseName(java.lang.String)>
+<cms.utils.Verification: boolean isEmail(java.lang.String)>
+<cms.web.action.template.ResourceManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.LayoutManageAction: java.lang.String deleteLayout(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.ForumManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.ResourceAction: java.lang.String queryChildNode(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)>
+<cms.web.action.common.CommentFormAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.SearchAction: cms.bean.QueryResult findIndexByCondition(int,int,java.lang.String,java.lang.Integer,int,boolean)>
+<cms.utils.WebUtil: java.lang.String getCookieByName(javax.servlet.http.Cookie[],java.lang.String)>
+<cms.web.action.topic.TopicManageAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.Long[],javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.forumCode.ForumCodeManageAction: java.lang.String forumSourceEditor(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,java.lang.String,cms.bean.PageForm,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.message.PrivateMessageManageAction: java.lang.String privateMessageChatList(java.lang.Integer,org.springframework.ui.ModelMap,java.lang.Long,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.CommentFormAction: java.lang.String edit(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.help.HelpManageAction: java.lang.String move(org.springframework.ui.ModelMap,java.lang.Long[],java.lang.Long,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.payment.OnlinePaymentInterfaceManageAction: java.lang.String editUI(org.springframework.ui.ModelMap,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.AnswerFormAction: java.lang.String editReply(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.CommentManageAction: java.lang.String editReplyUI(org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.thirdParty.ThirdPartyLoginInterfaceManageAction: java.lang.String editUI(org.springframework.ui.ModelMap,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.links.LinksManageAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.thumbnail.ThumbnailManage: void createImage(java.io.InputStream,java.lang.String,java.lang.String,int,int,int,int,int,int)>
+<cms.web.action.common.ThirdPartyFormAction: java.lang.String loginRedirect(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String editUserUI(org.springframework.ui.ModelMap,cms.bean.user.User,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.FileUtil: boolean validateFileSuffix(java.lang.String,java.util.List)>
+<cms.web.action.AdminManageAction: java.lang.String login(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.WebUtil: org.springframework.http.ResponseEntity downloadResponse(byte[],java.lang.String,javax.servlet.http.HttpServletRequest)>
+<cms.web.action.thirdParty.ThirdPartyManage: cms.bean.thirdParty.WeiXinUserInfo queryWeiXinUserInfo(java.lang.String,java.lang.String,java.lang.String)>
+<cms.web.action.template.LayoutManage: java.util.Map queryMore(java.lang.String,java.lang.String)>
+<cms.web.action.membershipCard.MembershipCardManageAction: java.lang.String queryUserMembershipCardOrderList(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.user.UserManageAction: java.lang.String editUI(cms.bean.user.User,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TagValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.service.besa.DaoSupport: cms.bean.QueryResult getScrollData(java.lang.Class,int,int,java.lang.String,java.lang.Object[],java.util.LinkedHashMap,java.lang.String)>
+<cms.web.action.question.QuestionManageAction: java.lang.String upload(org.springframework.ui.ModelMap,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.TopicAction: java.lang.String search(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.CommentFormAction: java.lang.String uploadImage(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<org.springframework.util.AntPathMatcher: boolean doMatch(java.lang.String,java.lang.String,boolean,java.util.Map)>
+<cms.web.action.staff.ACLManageAction: java.lang.String addRolesUI(org.springframework.ui.ModelMap,cms.bean.staff.SysRoles,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.sms.SmsManage: java.lang.String sendSms_code(java.lang.String,java.lang.String,java.lang.String)>
+<cms.web.action.common.AnswerFormAction: java.lang.String deleteReply(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.LayoutManageAction: java.lang.String more(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.TemplateManageAction: java.lang.String delete(org.springframework.ui.ModelMap,java.lang.String)>
+<cms.utils.FileUtil: java.lang.String toSystemPath(java.lang.String)>
+<cms.web.action.common.VideoPlaybackAction: java.lang.String videoRedirect(org.springframework.ui.ModelMap,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.upgrade.UpgradeManageAction: java.lang.String upgradeNow(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.filePackage.FilePackageManageAction: java.lang.String querySubdirectory(java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest)>
+<cms.web.action.common.QuestionFormAction: java.lang.String adoptionAnswer(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.String,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.HomeManageAction: java.lang.String addPrivateMessageUI(org.springframework.ui.ModelMap,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.common.BlankAction: java.lang.String execute(org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.payment.OnlinePaymentInterfaceManageAction: java.lang.String edit(org.springframework.ui.ModelMap,cms.bean.payment.OnlinePaymentInterface,org.springframework.validation.BindingResult,java.lang.Integer,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.ResourceManageAction: java.lang.String showFileUI(java.lang.String,java.lang.String,org.springframework.ui.ModelMap,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.redEnvelope.RedEnvelopeAction: java.lang.String receiveRedEnvelopePage(org.springframework.ui.ModelMap,cms.bean.PageForm,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.links.LinksValidator: void validate(java.lang.Object,org.springframework.validation.Errors)>
+<cms.web.action.filePackage.FilePackageManage: void filePack(java.util.concurrent.ConcurrentSkipListSet)>
+<cms.web.action.template.TemplateObjectMethods: void execute(freemarker.core.Environment,java.util.Map,freemarker.template.TemplateModel[],freemarker.template.TemplateDirectiveBody)>
+<cms.web.action.question.QuestionManageAction: java.lang.String editQuestion(org.springframework.ui.ModelMap,java.lang.Long,java.lang.Long[],java.lang.String,java.lang.Boolean,java.lang.Integer,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.topic.CommentManageAction: java.lang.String uploadImage(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,java.lang.Boolean,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.template.TemplateCustomMethods: void execute(freemarker.core.Environment,java.util.Map,freemarker.template.TemplateModel[],freemarker.template.TemplateDirectiveBody)>
+<cms.web.action.staff.StaffManageAction: java.lang.String deleteStaff(org.springframework.ui.ModelMap,java.lang.String)>
+<cms.web.action.common.AnswerFormAction: java.lang.String uploadImage(org.springframework.ui.ModelMap,java.lang.Long,java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.utils.WebUtil: java.lang.String getCookieByName(javax.servlet.http.HttpServletRequest,java.lang.String)>
+<cms.utils.Base64: java.lang.String decodeBase64URL(java.lang.String)>
+<cms.web.action.message.PrivateMessageManageAction: java.lang.String privateMessageList(cms.bean.PageForm,org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+<cms.web.action.setting.SystemSettingManageAction: java.lang.String updateDatabasePassword(org.springframework.ui.ModelMap,java.lang.String,java.lang.String)>
+<cms.web.action.user.UserManageAction: java.lang.String show(org.springframework.ui.ModelMap,java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)>
+[
+    {
+        "name": "cms.web.action.common.TopicFormAction",
+        "rules": [
+            {
+                "function": "upload",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.topic.TopicAction",
+        "rules": [
+            {
+                "function": "allAuditReply",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.common.HomeManageAction",
+        "rules": [
+            {
+                "function": "updateAvatar",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "updatePhoneBinding_1",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.topic.TopicManageAction",
+        "rules": [
+            {
+                "function": "edit",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "upload",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.template.LayoutManageAction",
+        "rules": [
+            {
+                "function": "checkUrlName",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "editLayout",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.help.HelpManageAction",
+        "rules": [
+            {
+                "function": "upload",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "edit",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.membershipCard.MembershipCardManageAction",
+        "rules": [
+            {
+                "function": "upload",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.question.QuestionManageAction",
+        "rules": [
+            {
+                "function": "deleteAppendQuestion",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "appendQuestion",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "editQuestionUI",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "upload",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.filePackage.FilePackageManageAction",
+        "rules": [
+            {
+                "function": "deleteExport",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "download",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.forumCode.ForumCodeManage",
+        "rules": [
+            {
+                "function": "readForumCodeFile",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.common.QuestionFormAction",
+        "rules": [
+            {
+                "function": "upload",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.template.TemplateManageAction",
+        "rules": [
+            {
+                "function": "edit",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "importTemplate",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "export",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.utils.FileUtil",
+        "rules": [
+            {
+                "function": "toRelativePath",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "validateFileSuffix",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.template.ResourceManageAction",
+        "rules": [
+            {
+                "function": "newFolder",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "rename",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "editFile",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "upload",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.setting.SystemSettingValidator",
+        "rules": [
+            {
+                "function": "validate",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.links.LinksManageAction",
+        "rules": [
+            {
+                "function": "edit",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.template.ForumManageAction",
+        "rules": [
+            {
+                "function": "edit",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "forumExtend",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "upload",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.question.AnswerManageAction",
+        "rules": [
+            {
+                "function": "uploadImage",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.user.UserManageAction",
+        "rules": [
+            {
+                "function": "allTopic",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            },
+            {
+                "function": "updateAvatar",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.utils.FileType",
+        "rules": [
+            {
+                "function": "getType",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.common.CommentFormAction",
+        "rules": [
+            {
+                "function": "uploadImage",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.upgrade.UpgradeManageAction",
+        "rules": [
+            {
+                "function": "upgradeNow",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.topic.CommentManageAction",
+        "rules": [
+            {
+                "function": "uploadImage",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    },
+    {
+        "name": "cms.web.action.common.AnswerFormAction",
+        "rules": [
+            {
+                "function": "uploadImage",
+                "type": "sanitization",
+                "vul": "",
+                "actions": {},
+                "polluted": [],
+                "signatures": []
+            }
+        ]
+    }
+]
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The upload method in the TopicFormAction class includes security filtering for file uploads. It checks the file suffix against allowed formats and validates file size limits."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The edit method involves checking and modifying file names and paths. It performs checks to ensure the provided template name does not include special characters and verifies if the file already exists, which are measures to prevent potential path traversal and other file-related security vulnerabilities."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The edit method in the provided class does not contain explicit path traversal filters or checks for file extensions. It primarily performs checks to ensure the template name is valid and does not already exist. These checks are related to the correctness of the file name but do not directly filter for path traversal or validate file extensions as per the specific criteria described in the audit rules."
+}
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method allComment includes SQL injection filtering. It constructs a SQL query with user input 'userName' and uses StringUtils.difference to remove unnecessary parts of the query, which is a technique to prevent SQL injection."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The method 'allComment' does not contain any SQL injection filtering as defined by audit rule 4. The method constructs a JPQL query string but does not include any filters for SQL-sensitive keywords such as 'and', 'or', 'update', ''', and '\"'. Simply constructing a query string and using StringUtils.difference does not constitute SQL injection filtering."
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The directoryRename method performs security filtering for the directory name by checking its length, allowed characters, and ensuring it does not already exist in the system."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The directoryRename method checks if the directory name is valid by verifying its length, allowed characters, and ensuring it does not already exist in the system. These checks are more about validating input rather than filtering for security purposes like path traversal or file extension validation. This does not fit the criteria for filtering functions as per the provided audit rules."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `allAuditReply` uses `textFilterManage.filterText` to filter the content of replies, which suggests it is performing some kind of security filtering on the text content that is likely related to preventing issues such as SQL injection or file-related vulnerabilities."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The edit method involves security filtering for filename or suffixes of file upload. It includes calls to fileManage.deleteLock and textFilterManage.readImageName which indicates filtering based on filenames and paths."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The edit method in the provided code snippet does not meet the criteria for being a filtering function as per the audit rules. The edit method involves updating and validating content, but it does not perform operations specifically to filter filenames or suffixes of file uploads. The calls to fileManage.deleteLock and textFilterManage.readImageName seem to handle file operations rather than filtering user input or file uploads. Therefore, it cannot be considered a filtering function."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The forumSourceUI method involves reading files from a specified directory and filename. It performs checks to ensure the directory and filename are not null or empty, which is related to security filtering to prevent issues such as path traversal or unauthorized access to files."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The forumSourceUI method does not contain any explicit filtering mechanisms for path traversal like checking for patterns such as ../ or .. in the directory or filename. It only checks if the dirName and nodeName are not null or empty, which does not qualify as a filtering operation according to the given audit rules."
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'updateAvatar' in the provided class includes security filtering for file upload operations. It checks the file suffix using a whitelist and also verifies the presence of certain path traversal characters. Specifically, it validates the file extension and limits the file size, ensuring only allowed image formats are accepted."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method contains filtering operations for file upload by validating the filename suffix using a whitelist. Specifically, it checks the file suffix against allowed types (gif, jpg, jpeg, bmp, png) before proceeding with the upload."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The deleteLike method does not contain any file upload functionality or filtering operations related to file uploads. It primarily deals with deleting a 'like' and performing associated operations, such as cache cleaning. The provided reason is incorrect."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'edit' in the class 'cms.web.action.topic.TopicManageAction' includes security filtering for filename suffixes and path traversal checks related to file upload and management operations."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason":"The deleteFavorite method in the HomeManageAction class includes checks for file operation security, specifically for filename or file suffix validation. It includes calls to the favoriteManage.createTopicFavoriteId and favoriteManage.createQuestionFavoriteId methods which are typically used to generate secure file paths or identifiers."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The deleteFavorite method in the HomeManageAction class does not meet the criteria for being considered a filtering function according to the provided audit rules. The method primarily deals with user data validation, token verification, and database operations related to favorite items. It does not perform any specific filtering operations on file paths, SQL keywords, or file uploads. The calls to favoriteManage.createTopicFavoriteId and favoriteManage.createQuestionFavoriteId are used to generate identifiers and are not related to file operation security."
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The `checkUrlName` method in `LayoutManageAction` class performs security filtering for file path validation. It checks the presence of invalid characters and patterns in the reference code to prevent path traversal and other potential vulnerabilities such as disallowed characters and consecutive slashes."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The upload method in the HelpManageAction class includes security filtering for file uploads. It checks the filename suffix using a whitelist of allowed formats for different types of files (image, flash, media, file)."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'reset' method includes a call to 'FileUtil.toRelativePath(dateName)', which suggests it is checking for path traversal issues by converting the filename to a relative path."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The 'reset' method does not contain an obvious path traversal filter. The presence of 'FileUtil.toRelativePath(dateName)' alone does not confirm that it is filtering for path traversal issues. There is no clear indication that the method is explicitly checking for patterns like ../ or .., which would be required to classify it as a filtering function according to audit_rule3."
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method templateDownload includes filtering operations to validate the filename by checking if it is null or empty before processing the file download."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method templateDownload only checks if the filename is null or empty before processing. This is not considered a filtering operation according to the provided audit rules."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The updateAvatar method in the HomeManageAction class includes security filtering for file uploads. It checks the file suffix using a whitelist (arrayList.add(\"gif\"); arrayList.add(\"jpg\"); arrayList.add(\"jpeg\"); arrayList.add(\"bmp\"); arrayList.add(\"png\");) and validates the file size (if (size / 1024L <= imageSize)). It also includes additional security checks and file operations related to paths and filenames."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The updatePhoneBinding_2UI method does not contain any filtering functionality. The method primarily processes input parameters and interacts with user services to update phone binding information. It does not contain any path traversal, SQL injection, or file upload filtering functionalities as described in the audit rules."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The function validateFileName checks the filename against a pattern to ensure it does not contain special characters that could lead to path traversal or other file-related vulnerabilities."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The function validateFileName checks if the filename contains special characters using a regex pattern, but it does not specifically filter for path traversal patterns like ../ or .. or any other path traversal related checks. Hence, it doesn't fit the description of a filtering operation according to the provided audit rules."
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `upload` in the `MembershipCardManageAction` class involves security filtering for file upload operations. It checks the filename suffix using a whitelist to ensure that only allowed file types can be uploaded."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The deleteAppendQuestion method includes security filtering for file operations. It checks the filename and directory for specific suffixes and paths, ensuring that only allowed file types are processed and paths are managed securely."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The deleteExport method includes a security filtering operation to convert the file name to a relative path using FileUtil.toRelativePath, which is indicative of a path traversal filtering mechanism."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The appendQuestion method in the QuestionManageAction class involves security filtering for file uploads by checking the filename suffix using a whitelist and validating the file path."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method readForumCodeFile in the class ForumCodeManage checks the file extension to ensure it is 'html', which is a form of security filtering for file operations."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'upload' in the 'QuestionFormAction' class involves security filtering for file uploads. It validates the filename suffix using whitelists, checks for allowed file types (like image), and ensures file size limits are respected."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `edit` in the class `cms.web.action.template.TemplateManageAction` involves filtering operations for file uploads. It validates the file suffix against a whitelist of allowed image formats (gif, jpg, jpeg, bmp, png)."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'addQuote' includes security filtering for file uploads. It validates the file suffix using a whitelist to ensure only allowed image formats are uploaded."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method 'addQuote' does not include any operations related to file uploads or file suffix validation. The method primarily deals with filtering and processing content text. Therefore, ChatGPT's previous answer was incorrect."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'view' contains security filtering to prevent path traversal attacks by checking for '..' in file paths."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method 'view' does not contain any security filtering mechanisms to prevent path traversal attacks by checking for '..' in file paths. The provided code does not include any explicit checks for patterns like '..' or '../', which are indicative of path traversal attempts. Thus, it cannot be classified as a filtering function based on the given code."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The `toRelativePath` method in the `cms.utils.FileUtil` class includes security filtering for path traversal by replacing special strings like '..' and '%' which are commonly used in path traversal attacks."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method newFolder performs security filtering by validating the folder name to ensure it does not contain special characters using FileUtil.validateFileName."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'editQuestionUI' in the given Java class involves security filtering for file operations. It processes rich text content and uses the method 'fileManage.processRichTextFilePath' to filter the file paths in the content, ensuring that the file paths are handled securely."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The function includes security filtering for filename and suffixes of file upload by checking the allowed formats for images, files, and videos."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'editAppendQuestionUI' involves security filtering for file paths, specifically through the 'fileManage.processRichTextFilePath' method. This method likely handles the sanitization or validation of file paths to prevent security issues like path traversal."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method 'editAppendQuestionUI' should not be considered a filtering function. The 'fileManage.processRichTextFilePath' method is used for processing rich text file paths but does not constitute a filtering operation as defined in the audit rules. Specifically, the method does not perform checks for path traversal patterns or other security-sensitive filtering directly."
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'edit' in the class 'cms.web.action.topic.CommentManageAction' includes security filtering for files. It checks the presence of path traversal characters and validates file suffixes using a whitelist."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "In the provided code, the 'edit' method does not include security filtering for files. The method primarily deals with comment content and status updates, with various checks related to text filtering and user permissions, but there is no evidence of file handling or validation within this method."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'edit' method in the 'HelpManageAction' class involves security filtering for file operations. It checks the filename suffix using a whitelist and performs operations to prevent unauthorized file access and path traversal."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The rename method in the cms.web.action.template.ResourceManageAction class performs security filtering by validating the new file or folder name to ensure it does not contain special characters using FileUtil.validateFileName()."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The edit method in the LinksManageAction class includes security filtering related to file uploads. It specifically validates the file suffix using a whitelist (formatList) and performs operations to prevent unauthorized file uploads."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method checks for valid file suffixes and formats for various file types (image, flash, media, file) during file upload operations. It includes security filtering by validating the file suffix using predefined lists of allowed formats."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'upload' in the class 'cms.web.action.topic.TopicManageAction' includes security filtering operations by checking the filename suffix using whitelists for different file types (image, flash, media, file) during file upload."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The editFile method checks the file suffix to ensure it is either 'js' or 'css' before performing any file operations. This is a form of security filtering for filename or suffixes of file operations."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason":"The method redEnvelopeAmountDistributionUI includes security filtering for file download, as it validates the filename suffix and handles file operations."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method redEnvelopeAmountDistributionUI does not include any file operations or checks related to file uploads or downloads. It primarily handles pagination and querying of red envelope data. Therefore, it cannot be considered a filtering function based on file operations."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The forumExtend method involves security filtering for file uploads by checking the file suffixes and ensuring the file types are valid. It also handles the uploading process responsibly by managing file paths and locking mechanisms."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The function 'deleteExport' in Class 'cms.web.action.template.TemplateManageAction' validates the filename before performing file deletion which is a security filtering operation related to file download."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The function 'deleteExport' in Class 'cms.web.action.template.TemplateManageAction' checks if the 'fileName' is null or empty, which is not a security filtering operation. It does not perform any actual filtering for security threats such as path traversal or validating file content."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The importTemplate method includes security filtering operations for file uploads, specifically validating the file suffix and checking for path traversal vulnerabilities."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The delete method in the class cms.web.action.forumCode.ForumCodeManageAction performs file deletion operations and includes checks for the presence of directory and node names. This makes it related to file operation security filtering."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The delete method in the class cms.web.action.forumCode.ForumCodeManageAction only checks if the dirName and nodeName are not empty. It does not perform any path traversal checks or other security filters. Therefore, it cannot be considered a filtering function."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'export' method in the Class 'cms.web.action.template.TemplateManageAction' includes security filtering for filename paths. It uses the 'FileUtil.toRelativePath' method to convert the filename to a relative path, which helps prevent path traversal vulnerabilities."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason":"The method editAppendQuestion performs security filtering for file upload. It checks the file name suffix using predefined formats and ensures the content is sanitized through the textFilterManage."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method editAppendQuestion does not perform file upload operations. Instead, it processes existing content, sanitizes it using textFilterManage, and updates the content of an append question item. The text filtering is for sanitizing HTML content, not for file upload security filtering."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'uploadImage' in the class 'AnswerManageAction' performs security filtering for file uploads. It checks the filename suffix against allowed formats and validates the file size."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'download' and 'deleteExport' methods involve file operations and include a call to 'FileUtil.toRelativePath(fileName)', which indicates some form of path normalization or validation to prevent path traversal or other file-related vulnerabilities."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The 'download' and 'deleteExport' methods involve file operations but the check if (fileName == null || \"\".equals(fileName.trim())) simply ensures the file name is not empty, which is not considered a filtering operation by audit_rule1. Although 'FileUtil.toRelativePath(fileName)' is called, there is no explicit indication in the provided code that it performs path traversal filtering as required by audit_rule3."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'download' includes filename security filtering by converting the filename to a relative path using FileUtil.toRelativePath, which helps mitigate against path traversal attacks."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'allTopic' method retrieves and sets the avatar path for users. This involves manipulating file paths, which necessitates security filtering to prevent path traversal vulnerabilities."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method deleteUpgradePackage checks for the presence of path traversal special strings like '../' using the FileUtil.toRelativePath() method for security filtering of the filename."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The provided method deleteUpgradePackage does not explicitly showcase any filtering operation that checks for path traversal characters like '../'. The description claims the usage of FileUtil.toRelativePath() for such checks, but this is not visible in the provided decompiled code. Therefore, it cannot be confirmed that the method is performing the filtering operation as claimed."
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method updateAvatar includes security filtering for file upload operations. It validates the file type against a whitelist of allowed formats and checks the file size to ensure it does not exceed the allowed limit."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The getType method in the FileType class checks the file's hex header to determine its type, which is a form of file upload security filtering to ensure the file is of an expected type."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'editLayoutUI' performs security filtering by checking for specific patterns in the 'referenceCode' such as leading/trailing slashes, continuous slashes, and allowed characters. It also checks against a set of disabled paths to prevent unauthorized access."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method 'editLayoutUI' does not perform any security filtering. It only checks if the 'dirName' and 'layoutId' parameters are not empty and retrieves the corresponding 'Templates' and 'Layout' objects. The actual security checks and filtering related to the 'referenceCode' occur in other methods, not in 'editLayoutUI'."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method upgradeSystemList includes security filtering for path traversal by checking if the file name contains '..;/ or '../' and throws an exception if detected."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The provided code for the method upgradeSystemList in the class cms.web.action.upgrade.UpgradeManageAction does not contain any checks or filters for path traversal patterns like '../'. The method primarily deals with listing upgrade systems and reading configuration properties from zip files. Therefore, it does not qualify as a filtering function based on the provided audit rules."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'updateAvatar' includes file upload operations and contains security filtering logic for file suffixes, which are validated against a whitelist, and checks for image dimensions to prevent malicious file uploads."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The editLayout method performs security filtering on filenames and paths by checking for invalid characters and patterns such as '/', trailing '/', consecutive slashes, and matching against a set of disabled paths."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'upload' method in the 'ResourceManageAction' class includes security filtering for file uploads. It verifies the file suffix against a whitelist of allowed formats and checks the file size to ensure it does not exceed the allowed limit."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `deleteLayout` includes security filtering to prevent directory traversal attacks by checking if the layout file name contains path traversal special strings like '../'."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method `deleteLayout` does not contain any specific checks for directory traversal patterns like '../'. It primarily deals with the deletion of layout files and handling of associated data but does not perform the specific filtering required for path traversal protection as per audit_rule3."
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'upload' method in the 'cms.web.action.template.ForumManageAction' class is responsible for security filtering of file uploads. It checks the filename suffix using a whitelist and validates the file type and size for various directories (image, flash, media, file)."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The forumSourceEditor method involves file upload operations by writing content to files. It includes file path construction and filename validation to ensure the filenames are not empty, which indicates it performs some level of security filtering for file uploads."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The forumSourceEditor method involves writing content to files but does not include any specific filtering logic for file uploads. It simply writes the provided content to specified paths without any validation or filtering of the content itself. Thus, it does not meet the criteria for a filtering function according to audit rules."
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'move' in the class 'HelpManageAction' involves security filtering for file operations. It checks the file paths and filenames, ensuring proper handling through methods like 'FileUtil.validateFileSuffix', 'FileUtil.toRelativePath', and 'FileUtil.toSystemPath'. It also uses 'fileManage.addLock' to prevent unauthorized file manipulations."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The 'move' method in the 'HelpManageAction' class does not perform filtering operations. It primarily deals with file path updates and file management tasks such as copying and deleting files. While it does interact with methods like 'FileUtil.toRelativePath' and 'FileUtil.toSystemPath', these methods are used for path conversions rather than filtering. The 'fileManage.addLock' method is also for file management and not for filtering or security checks. Therefore, the method does not meet the criteria for a filtering function as per the provided audit rules."
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The validateFileSuffix method checks the file extension against a list of allowed formats, which is a security filtering operation related to file uploads or downloads."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'upload' in the provided Java class checks the filename suffix using a whitelist or blacklist to ensure the file type is allowed for upload. The method uses lists of allowed formats for different file types (image, flash, media, file) and performs validation to prevent unauthorized file uploads."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method involves security filtering for file uploads by validating the file suffix and file size using blacklists or whitelists, and checking user permissions."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The delete method in Class cms.web.action.template.TemplateManageAction includes security filtering by checking if the file name is not null or empty before performing the delete operation."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The delete method in the provided class checks if the file name is not null or empty before performing the delete operation. This is simply a validation check and does not constitute a filtering operation as per the audit rules. Specifically, audit_rule1 states that a check for a string being empty cannot be considered a filtering operation."
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method toSystemPath in the Class cms.utils.FileUtil includes security filtering for path traversal by checking and replacing path traversal characters like '..'."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The toSystemPath function does not perform any security filtering for path traversal attacks. It merely replaces '/' with the system's file separator. It should not be classified as a filtering function."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'upgradeNow' in the class 'UpgradeManageAction' performs security filtering by validating the file suffix to ensure it is a 'zip' file and uses 'FileUtil.toRelativePath(updatePackageName)' to sanitize the file path."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `addPrivateMessageUI` in the `HomeManageAction` class involves checking the suffix of uploaded files in the `imgFile` parameter using a whitelist. This is indicated by the code snippet where the file suffix is validated against a list of allowed suffixes such as 'gif', 'jpg', 'jpeg', 'bmp', and 'png'."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method `addPrivateMessageUI` in the `HomeManageAction` class does not involve checking the suffix of uploaded files or any file-related operations. Instead, it deals with captcha validation and user permission checks for sending private messages. The provided reason is incorrect and does not apply to this method."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'uploadImage' includes security filtering for file uploads. It checks the filename suffix using a whitelist and also validates the file size."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The uploadImage method in the AnswerFormAction class performs security filtering for file uploads. It checks the file extension against a list of allowed image formats and validates the file size."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The function updateDatabasePassword includes a decryption process for a
+   database password and re-encryption with a new password. The presence of DruidTool.decryptString and DruidTool.encryptString methods indicates that the function is performing sensitive operations related to database credentials, which often require SQL injection filtering to ensure security."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The function updateDatabasePassword is primarily responsible for updating the database password
+   by decrypting the old password and encrypting the new one. The presence of decryption and encryption methods does not inherently imply SQL injection filtering. The function does not contain any obvious SQL-sensitive keyword filters or path traversal filters. Thus, it does not qualify as a filtering function based on the provided audit rules."
+}
+
+{
+  "isfilter": false
+}
+

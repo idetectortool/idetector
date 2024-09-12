@@ -1,0 +1,26 @@
+========================================
+[1] Found sink method:
+ <com.genersoft.iot.vmp.storager.dao.DeviceChannelMapper: java.util.List queryChannelsWithDeviceInfo(java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.Boolean,java.util.List)>
+(1) Found vul call chain:
+ <com.genersoft.iot.vmp.web.gb28181.ApiDeviceController: com.alibaba.fastjson2.JSONObject channellist(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Boolean)>
+  <com.genersoft.iot.vmp.storager.impl.VideoManagerStorageImpl: java.util.List queryChannelsByDeviceId(java.lang.String,java.util.List,java.lang.Boolean)>
+   <com.genersoft.iot.vmp.storager.dao.DeviceChannelMapper: java.util.List queryChannelsWithDeviceInfo(java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.Boolean,java.util.List)>
+========================================
+[2] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.genersoft.iot.vmp.vmanager.gb28181.device.DeviceQuery: void getSnap(javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)>
+  <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <com.genersoft.iot.vmp.vmanager.gb28181.play.PlayController: org.springframework.web.context.request.async.DeferredResult getSnap(java.lang.String,java.lang.String,boolean)>
+  <com.genersoft.iot.vmp.service.impl.PlayServiceImpl: void getSnap(java.lang.String,java.lang.String,java.lang.String,com.genersoft.iot.vmp.service.bean.ErrorCallback)>
+   <com.genersoft.iot.vmp.media.service.impl.MediaServerServiceImpl: void getSnap(com.genersoft.iot.vmp.media.bean.MediaServer,java.lang.String,int,int,java.lang.String,java.lang.String)>
+    <com.genersoft.iot.vmp.media.zlm.ZLMMediaNodeServerService: void getSnap(com.genersoft.iot.vmp.media.bean.MediaServer,java.lang.String,int,int,java.lang.String,java.lang.String)>
+     <com.genersoft.iot.vmp.media.zlm.ZLMRESTfulUtils: void getSnap(com.genersoft.iot.vmp.media.bean.MediaServer,java.lang.String,int,int,java.lang.String,java.lang.String)>
+      <com.genersoft.iot.vmp.media.zlm.ZLMRESTfulUtils: void sendGetForImg(com.genersoft.iot.vmp.media.bean.MediaServer,java.lang.String,java.util.Map,java.lang.String,java.lang.String)>
+       <java.io.File: void <init>(java.lang.String)>
+(3) Found vul call chain:
+ <com.genersoft.iot.vmp.vmanager.gb28181.play.PlayController: org.springframework.web.context.request.async.DeferredResult getSnap(java.lang.String,java.lang.String,boolean)>
+  <com.genersoft.iot.vmp.service.impl.PlayServiceImpl: void getSnap(java.lang.String,java.lang.String,java.lang.String,com.genersoft.iot.vmp.service.bean.ErrorCallback)>
+   <java.io.File: void <init>(java.lang.String)>
+Cost 49 seconds

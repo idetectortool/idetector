@@ -1,0 +1,202 @@
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method replaceParams in the SqlParseUtils class involves SQL injection filtering by replacing placeholders in the SQL query with corresponding parameters, ensuring these parameters are properly handled and validated."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The function isCsv in the FileUtils class checks the filename suffix to determine if it is a CSV file, which is a type of security filtering related to file upload."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'writeExcel' performs security filtering for file operations by checking the file path and file format. It ensures that the file path is not empty and that the file format is '.xlsx'."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'generationFile' in the provided class includes file generation functionality (CSV and XLSX). It involves checking the file path and ensuring the correct file format, which are crucial for preventing vulnerabilities related to file operations."
+}
+
+========checker=======
+
+(X){
+  "istrue": false,
+  "reason": "The method 'generationFile' includes file generation functionality but does not explicitly check file extensions or perform any filtering operations to prevent vulnerabilities related to file operations. It mainly focuses on the logic to generate files and handle file paths."
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The isExcel method checks if the uploaded file's extension matches common Excel file formats (.xlsx or .xls). This is a form of security filtering for file uploads based on filename suffixes."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The dataUpload method filters the file type to ensure only CSV or Excel files are allowed for upload."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `uploadSlideSubWidgetBGImage` checks the file format to ensure it is an image before uploading. This is a security filtering operation for file uploads."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The function 'isImage' checks the filename suffix against a pattern to determine if it is an image file, which is a form of security filtering for file uploads."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The parseSql method in edp.davinci.core.utils.SqlParseUtils class performs security filtering by using regular expressions to identify and replace placeholders in SQL strings. It also processes SQL variables and handles different types of SQL variables (QUERYVAR and AUTHVAR) with specific value retrieval and insertion logic, making it a dedicated SQL injection filtering function."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method getReadWorkbook in the ExcelUtils class checks the filename suffix to determine the type of Excel file (XLSX or XLS) being processed."
+}
+
+========checker=======
+{
+  "istrue": true
+}

@@ -1,0 +1,11 @@
+========================================
+[1] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <com.xnx3.wangmarket.superadmin.controller.PluginManageController: com.xnx3.BaseVO exportPlugin(javax.servlet.http.HttpServletRequest,java.lang.String)>
+  <java.io.File: void <init>(java.lang.String)>
+(2) Found vul call chain:
+ <com.xnx3.wangmarket.superadmin.controller.PluginManageController: com.xnx3.BaseVO exportPlugin(javax.servlet.http.HttpServletRequest,java.lang.String)>
+  <com.xnx3.wangmarket.superadmin.controller.PluginManageController: void copyDir(java.lang.String,java.lang.String)>
+   <java.io.File: void <init>(java.lang.String)>
+Cost 31 seconds

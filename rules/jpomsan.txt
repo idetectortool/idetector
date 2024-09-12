@@ -1,0 +1,393 @@
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'uploadBackupFile' method in the 'BackupInfoController' class includes security filtering operations for file uploads. It checks the file extension to ensure it is 'sql' before proceeding with the upload."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method getBuildToken is related to file download security filtering as it constructs a URL for file download and uses FileUtil.normalize to ensure the URL is properly formatted, which is a common practice to prevent path traversal attacks."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The getBuildToken method constructs a URL for file download and uses FileUtil.normalize to format the URL. However, the code snippet provided does not include any explicit filtering mechanism to prevent path traversal attacks, such as checking for patterns like ../. Simply formatting a URL without additional security checks does not constitute a filtering function."
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `clearCache` includes filtering operations for clearing cache files, which involves checking specific types of cache and performing deletions of files and directories."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'importFile' in the class 'org.dromara.jpom.func.cert.controller.CertificateInfoController' performs file upload operations and includes security filtering by checking the filename extension and ensuring it matches expected types ('pkcs12', 'JKS', 'X.509'). It validates the file type and checks for a valid extension before proceeding with further file operations."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The importData method includes file upload operations and performs security filtering by checking the file extension to ensure it is a CSV file."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method `resolvePkcs12OrJks` performs security filtering by checking the file extension against a whitelist ('jks' or 'pfx') and extracting from zip files. It validates the file extension to prevent unsupported file formats and ensures that the correct file type is processed."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The function 'doData' in the class 'org.dromara.jpom.controller.outgiving.OutGivingProjectEditController' includes security filtering for file paths. It specifically checks the filename suffix using whitelists and checks for path traversal special strings. For example, it validates the 'whitelistDirectory' and 'logPath' parameters using the 'AgentWhitelist.checkPath' method to ensure they are within the allowed paths, preventing unauthorized access."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The checkParameter method includes security filtering for file paths and directories. It checks for valid project paths, prevents path traversal by using FileUtils.checkSlip, and ensures that directories are within a whitelist."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The resolveX509 method checks the file extension to ensure it is a 'zip' file and subsequently handles it accordingly, which is a form of security filtering for file uploads."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'importTls' in the provided class performs security filtering by checking the file extension to ensure it is a 'zip' file and handles file operations securely by extracting the uploaded file and verifying certificate information."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method 'uploadSharding' checks the filename suffix using a whitelist (extNames) and validates the presence of required parameters, ensuring that only permitted file types are uploaded."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The deleteFile method in the ProjectFileControl class includes filtering operations related to file operations. Specifically, it checks for the presence of the filename parameter and performs file deletion operations based on the provided type and filename."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The deleteFile method in the ProjectFileControl class does not include filtering operations as per the defined rules. The method primarily performs user permission checks, validates input parameters, and executes file deletion operations. It does not contain explicit path traversal filters, SQL injection filters, or checks for specific file extensions or patterns that qualify as filtering functions."
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The method perform security filtering for file paths, ensuring that the file paths are normalized and fall within authorized directories."
+}
+
+========checker=======
+{
+  "istrue": false,
+  "reason": "The method `formatSsh` primarily checks the existence and validity of data related to SSH, such as releaseMethodDataId, releasePath, and releaseCommand. While it normalizes the releasePath and verifies it falls within authorized directories, it does not perform filtering operations for patterns like `../` or `..` as described in the audit rules."
+}
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The function checkPath in the class ManageEditProjectController includes security filtering for path traversal and file operations. It checks for spaces in the project ID and project paths, ensures the paths are directories, and verifies that the paths do not conflict with existing project paths, which are common security measures to prevent path traversal and related vulnerabilities."
+}
+
+========checker=======
+{
+  "istrue": true
+}
+
+{
+  "isfilter": true,
+  "type": "file",
+  "reason": "The 'newFileFolder' method in the 'BaseSshFileController' class contains logic to check for the presence of path traversal characters ('/'), which is a security filtering operation related to file paths."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The 'newFileFolder' method merely checks if the name contains a '/' character, which does not qualify as a filtering operation according to the audit rules. Specifically, it doesn't contain any checks for path traversal patterns like '../' or '..', nor does it filter based on file extensions or perform other security filtering tasks."
+}
+
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": false
+}
+

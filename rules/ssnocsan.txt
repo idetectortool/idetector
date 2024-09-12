@@ -1,0 +1,46 @@
+
+{
+  "isfilter": false
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The searchForPublicMessage method constructs an SQL query dynamically based on user input and includes filtering operations to protect against SQL injection by checking for stop words and sanitizing search terms."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The searchForPublicMessage method doesn't contain explicit filtering for SQL-sensitive keywords (like and, or, update, ', \"). It primarily checks for stop words to form the SQL query. This doesn't meet the criteria specified in audit rule 4 for SQL injection filtering functions."
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method 'searchForPublicAnnouncements' in the class 'MessageDetailDAOImpl' implements SQL injection filtering by checking the input message against a list of stop words and constructing the SQL query dynamically with sanitized input."
+}
+
+========checker=======
+
+{
+  "istrue": false,
+  "reason": "The method 'searchForPublicAnnouncements' in the class 'MessageDetailDAOImpl' does not implement SQL injection filtering. Instead, it dynamically constructs an SQL query using user input without proper sanitization. The method checks the input message against a list of stop words, but this is not sufficient to prevent SQL injection."
+}
+
+
+{
+  "isfilter": true,
+  "type": "sql",
+  "reason": "The method 'searchForPrivateChats' in class 'MessageDetailDAOImpl' constructs an SQL query dynamically by appending user input after converting it to uppercase. It uses the 'LIKE' operator to search for matches in the 'message' field. Although it uses a set of stop words to filter out certain words from the user input, it does not adequately sanitize or escape the input to prevent SQL injection attacks. The method involves SQL filtering but lacks proper security measures."
+}
+
+========checker=======
+
+{
+  "istrue": true
+}
+

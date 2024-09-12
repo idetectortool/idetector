@@ -1,0 +1,35 @@
+========================================
+[1] Found sink method:
+ <ltd.newbee.mall.dao.NewBeeMallGoodsMapper: int getTotalNewBeeMallGoodsBySearch(ltd.newbee.mall.util.PageQueryUtil)>
+(1) Found vul call chain:
+ <ltd.newbee.mall.controller.mall.GoodsController: java.lang.String searchPage(java.util.Map,javax.servlet.http.HttpServletRequest)>
+  <ltd.newbee.mall.service.impl.NewBeeMallGoodsServiceImpl: ltd.newbee.mall.util.PageResult searchNewBeeMallGoods(ltd.newbee.mall.util.PageQueryUtil)>
+   <ltd.newbee.mall.dao.NewBeeMallGoodsMapper: int getTotalNewBeeMallGoodsBySearch(ltd.newbee.mall.util.PageQueryUtil)>
+========================================
+[2] Found sink method:
+ <ltd.newbee.mall.dao.NewBeeMallGoodsMapper: java.util.List findNewBeeMallGoodsListBySearch(ltd.newbee.mall.util.PageQueryUtil)>
+(1) Found vul call chain:
+ <ltd.newbee.mall.controller.mall.GoodsController: java.lang.String searchPage(java.util.Map,javax.servlet.http.HttpServletRequest)>
+  <ltd.newbee.mall.service.impl.NewBeeMallGoodsServiceImpl: ltd.newbee.mall.util.PageResult searchNewBeeMallGoods(ltd.newbee.mall.util.PageQueryUtil)>
+   <ltd.newbee.mall.dao.NewBeeMallGoodsMapper: java.util.List findNewBeeMallGoodsListBySearch(ltd.newbee.mall.util.PageQueryUtil)>
+========================================
+[3] Found sink method:
+ <java.io.File: void <init>(java.lang.String)>
+(1) Found vul call chain:
+ <ltd.newbee.mall.controller.common.UploadController: ltd.newbee.mall.util.Result upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)>
+  <java.io.File: void <init>(java.lang.String)>
+========================================
+[4] Found sink method:
+ <ltd.newbee.mall.dao.NewBeeMallGoodsMapper: java.util.List findNewBeeMallGoodsList(ltd.newbee.mall.util.PageQueryUtil)>
+(1) Found vul call chain:
+ <ltd.newbee.mall.controller.admin.NewBeeMallGoodsController: ltd.newbee.mall.util.Result list(java.util.Map)>
+  <ltd.newbee.mall.service.impl.NewBeeMallGoodsServiceImpl: ltd.newbee.mall.util.PageResult getNewBeeMallGoodsPage(ltd.newbee.mall.util.PageQueryUtil)>
+   <ltd.newbee.mall.dao.NewBeeMallGoodsMapper: java.util.List findNewBeeMallGoodsList(ltd.newbee.mall.util.PageQueryUtil)>
+========================================
+[5] Found sink method:
+ <ltd.newbee.mall.dao.NewBeeMallGoodsMapper: int getTotalNewBeeMallGoods(ltd.newbee.mall.util.PageQueryUtil)>
+(1) Found vul call chain:
+ <ltd.newbee.mall.controller.admin.NewBeeMallGoodsController: ltd.newbee.mall.util.Result list(java.util.Map)>
+  <ltd.newbee.mall.service.impl.NewBeeMallGoodsServiceImpl: ltd.newbee.mall.util.PageResult getNewBeeMallGoodsPage(ltd.newbee.mall.util.PageQueryUtil)>
+   <ltd.newbee.mall.dao.NewBeeMallGoodsMapper: int getTotalNewBeeMallGoods(ltd.newbee.mall.util.PageQueryUtil)>
+Cost 25 seconds
