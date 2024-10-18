@@ -1,0 +1,3132 @@
+[
+  {
+    "name": "com.j2eefast.common.core.xss.SQLFilter",
+    "rules": [
+      {
+        "function": "sqlInject",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.jeecg.common.util.filter.FileTypeFilter",
+    "rules": [
+      {
+        "function": "fileTypeFilter",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "com.aliyun.oss.OSSClient.putObject",
+    "rules": [
+      {
+        "function": "putObject",
+        "type": "sink",
+        "vul": "",
+        "actions": {},
+        "polluted": [
+          1
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.web.multipart.MultipartFile",
+    "rules": [
+      {
+        "function": "transferTo",
+        "type": "sink",
+        "vul": "",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.web.multipart.commons.CommonsMultipartFile",
+    "rules": [
+      {
+        "function": "transferTo",
+        "type": "sink",
+        "vul": "",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.mock.web.MockMultipartFile",
+    "rules": [
+      {
+        "function": "transferTo",
+        "type": "sink",
+        "vul": "",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Integer",
+    "rules": [
+      {
+        "function": "parseInt",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "com.j2eefast.common.core.xss.SQLFilter",
+    "rules": [
+      {
+        "function": "sqlInject",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "freemarker.template.TemplateDirectiveModel",
+    "rules": [
+      {
+        "function": "execute",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [],
+        "__comment": "freemarker"
+      }
+    ]
+  },
+  {
+    "name": "net.mingsoft.basic.util.BasicUtil",
+    "rules": [
+      {
+        "function": "assemblyRequestMap",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [],
+        "__comment": "MCMS"
+      }
+    ]
+  },
+  {
+    "name": "org.springblade.core.mp.support.Condition",
+    "rules": [
+      {
+        "function": "getQueryWrapper",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [],
+        "__comment": "spring-blade"
+      }
+    ]
+  },
+  {
+    "name": "com.skyeye.common.object.InputObject",
+    "rules": [
+      {
+        "function": "getMap",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [],
+        "__comment": "erp-pro"
+      },
+      {
+        "function": "getParams",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [],
+        "__comment": "erp-pro"
+      }
+    ]
+  },
+  {
+    "name": "com.skyeye.common.object.PutObject",
+    "rules": [
+      {
+        "function": "getRequest",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [],
+        "__comment": "erp-pro"
+      }
+    ]
+  },
+  {
+    "name": "java.awt.event.ActionListener",
+    "rules": [
+      {
+        "function": "*",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [],
+        "__comment": "InventoryManagementSystem"
+      }
+    ]
+  },
+  {
+    "name": "java.awt.event.MouseAdapter",
+    "rules": [
+      {
+        "function": "*",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [
+          "<java.awt.event.MouseAdapter: void mouseClicked(java.awt.event.MouseEvent)>"
+        ],
+        "__comment": "InventoryManagementSystem"
+      }
+    ]
+  },
+  {
+    "name": "java.awt.event.KeyAdapter",
+    "rules": [
+      {
+        "function": "*",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [],
+        "__comment": "InventoryManagementSystem"
+      }
+    ]
+  },
+  {
+    "name": "javax.swing.text.JTextComponent",
+    "rules": [
+      {
+        "function": "getText",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [
+          ""
+        ],
+        "__comment": "InventoryManagementSystem"
+      }
+    ]
+  },
+  {
+    "name": "javax.swing.JComboBox",
+    "rules": [
+      {
+        "function": "getSelectedItem",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [
+          ""
+        ],
+        "__comment": "InventoryManagementSystem"
+      }
+    ]
+  },
+  {
+    "name": "org.owasp.webgoat.lessons.GoatHillsFinancial.LessonAction",
+    "rules": [
+      {
+        "function": "handleRequest",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [
+          ""
+        ],
+        "__comment": "WebGoat"
+      }
+    ]
+  },
+  {
+    "name": "com.jflyfox.jfinal.base.BaseController",
+    "rules": [
+      {
+        "function": "getModel",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [
+          ""
+        ],
+        "__comment": "https://github.com/jflyfox/jfinal_cms"
+      },
+      {
+        "function": "getModelByAttr",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [
+          ""
+        ],
+        "__comment": "https://github.com/jflyfox/jfinal_cms"
+      },
+      {
+        "function": "getModelByForm",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [
+          ""
+        ],
+        "__comment": "https://github.com/jflyfox/jfinal_cms"
+      },
+      {
+        "function": "getBaseForm",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [
+          ""
+        ],
+        "__comment": "https://github.com/jflyfox/jfinal_cms"
+      }
+    ]
+  },
+  {
+    "name": "org.hibernate.Session",
+    "rules": [
+      {
+        "function": "createQuery",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          ""
+        ],
+        "__comment": "OpenClinica"
+      }
+    ]
+  },
+  {
+    "name": "org.hibernate.impl.SessionImpl",
+    "rules": [
+      {
+        "function": "createQuery",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          ""
+        ],
+        "__comment": "OpenClinica"
+      }
+    ]
+  },
+  {
+    "name": "com.jflyfox.jfinal.base.BaseModel",
+    "rules": [
+      {
+        "function": "paginate",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          3,
+          4
+        ],
+        "signatures": [
+          ""
+        ],
+        "__comment": "https://github.com/jflyfox/jfinal_cms"
+      }
+    ]
+  },
+  {
+    "name": "cn.devezhao.persist4j.query.AjqlQuery",
+    "rules": [
+      {
+        "function": "<init>",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<cn.devezhao.persist4j.query.AjqlQuery: void <init>(java.lang.String,cn.devezhao.persist4j.PersistManagerFactory,cn.devezhao.persist4j.Filter)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "javax.persistence.EntityManager",
+    "rules": [
+      {
+        "function": "createNativeQuery",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<javax.persistence.EntityManager: javax.persistence.Query createNativeQuery(java.lang.String)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "org.hibernate.engine.spi.SessionImplementor",
+    "rules": [
+      {
+        "function": "createNativeQuery",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<org.hibernate.engine.spi.SessionImplementor: javax.persistence.Query createNativeQuery(java.lang.String)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.sql.Connection",
+    "rules": [
+      {
+        "function": "prepareStatement",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      },
+      {
+        "function": "prepareCall",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      },
+      {
+        "function": "nativeSQL",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.sql.Statement",
+    "rules": [
+      {
+        "function": "executeQuery",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      },
+      {
+        "function": "executeUpdate",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      },
+      {
+        "function": "addBatch",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      },
+      {
+        "function": "execute",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.sql.PreparedStatement",
+    "rules": [
+      {
+        "function": "executeQuery",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          -1
+        ],
+        "signatures": []
+      },
+      {
+        "function": "execute",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          -1
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate",
+    "rules": [
+      {
+        "function": "queryForList",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate: java.util.List queryForList(java.lang.String,org.springframework.jdbc.core.namedparam.SqlParameterSource,java.lang.Class)>",
+          "<org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate: java.util.List queryForList(java.lang.String,java.util.Map,java.lang.Class)>",
+          "<org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate: java.util.List queryForList(java.lang.String,org.springframework.jdbc.core.namedparam.SqlParameterSource)>",
+          "<org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate: java.util.List queryForList(java.lang.String,java.util.Map)>"
+        ]
+      },
+      {
+        "function": "queryForObject",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      },
+      {
+        "function": "query",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.apache.ibatis.executor.Executor",
+    "rules": [
+      {
+        "function": "query",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "javax.servlet.ServletOutputStream",
+    "rules": [
+      {
+        "function": "println",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.kamranzafar.auth.rs.ldap.LdapAuthentication",
+    "rules": [
+      {
+        "function": "setSearchFilter",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.jdbc.core.JdbcTemplate",
+    "rules": [
+      {
+        "function": "queryForList",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": ["<org.springframework.jdbc.core.JdbcTemplate: java.util.List queryForList(java.lang.String)>"]
+      },
+      {
+        "function": "queryForObject",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      },
+      {
+        "function": "query",
+        "type": "sink",
+        "vul": "SQL",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.io.FileOutputStream",
+    "rules": [
+      {
+        "function": "close",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.util.HashMap",
+    "rules": [
+      {
+        "function": "put",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-1"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.util.HashMap",
+    "rules": [
+      {
+        "function": "get",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.sql.ResultSet",
+    "rules": [
+      {
+        "function": "getString",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "com.alibaba.fastjson.JSON",
+    "rules": [
+      {
+        "function": "toJSONString",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      },
+      {
+        "function": "parseArray",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "com.alibaba.fastjson.JSONObject",
+    "rules": [
+      {
+        "function": "parseObject",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Object",
+    "rules": [
+      {
+        "function": "getClass",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.Object: java.lang.Class getClass()>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.io.ObjectInputStream",
+    "rules": [
+      {
+        "function": "readFields",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "<init>",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.io.ObjectInputStream: void <init>(java.io.InputStream)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "javax.activation.DataSource",
+    "rules": [
+      {
+        "function": "getInputStream",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<javax.activation.DataSource: java.io.InputStream getInputStream()>"
+        ]
+      },
+      {
+        "function": "getOutputStream",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<javax.activation.DataSource: java.io.OutputStream getOutputStream()>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.util.Collections$CheckedMap$CheckedEntrySet",
+    "rules": [
+      {
+        "function": "iterator",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.util.Collections$CheckedMap$CheckedEntrySet: java.util.Iterator iterator()>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.util.Iterator",
+    "rules": [
+      {
+        "function": "next",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.io.ByteArrayInputStream",
+    "rules": [
+      {
+        "function": "<init>",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.io.ByteArrayInputStream: void <init>(byte[],int,int)>",
+          "<java.io.ByteArrayInputStream: void <init>(byte[])>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "org.apache.commons.codec.binary.Base64",
+    "rules": [
+      {
+        "function": "decodeBase64",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+        ]
+      },
+      {
+        "function": "encodeBase64",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+        ]
+      }
+    ]
+  },
+  {
+    "name": "cn.keking.utils.WebUtils",
+    "rules": [
+      {
+        "function": "normalizedURL",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.io.ObjectInput",
+    "rules": [
+      {
+        "function": "read",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "param-0": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "readFully",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "param-0": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "readLine",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "readUTF",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.lang.StringBuilder",
+    "rules": [
+      {
+        "function": "toString",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuilder: java.lang.String toString()>"
+        ]
+      },
+      {
+        "function": "append",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-0&remain",
+          "return": "this"
+        },
+        "quote": true,
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuilder: java.lang.AbstractStringBuilder append(java.lang.StringBuffer)>",
+          "<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.StringBuffer)>",
+          "<java.lang.StringBuilder: java.lang.AbstractStringBuilder append(java.lang.String)>",
+          "<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>",
+          "<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.Object)>",
+          "<java.lang.StringBuilder: java.lang.AbstractStringBuilder append(java.lang.Object)>",
+          "<java.lang.StringBuilder: java.lang.StringBuilder append(char[])>"
+        ]
+      },
+      {
+        "function": "indexOf",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuilder: int indexOf(java.lang.String,int)>",
+          "<java.lang.StringBuilder: int indexOf(java.lang.String)>"
+        ]
+      },
+      {
+        "function": "lastIndexOf",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuilder: int lastIndexOf(java.lang.String,int)>",
+          "<java.lang.StringBuilder: int lastIndexOf(java.lang.String)>"
+        ]
+      },
+      {
+        "function": "insert",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-1&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuilder: java.lang.StringBuilder insert(int,char[])>",
+          "<java.lang.StringBuilder: java.lang.AbstractStringBuilder insert(int,java.lang.Object)>",
+          "<java.lang.StringBuilder: java.lang.StringBuilder insert(int,java.lang.Object)>",
+          "<java.lang.StringBuilder: java.lang.StringBuilder insert(int,java.lang.String)>",
+          "<java.lang.StringBuilder: java.lang.AbstractStringBuilder insert(int,java.lang.String)>"
+        ]
+      },
+      {
+        "function": "replace",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-2&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuilder: java.lang.StringBuilder replace(int,int,java.lang.String)>",
+          "<java.lang.StringBuilder: java.lang.AbstractStringBuilder replace(int,int,java.lang.String)>"
+        ]
+      },
+      {
+        "function": "reverse",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuilder: java.lang.AbstractStringBuilder reverse()>",
+          "<java.lang.StringBuilder: java.lang.StringBuilder reverse()>"
+        ]
+      },
+      {
+        "function": "delete",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuilder: java.lang.AbstractStringBuilder delete(int,int)>",
+          "<java.lang.StringBuilder: java.lang.StringBuilder delete(int,int)>"
+        ]
+      },
+      {
+        "function": "<init>",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuilder: void <init>(java.lang.String)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.StringBuffer",
+    "rules": [
+      {
+        "function": "toString",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuffer: java.lang.String toString()>"
+        ]
+      },
+      {
+        "function": "append",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-0&remain",
+          "return": "this"
+        },
+        "quote": true,
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.StringBuffer)>",
+          "<java.lang.StringBuffer: java.lang.StringBuffer append(char[])>",
+          "<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.Object)>",
+          "<java.lang.StringBuffer: java.lang.StringBuffer append(java.lang.String)>",
+          "<java.lang.StringBuffer: java.lang.StringBuffer append(char[],int,int)>"
+        ]
+      },
+      {
+        "function": "insert",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-1&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuffer: java.lang.StringBuffer insert(int,java.lang.Object)>",
+          "<java.lang.StringBuffer: java.lang.StringBuffer insert(int,java.lang.String)>",
+          "<java.lang.StringBuffer: java.lang.StringBuffer insert(int,char[],int,int)>",
+          "<java.lang.StringBuffer: java.lang.StringBuffer insert(int,char[])>"
+        ]
+      },
+      {
+        "function": "replace",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-2&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuffer: java.lang.StringBuffer replace(int,int,java.lang.String)>"
+        ]
+      },
+      {
+        "function": "reverse",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuffer: java.lang.StringBuffer reverse()>"
+        ]
+      },
+      {
+        "function": "delete",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuffer: java.lang.StringBuffer delete(int,int)>"
+        ]
+      },
+      {
+        "function": "<init>",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.StringBuffer: void <init>(java.lang.String)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.String",
+    "rules": [
+      {
+        "function": "concat",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-0&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.String: java.lang.String concat(java.lang.String)>"
+        ]
+      },
+      {
+        "function": "substring",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.String: java.lang.String substring(int)>",
+          "<java.lang.String: java.lang.String substring(int,int)>"
+        ]
+      },
+      {
+        "function": "toUpperCase",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.String: java.lang.String toUpperCase()>"
+        ]
+      },
+      {
+        "function": "trim",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+        ]
+      },
+      {
+        "function": "toString",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.String: java.lang.String toString()>"
+        ]
+      },
+      {
+        "function": "getBytes",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.String: byte[] getBytes()>"
+        ]
+      },
+      {
+        "function": "<init>",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-0&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.String: void <init>(java.lang.String)>"
+        ]
+      },
+      {
+        "function": "charAt",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "split",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.String: java.lang.String[] split(java.lang.String)>",
+          "<java.lang.String: java.lang.String[] split(java.lang.String,int)>"
+        ]
+      },
+      {
+        "function": "replace",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-1&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>"
+        ]
+      }
+    ,
+      {
+        "function": "replaceAll",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-1&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.lang.String: java.lang.String replaceAll(java.lang.String,java.lang.String)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.util.List",
+    "rules": [
+      {
+        "function": "toArray",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.util.List: java.lang.Object[] toArray(java.lang.Object[])>",
+          "<java.util.List: java.lang.Object[] toArray()>"
+        ]
+      },
+      {
+        "function": "size",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": [
+          "<java.util.List: int size()>"
+        ]
+      },
+      {
+        "function": "add",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-0&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.util.List: boolean add(java.lang.Object)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.io.DataInput",
+    "rules": [
+      {
+        "function": "readFully",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "param-0": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "readLine",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "readUTF",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.io.ObjectInputStream$GetField",
+    "rules": [
+      {
+        "function": "get",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.io.ObjectInputStream$GetField: java.lang.Object get(java.lang.String,java.lang.Object)>",
+          "<java.io.ObjectInputStream$GetField: int get(java.lang.String,int)>",
+          "<java.io.ObjectInputStream$GetField: boolean get(java.lang.String,boolean)>",
+          "<java.io.ObjectInputStream$GetField: byte get(java.lang.String,byte)>",
+          "<java.io.ObjectInputStream$GetField: char get(java.lang.String,char)>",
+          "<java.io.ObjectInputStream$GetField: long get(java.lang.String,long)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.io.ObjectInputStream$GetField",
+    "rules": [
+      {
+        "function": "getOriginalFilename",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.io.ObjectInputStream$GetField: java.lang.String getOriginalFilename()>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jersey.core.util.Base64",
+    "rules": [
+      {
+        "function": "decode",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+          "<com.sun.jersey.core.util.Base64: byte[] decode(byte[])>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.net.URLDecoder",
+    "rules": [
+      {
+        "function": "decode",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+          "<com.sun.jersey.core.util.Base64: byte[] decode(byte[])>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.net.URLDecoder",
+    "rules": [
+      {
+        "function": "encode",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+          "<com.sun.jersey.core.util.Base64: byte[] decode(byte[])>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.System",
+    "rules": [
+      {
+        "function": "arraycopy",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "param-2": "param-0"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "identityHashCode",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "javax.servlet.http.HttpSession",
+    "rules": [
+      {
+        "function": "getAttribute",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": ["<javax.servlet.http.HttpSession: java.lang.Object getAttribute(java.lang.String)>"]
+      }
+    ]
+  },
+  {
+    "name": "javax.servlet.http.HttpServletRequest",
+    "rules": [
+      {
+        "function": "getHeader",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getHeaders",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getRequestURI",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getCookies",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getParameter",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getParameterMap",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getSession",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.jsoup.Jsoup",
+    "rules": [
+      {
+        "function": "clean",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+        },
+        "polluted": [],
+        "signatures": [
+          "<org.jsoup.Jsoup: java.lang.String clean(java.lang.String, org.jsoup.safety.Whitelist)>",
+          "<org.jsoup.Jsoup: java.lang.String clean(java.lang.String, java.lang.String, org.jsoup.safety.Whitelist)>",
+          "<org.jsoup.Jsoup: java.lang.String clean(java.lang.String, java.lang.String, , org.jsoup.safety.Whitelist, org.jsoup.nodes.Document.OutputSettings)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "org.apache.commons.text.StringEscapeUtils",
+    "rules": [
+      {
+        "function": "*",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "javax.servlet.ServletRequest",
+    "rules": [
+      {
+        "function": "getParameter",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getParameterMap",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "*",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "net.sf.regain.util.sharedtag.taglib.JspPageRequest",
+    "rules": [
+      {
+        "function": "getParameter",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.io.PrintStream",
+    "rules": [
+      {
+        "function": "print",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "com.bluecast.xml.PiccoloLexer",
+    "rules": [
+      {
+        "function": "yylex",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "sun.util.resources.OpenListResourceBundle",
+    "rules": [
+      {
+        "function": "getContents",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "javax.swing.plaf.nimbus.NimbusDefaults",
+    "rules": [
+      {
+        "function": "initializeDefaults",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "javax.swing.plaf.nimbus.NimbusLookAndFeel",
+    "rules": [
+      {
+        "function": "getDefaults",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this|<javax.swing.plaf.nimbus.NimbusLookAndFeel: javax.swing.UIDefaults uiDefaults>"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "sun.util.resources.TimeZoneNamesBundle",
+    "rules": [
+      {
+        "function": "getContents",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "sun.text.resources.DateFormatZoneData",
+    "rules": [
+      {
+        "function": "getContents",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "javax.swing.plaf.basic.BasicLookAndFeel",
+    "rules": [
+      {
+        "function": "initComponentDefaults",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "com.sun.java.swing.plaf.gtk.GTKLookAndFeel",
+    "rules": [
+      {
+        "function": "getDefaults",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "com.seeyon.ctp.common.parser.BytesEncodingDetect",
+    "rules": [
+      {
+        "function": "initialize_frequencies",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "com.seeyon.cap4.form.util.SinoDetect",
+    "rules": [
+      {
+        "function": "initializeFrequencies",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.apache.commons.lang.StringUtils",
+    "rules": [
+      {
+        "function": "replace",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "param-0": "param-2&remain",
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+          "<org.apache.commons.lang.StringUtils: java.lang.String replace(java.lang.String, java.lang.String, java.lang.String)>"
+        ]
+      },
+      {
+        "function": "join",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "param-0": "param-1&remain",
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+          "<org.apache.commons.lang.StringUtils: java.lang.String join(java.util.Collection,java.lang.String)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "org.apache.commons.lang.StringEscapeUtils",
+    "rules": [
+      {
+        "function": "escapeSql",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.jflyfox.jfinal.component.annotation.ControllerBind",
+    "rules": [
+      {
+        "function": "0",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.apache.solr.api.EndPoint",
+    "rules": [
+      {
+        "function": "0",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.web.bind.annotation.RequestMapping",
+    "rules": [
+      {
+        "function": "0",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.web.bind.annotation.PostMapping",
+    "rules": [
+      {
+        "function": "0",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.web.bind.annotation.GetMapping",
+    "rules": [
+      {
+        "function": "0",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.io.OutputStream",
+    "rules": [
+      {
+        "function": "write",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      },
+      {
+        "function": "close",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "flush",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.io.InputStream",
+    "rules": [
+      {
+        "function": "read",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "param-1": "this&remain"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "close",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.util.zip.ZipInputStream",
+    "rules": [
+      {
+        "function": "getNextEntry",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "<init>",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.io.ObjectInputStream: void <init>(java.io.InputStream)>"
+        ]
+      },
+      {
+        "function": "readAllBytes",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": [
+          "<java.io.ObjectInputStream: void <init>(java.io.InputStream)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "org.apache.solr.handler.configsets.ConfigSetAPIBase",
+    "rules": [
+      {
+        "function": "ensureNonEmptyInputStream",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.util.zip.ZipEntry",
+    "rules": [
+      {
+        "function": "getName",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.expression.common.TemplateAwareExpressionParser",
+    "rules": [
+      {
+        "function": "parseExpression",
+        "type": "sink",
+        "vul": "Spel表达式注入",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.io.PrintWriter",
+    "rules": [
+      {
+        "function": "print",
+        "type": "sink",
+        "vul": "XSS",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      },
+      {
+        "function": "println",
+        "type": "sink",
+        "vul": "XSS",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.core.io.InputStreamSource",
+    "rules": [
+      {
+        "function": "getInputStream",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {},
+        "polluted": [
+          -1
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.mvel2.MVEL",
+    "rules": [
+      {
+        "function": "executeExpression",
+        "type": "sink",
+        "vul": "MVEL表达式注入",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.io.RandomAccessFile",
+    "rules": [
+      {
+        "function": "getChannel",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {},
+        "polluted": [
+          -1
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.util.FileCopyUtils",
+    "rules": [
+      {
+        "function": "copy",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {},
+        "polluted": [
+          0,
+          1
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.beans.XMLDecoder",
+    "rules": [
+      {
+        "function": "readObject",
+        "type": "sink",
+        "vul": "SERIALIZE",
+        "actions": {},
+        "polluted": [
+          -1
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "javax.naming.Context",
+    "rules": [
+      {
+        "function": "lookup",
+        "type": "sink",
+        "vul": "JNDI",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<javax.naming.Context: java.lang.Object lookup(java.lang.String)>",
+          "<javax.naming.Context: java.lang.Object lookup(javax.naming.Name)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.rmi.registry.Registry",
+    "rules": [
+      {
+        "function": "lookup",
+        "type": "sink",
+        "vul": "JNDI",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.rmi.registry.Registry: java.rmi.Remote lookup(java.lang.String)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "com.sun.jndi.ldap",
+    "rules": [
+      {
+        "function": "c_lookup",
+        "type": "sink",
+        "vul": "JNDI",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.rmi.registry.Registry: java.rmi.Remote lookup(java.lang.String)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.jndi.JndiTemplate",
+    "rules": [
+      {
+        "function": "lookup",
+        "type": "sink",
+        "vul": "JNDI",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.lang.Runtime",
+    "rules": [
+      {
+        "function": "exec",
+        "type": "sink",
+        "vul": "EXEC",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.lang.Runtime: java.lang.Process exec(java.lang.String[],java.lang.String[],java.io.File)>",
+          "<java.lang.Runtime: java.lang.Process exec(java.lang.String[])>",
+          "<java.lang.Runtime: java.lang.Process exec(java.lang.String,java.lang.String[])>",
+          "<java.lang.Runtime: java.lang.Process exec(java.lang.String,java.lang.String[],java.io.File)>",
+          "<java.lang.Runtime: java.lang.Process exec(java.lang.String)>",
+          "<java.lang.Runtime: java.lang.Process exec(java.lang.String[],java.lang.String[])>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.ProcessBuilder",
+    "rules": [
+      {
+        "function": "<init>",
+        "type": "sink",
+        "vul": "EXEC",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.lang.ProcessBuilder: void <init>(java.util.List)>",
+          "<java.lang.ProcessBuilder: void <init>(java.lang.String[])>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.lang.ProcessImpl",
+    "rules": [
+      {
+        "function": "start",
+        "type": "sink",
+        "vul": "EXEC",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.lang.ProcessImpl: java.lang.Process start(java.lang.String[],java.util.Map,java.lang.String,java.lang.ProcessBuilder$Redirect[],boolean)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "javax.naming.spi.DirectoryManager",
+    "rules": [
+      {
+        "function": "getObjectInstance",
+        "type": "sink",
+        "vul": "JNDI",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.io.File",
+    "rules": [
+      {
+        "function": "delete",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {},
+        "polluted": [
+          -1
+        ],
+        "signatures": [
+          "<java.io.File: boolean delete()>"
+        ]
+      },
+      {
+        "function": "<init>",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.io.File: void <init>(java.lang.String)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "javax.xml.parsers.DocumentBuilder",
+    "rules": [
+      {
+        "function": "parse",
+        "type": "sink",
+        "vul": "XXE",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "javax.xml.transform.Transformer",
+    "rules": [
+      {
+        "function": "transform",
+        "type": "sink",
+        "vul": "XXE",
+        "actions": {
+          "param-1": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.nio.file.Path",
+    "rules": [
+      {
+        "function": "resolve",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-0&remain"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      },
+      {
+        "function": "normalize",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.nio.file.Files",
+    "rules": [
+      {
+        "function": "newInputStream",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.nio.file.Files: java.io.InputStream newInputStream(java.nio.file.Path,java.nio.file.OpenOption[])>"
+        ]
+      },
+      {
+        "function": "newOutputStream",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.nio.file.Files: java.io.OutputStream newOutputStream(java.nio.file.Path,java.nio.file.OpenOption[])>"
+        ]
+      },
+      {
+        "function": "newBufferedReader",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.nio.file.Files: java.io.BufferedReader newBufferedReader(java.nio.file.Path)>",
+          "<java.nio.file.Files: java.io.BufferedReader newBufferedReader(java.nio.file.Path,java.nio.charset.Charset)>"
+        ]
+      },
+      {
+        "function": "newBufferedWriter",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.nio.file.Files: java.io.BufferedWriter newBufferedWriter(java.nio.file.Path,java.nio.charset.Charset,java.nio.file.OpenOption[])>",
+          "<java.nio.file.Files: java.io.BufferedWriter newBufferedWriter(java.nio.file.Path,java.nio.file.OpenOption[])>"
+        ]
+      },
+      {
+        "function": "write",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {},
+        "polluted": [
+          0,
+          1
+        ],
+        "signatures": []
+      },
+      {
+        "function": "copy",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {},
+        "polluted": [
+          0,
+          1
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.io.FileInputStream",
+    "rules": [
+      {
+        "function": "<init>",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.io.FileInputStream: void <init>(java.lang.String)>",
+          "<java.io.FileInputStream: void <init>(java.io.File)>",
+          "<java.io.FileInputStream: void <init>(java.io.FileDescriptor)>"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "java.io.FileOutputStream",
+    "rules": [
+      {
+        "function": "<init>",
+        "type": "sink",
+        "vul": "FILE",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": [
+          "<java.io.FileOutputStream: void <init>(java.lang.String,boolean)>",
+          "<java.io.FileOutputStream: void <init>(java.lang.String)>",
+          "<java.io.FileOutputStream: void <init>(java.io.File,boolean)>",
+          "<java.io.FileOutputStream: void <init>(java.io.FileDescriptor)>",
+          "<java.io.FileOutputStream: void <init>(java.io.File)>"
+        ]
+      },
+      {
+        "function": "close",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "write",
+        "type": "sink",
+        "vul": "",
+        "actions": {},
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.sql.DriverManager",
+    "rules": [
+      {
+        "function": "getConnection",
+        "type": "sink",
+        "vul": "JNDI",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.sql.Driver",
+    "rules": [
+      {
+        "function": "connect",
+        "type": "sink",
+        "vul": "JNDI",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [
+          0
+        ],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.web.multipart.MultipartFile",
+    "rules": [
+      {
+        "function": "getBytes",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getInputStream",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.apache.flink.shaded.netty4.io.netty.channel.SimpleChannelInboundHandler",
+    "rules": [
+      {
+        "function": "channelRead0",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.springframework.web.servlet.resource.ResourceHttpRequestHandler",
+    "rules": [
+      {
+        "function": "handleRequest",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "weblogic.deploy.service.internal.transport.http.DeploymentServiceServlet",
+    "rules": [
+      {
+        "function": "internalDoPost",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "org.apache.shiro.mgt.DefaultSecurityManager",
+    "rules": [
+      {
+        "function": "resolvePrincipals",
+        "type": "source",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.io.PrintWriter",
+    "rules": [
+      {
+        "function": "println",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "java.lang.ClassLoader",
+    "rules": [
+      {
+        "function": "loadClass",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "com.auth0.jwt.JWT",
+    "rules": [
+      {
+        "function": "decode",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "decodeJwt",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "param-0"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  },
+  {
+    "name": "ignoreMethod",
+    "rules": [
+      {
+        "function": "append",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-0&remain",
+          "return": "this"
+        },
+        "quote": true,
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "containsKey",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "containsBean",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "containsValue",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "get",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-1&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getBean",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "put",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-1&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "remove",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "putAll",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "param-0": "param-1&remain",
+          "this": "param-0&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "size",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "isEmpty",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "clear",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "keySet",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "values",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "entrySet",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getKey",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getValue",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "setValue",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "equals",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "hashCode",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "comparator",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "run",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "hasNext",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "contains",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "iterator",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "toArray",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "add",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-0&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "containsAll",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "addAll",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "this": "param-0&remain",
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "removeAll",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "retainAll",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "replaceAll",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "sort",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "set",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "indexOf",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "lastIndexOf",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "listIterator",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "subList",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "spliterator",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "next",
+        "type": "ignore",
+        "vul": "",
+        "actions": {},
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "toString",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getOriginalFilename",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      },
+      {
+        "function": "getContentType",
+        "type": "ignore",
+        "vul": "",
+        "actions": {
+          "return": "this"
+        },
+        "polluted": [],
+        "signatures": []
+      }
+    ]
+  }
+]
