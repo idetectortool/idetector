@@ -12,7 +12,7 @@ client = OpenAI(api_key=openai.api_key, base_url='https://openai')
 
 
 prior_knowledge = '''
-    Now, you are a professional code auditor, and your goal is to determine whether the function I provide is a sanitization function. Specifically, you need to assess whether this sanitization function is related to SQL injection or file operation sanitization. I will provide you with some examples of sanitization functions, and your task is to learn from them to understand the sanitization operations.
+    Now, you are a professional code auditor, and your goal is to determine whether the function I provide is a sanitizer. Specifically, you need to assess whether this sanitizer is related to SQL injection or file operation sanitization. I will provide you with some examples of sanitizers, and your task is to learn from them to understand the sanitization operations.
     SQL injection filtering is generally performed through whitelisting/blacklisting or pattern-based checks for the presence of sensitive keywords such as "select," "and," "or," "&," "|," or quotation marks. Below are examples of SQL injection sanitization functions that I will provide to you:
     /**
          * @description sql injection filter
@@ -84,28 +84,30 @@ prior_knowledge = '''
 '''
 
 cot_think = '''
-    Here is the professional translation:
     Then, you can proceed step by step to determine whether the function I submit to you is a sanitization function.
 
     Step 1: If the function contains comments at the beginning, review the comments to get a general understanding of the function’s purpose.
-    Step 2: Check the function name. If the name is something obvious like sqlfilter or checkFileName, it is highly likely to be a sanitization function.
-    Step 3: Review the function logic. This is the most crucial step. You need to apply prior knowledge to evaluate the content I provide.
+
+    Step 2: Check the function name and classname. If the name is something obvious like sqlfilter or checkFileName or project.tools.filter.commonFilter, it is highly likely to be a sanitizer.
+
+    Step 3: Review the function logic. This is the most crucial step. You need to apply prior knowledge to evaluate the content I provide.  
 
     Following this thought process, you can perform a step-by-step evaluation to determine whether the function is a sanitization function. I will provide examples next.
 '''
 
 content_system = '''{
 	"rule_for_chatgpt":"You are a professional code auditor, I will provide you with a Java class and method. You need to think step by step to help me determine whether the functionality of this method involves security filtering for sql injection or security filtering for filename or suffixes of file download or security filtering for filename or suffixes of file upload. Please strictly follow the audit_rule below for analysis.",
-	"sql_filter_audit_rule1":"The sql injection filtering generally checks for the presence of sensitive keywords such as 'select','and','or','&','|' or quotes through black and white lists or regularity. Give you an example 'public static String                  SQL_PATTERN = "(?:')|(?:--)|(/\\*(?:.|[\\n\\r])*?\\*/)|((extractvalue|updatexml|if|mid|database)([\\s]*?)\\()|"+ "(\\b(select|update|and|or|delete|insert|trancate|char|into|substr|ascii|declare|exec|count|master|into|drop|execute|case when|sleep|union|load_file)\\b)"; public static boolean isValidOrderBySql(String value) {Pattern sqlPattern = Pattern.compile(SQL_PATTERN, Pattern.CASE_INSENSITIVE);if (sqlPattern.matcher(value.toLowerCase()).find()) {return true;}return false;}'",
-	"sql_filter_audit_rule2":"For SQL injection filtering functions, you need to determine whether the function is a general SQL injection filtering function for this project (It does not include business logic operations, only keyword checking and filtering. Other business functions can directly call this function for filtering operations.), rather than returning true simply because it contains some validation operations.",
-	"sql_filter_audit_rule3":"Functions specifically used for security filtering usually have highly targeted names, such as 'sqlfilter', etc.",
-	"sql_filter_audit_rule4":"If this function includes business logic operations, it is most likely not an SQL injection filtering function.",
-	"sql_filter_audit_rule5":"I need to confirm whether this method is related to SQL injection filtering, not whether it poses an SQL injection risk.",
-	"path_vulnerability_audit_rule1":"You must carefully confirm that functions related to file operation security filtering must check the filename suffix using blacklist or whitelist or check the presence of path traversal special strings like '../'. Give you an example '@GetMapping("common/download")public void fileDownload(String fileName, Boolean delete, HttpServletResponse response, HttpServletRequest request){String realFileName = System.currentTimeMillis()+fileName.substring(fileName.indexOf("_")+1);try{//防止跨目录访问漏洞if(fileName.contains("..;/")||fileName.contains("../")){throw new BusinessException("不允许跨目录访问");}String filePath = LuckyFrameConfig.getDownloadPath() + fileName;response.setCharacterEncoding("utf-8");response.setContentType("multipart/form-data");response.setHeader("Content-Disposition","attachment;fileName="+setFileDownloadHeader(request, realFileName));FileUtils.writeBytes(filePath, response.getOutputStream());if (delete){FileUtils.deleteFile(filePath);}}catch (Exception e){log.error("", e);}}'",
-	"path_vulnerability_audit_rule2":"For file operation filtering, it is most likely related to file upload, download, import, or export. There is no need to focus on business validations within other business functions.",
-	"path_vulnerability_audit_rule3":"Do not return true simply because the function involves file upload or download operations. I need to confirm that the function includes filtering operations!!!",
-	"audit_rule1":"Please exclude certain validations that are clearly unrelated to SQL injection and file operations, such as verifying user phone numbers, usernames, and similar operations.",
-	"audit_rule2":"Please review only the filtering functions related to SQL injection and file operations. Other types of filtering functions are not within the scope of consideration.",
+    "sql_filter_audit_rule1":"The sql injection filtering generally checks for the presence of sensitive keywords such as 'select','and','or','&','|' or quotes through black and white lists or regularity.",
+    "sql_filter_audit_rule2":"For SQL injection filtering functions, you need to determine whether the function is a general SQL injection filtering function for this project (It does not include business logic operations, only keyword checking and filtering. Other business functions can directly call this function for filtering operations.), rather than returning true simply because it contains some validation operations.",
+    "sql_filter_audit_rule3":"If this function includes business logic operations, it is most likely not an SQL injection filtering function.",
+    "sql_filter_audit_rule4":"I need to confirm whether this method is related to SQL injection filtering, not whether it poses an SQL injection risk.",
+    "path_vulnerability_audit_rule1":"You must carefully confirm that functions related to file operation security filtering must check the filename suffix using blacklist or whitelist or check the presence of path traversal special strings like '../'",
+    "path_vulnerability_audit_rule2":"For file operation filtering, it is most likely related to file upload, download, import, or export. There is no need to focus on business validations within other business functions.",
+    "path_vulnerability_audit_rule3":"Do not return true simply because the function involves file upload or download operations. I need to confirm that the function includes filtering operations.",
+    "audit_rule1":"Please exclude certain validations that are clearly unrelated to SQL injection and file operations, such as verifying user phone numbers, usernames, and similar operations.",
+    "audit_rule2":"Please review only the filtering functions related to SQL injection and file operations. Other types of filtering functions are not within the scope of consideration.",
+    "audit_rule3":"Functions specifically used for security filtering usually have highly targeted method names or class names, such as 'sqlfilter', 'project.tools.filter.commonFilter', etc.",
+    "audit_rule4":"You can utilize the function's comment information to assist in identifying sanitizers. For instance, a sanitizer that checks file suffixes might have a comment like /** Check File Suffix **/.",
 	"output":"Return the results to me in JSON format. If the method is security filtered, just respond with '{"isfilter": true,"reason": "xxxxx"}',else return '{"isfilter": false}'#Other than that, don't tell me anything!"
 }
 
@@ -122,13 +124,11 @@ output_format if as below
 '''
 
 checker_system = '''{
-    "rule_for_checker":"Now, you are a professional vulnerability discovery expert. I will provide you with the previous ChatGPT role setting rules, my questions, and ChatGPT's answers. You need to think step by step to help me verify the correctness of ChatGPT's judgment on filtering functions, following these audit rules.",
+    "rule_for_checker":"Now, you are a professional code auditor. I will provide you with the previous ChatGPT role setting rules, my questions, and ChatGPT's answers. You need to think step by step to help me verify the correctness of ChatGPT's judgment on sanitizers, following these audit rules.",
     "audit_rule1":"A statement like if (dirName != null && !"".equals(dirName.trim())) that simply checks if a string is empty cannot be considered a filtering operation.",
     "audit_rule2":"User permission checks cannot be considered filtering operations, such as verifying if a user is an administrator or has a logged-in status",
     "audit_rule3":"A function that contains an obvious path traversal filter for patterns like ../ or .. in its content can be considered a filtering function.",
-    "audit_rule4":"A function that contains obvious filters for SQL-sensitive keywords such as and, or, update, ', and " in its content can be considered an SQL injection filtering function. note that: Some sanitization functions will mix sql and xss filtering together, and this counts as sanitization functions",
-    "audit_rule5":"Some filtering functions may only check certain blacklists or whitelists and then return false or true. This is because some filtering functions are called by other functions, and the next steps in the function logic depend on the content of these filtering functions.",
-    "audit_rule6":"Some file upload operations can also be considered filtering functions if the function body explicitly checks file extensions or detects operations like ../."
+    "audit_rule4":"A function that contains obvious filters for SQL-sensitive keywords such as and, or, update, ', and " in its content can be considered an SQL injection filtering function. note that: Some sanitizers may mix sql and xss filtering together, and this counts as sanitizers",
     "output":"Return the results to me in JSON format.
     output_format if as below
     {
