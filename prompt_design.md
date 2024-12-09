@@ -128,7 +128,7 @@ You can proceed **step by step** to determine whether the function I submit to y
 
     "audit_rule4":"A function that contains obvious filters for SQL-sensitive keywords such as and, or, update, ', and \" in its content can be considered an SQL injection filtering function. note that: Some sanitizers may mix sql and xss filtering together, and this counts as sanitizers",
 
-    "output":"Return the results to me in JSON format.
+    "output":"Return the results to me in JSON format",.
 
     output_format if as below
 
